@@ -57,9 +57,8 @@
 #Column	e_pmDE	(F6.3)	? Standard error of proper motion in declination direction (pmdec_error)	[ucd=stat.error;pos.pm;pos.eq.dec]
 #Column	RV	(F7.2)	? Spectroscopic radial velocity in the solar barycentric reference frame (radial_velocity)	[ucd=spect.dopplerVeloc.opt;pos.barycenter]
 #Column	e_RV	(F5.2)	? Radial velocity error (radial_velocity_error) (30)	[ucd=stat.error;spect.dopplerVeloc.opt;pos.barycenter]
-DR2Name|RA_ICRS|e_RA_ICRS|DE_ICRS|e_DE_ICRS|Plx|e_Plx|pmRA|e_pmRA|pmDE|e_pmDE|RV|e_RV
- |deg|mas|deg|mas|mas|mas|mas/yr|mas/yr|mas/yr|mas/yr|km/s|km/s
-----------------------------|---------------|-------|---------------|-------|----------|-------|---------|------|---------|------|-------|-----
+DR2Name|RA_ICRS|e_RA_ICRS|DE_ICRS|e_DE_ICRS|Plx|e_Plx|pmRA|e_pmRA|pmDE|e_pmDE|RV|e_RV|deg|mas|deg|mas|mas|mas|mas/yr|mas/yr|mas/yr|mas/yr|km/s|km/s
+#----------------------------|---------------|-------|---------------|-------|----------|-------|---------|------|---------|------|-------|-----
 Gaia DR2 4657676356459233792|084.84437996799| 0.3044|-69.15457691726| 0.3711|    0.0361| 0.3114|    1.565| 0.701|   -0.434| 0.757|       |
 Gaia DR2 4657676360756283264|084.84573269896| 0.7817|-69.14562344359| 1.1423|   -1.5250| 0.7672|    5.135| 2.164|    5.469| 2.396|       |
 Gaia DR2 4657676292036031360|084.89257262565| 1.7179|-69.15704244625| 1.4226|          |       |         |      |         |      |       |
