@@ -47,28 +47,27 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \institute{{Astronomical Institute Anton Pannekoek, University of
     Amsterdam, 1098 XH Amsterdam, The Netherlands}
-  \and{School of Astronomy \& Space Science, University of the Chinese
-    Academy of Sciences, Beijing 100012, China}
-  \and{National Astronomical Observatories, Chinese Academy of
-    Sciences, Beijing 100012, China}
+  % \and{School of Astronomy \& Space Science, University of the Chinese
+  %   Academy of Sciences, Beijing 100012, China}
+  % \and{National Astronomical Observatories, Chinese Academy of
+  %   Sciences, Beijing 100012, China}
 }
   
 \offprints{M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
 \date{}
 \abstract{}
 
-\keywords{stars: kinematics, stars:individual:VFTS682}
+\keywords{stars: kinematics, stars: runaways, stars: individual: VFTS682}
 \maketitle{}
 
 \section{Introduction}
 \label{sec:intro}
 
-How do stars form is one longstanding question in astrophysics \cite{lada:03}
-\todo{ref?}. Answering it for massive stars is particularly difficult,
-since these are intrinsically rare
+How do stars form is one longstanding question in astrophysics
+\cite{lada:03, zinnecker:07}. It is particularly difficult for massive stars, because these are intrinsically rare
 \citep[e.g.,][]{salpeter:55,kroupa:01, schneider:18}, evolve fast, and
-remain enshrouded in their parent cloud during the whole formation
-process \todo{ref}. Moreover, observations of young massive stars reveal a
+remain enshrouded in their parent cloud during the formation
+process. Moreover, observations of young massive stars reveal a
 complicated multipliticy structure which requires
 explanation \citep[][]{kobulnicky:07,mason:09,sana:11,sana:12,kiminki:12,chini:12,kobulnicky:14,almeida:17,demarco:17}. Understanding massive star formation, possibly as a
 function of metallicity, is a key question given the present and upcoming
@@ -76,28 +75,30 @@ transient survey \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{} which
 will reveal transients associated to massive stars
 evolution and death.
 
-\todo{short summary of formation scenarios goes here}.
-
-
 The second data release (DR2) from the Gaia satellite
-\cite[][]{brown:18,} allows us to test
-these hypothesis using one particular star, VFTS682. This star is a
-very massive ($\sim$$150\,M_\odot$) WNh5 star in the 30 Doradus region
-of the Large Magellanic Cloud, and it is presently observed at a
+\cite[][]{gaia:16,brown:18} allows us to test
+these hypothesis using one particular star, VFTS682. 
+This star is a
+very massive \citep[$M_\mathrm{ZAMS}\simeq150\,M_\odot$,][]{bestenlehner:11,schneider:18} WNh5 star in the 30 Doradus region
+of the Large Magellanic Cloud (LMC), and it is presently observed at a
 projected distance of $\sim$$29$\,pc from the nearest cluster of
 massive stars R136 \citep[][]{bestenlehner:11}. Based on the extremely high mass of this star and
 its present day apparent isolation, \cite{bestenlehner:11} proposed it
-might be a candidate for isolated star formation, or a runaway ejected
-from R136 in the past.
+might be a candidate for isolated star formation, or a ``slow runaway'' ejected
+from R136 in the past. This second option is also supported by the
+N-body simulations of \cite{fujii:11, banerjee:12}.   Many other
+very massive stars are present in the surroundings of R136, and a more
+detailed analysis on the larger sample is desirable.
+
 
 Massive stars can in principle be ejected from R136 as a consequence of dynamical
 interactions \citep[][]{poveda:67,leonard:91, evans:10, fujii:11,
   allison:12, oh:16}, or by the disruption of a binary by the first
 core-collapse supernova
 \citep[][]{zwicky:57,blaauw:61,dedonder:97,eldridge:11,renzo:18}. However,
-R136 has an estimated age of $\lessim2$\,Myr \todo{ref}, which is
-shorter than the shortest stellar lifetime of about $\sim$3\,Myr
-\citep[e.g.,][]{zapartas:17}, so one would not expect the binary
+R136 has an estimated age of $\lesssim2$\,Myr \citep[][]{sabbi:12}, which is
+shorter than the shortest stellar lifetime
+\citep[$\sim$3\,Myr, e.g.,][]{zapartas:17}, so one would not expect the binary
 disruption scenario to be relevant for this cluster.
 
 
@@ -111,26 +112,39 @@ required to explain it. However, we find a mild discrepancy between the
 apparent age of VFTS682, its kinematic age, and the age estimates for
 R136. 
 
-In \Secref{sec:sample}, we describe how we select stars in R136 and in
-the surroundings of VFTS682 itself to remove the mean motion of the
-region. \Secref{sec:results} presents our main findings. We conclude by
-discussing the implications for theories of
+In \Secref{sec:sample}, we describe the data selection and validation
+process for VFTS 682 and for stars in the surrounding used to
+calculate and remove the mean motion of the
+region. \Secref{sec:results} presents our main findings. We conclude
+by discussing the implications for theories of
 star formation, N-body interactions, and binary evolution in
 \Secref{sec:discussion}.
 
 \section{Gaia DR2 data selection}
 \label{sec:sample}
+
 VFTS682 is labeled in the Gaia DR2
 catalog\footnote{\url{https://gea.esac.esa.int/archive/}} with the
-source id 4657685637907503744. For this star, we retrieve from the
-Gaia catalog its position in right ascension (RA) and declination (DE)
-in the IGCS frame\cite[][]{brown:18}\todo{some 2016 Gaia paper?}, its
+source id 4657685637907503744. The star has a
+\texttt{visibility\_period} = 17, which counts how many observations have
+been used to reconstruct its astrometric solution \citep[][]{lindengren:18}. Its G-band
+magnitude is 15.65, cf. the V-band magnitude of 16.08
+\citep[][]{evans:11, bestenlehner:11}, and the reported
+\texttt{astrometric\_noise} = 0. These values suggest that the Gaia
+data for VFTS682 are trustworthy. However, the effective temperature
+reported is one order of magnitude lower than what found by
+\cite{bestenlehner:11}, and the best fit parallax of this star is
+negative. We do not use the effective temperature of the star anywhere
+in this study, and we attribute the unphysical value of the parallax
+to the large distance to the LMC. Our main findings do not rely on the
+parallax value reported in the Gaia catalog.
+
+We retrieve for VFTS682 the position in right ascension (RA) and declination (DE)
+in the IGCS frame \cite[][]{brown:18}, its
 proper motion components ($\mu_\mathrm{RA}$, and $\mu_\mathrm{DE}$,
 respectively). For the radial velocity of VFTS682 and of the 30 Doradus
 region as a whole, we instead use the VFTS data
-as quoted in \cite{bestenlehner:11}. Our main conclusions do not
-depend on the detailed value of the radial velocity.\todo{improve
-  phrasing} \Tabref{tab:vfts682} lists the values adopted throughout
+as quoted in \cite{bestenlehner:11}. \Tabref{tab:vfts682} lists the values adopted throughout
 this work for each of these quantities.
 
 \begin{table}[tbp]
@@ -157,12 +171,14 @@ To compare the astrometry of VFTS682 and derive its peculiar motion,
 we then select data from the Gaia DR2 catalog for two regions: the
 ``surroundings'' of VFTS 682, and the ``R136 cluster''. The
 surrounding region is defined by all the stars within 10 arcminutes from
-VFTS682. This includes the subset of stars which we consider to be
+VFTS682 \todo{without a pm and with G mag<17 for VFTS completeness and
+to focus on massive stars only}. This includes the subset of stars which we consider to be
 part of R136. We include all the stars for which a value of the proper
 motion components and the corresponding errors are available.
 The ``R136 cluster'' is effectively defined by taking all the stars
 within 25 arcseconds from R136a, one of the most massive members of
-the cluster itself \citep[][]{crowther:10}.
+the cluster itself \citep[][]{crowther:10}. \todo{improve definition
+  of stars from R136 -- check with Danny}
 
 Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
 the 30 Doradus region as a whole, since the parallax for VFTS682
@@ -184,9 +200,24 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
 
 
 
-\section{Discussion}
+\section{Summary and Discussion}
 \label{sec:discussion}
 
+\begin{itemize}
+\item VFTS682 is a bona fide runaway with $v\sim60\,\mathrm{km\
+    s^{-1}}$ thrown out from R136. Both its speed and the age of the
+  cluster are consitent with a dynamical ejection.
+  \item VFTS682 comes from R136 as was expected by
+  \cite{bestenlehner:11, fujii:11, banerjee:12}, so it does not
+  require isolated SFH to be explained
+\item apparent age tension (connect to VFTS16 as well).
+\item is R136 a single young cluster or a merger
+\item estimate the influence of the gravitational potential of R136,
+  what is its total mass and relaxation time?
+\end{itemize}
+
+Random notes: vsini<200 form \cite{schneider:18}, age $1\pm 0.2$\,Myr
+from \cite{schneider:18}
 
 \bibliographystyle{aa}
 \bibliography{bibliography/vfts682}
