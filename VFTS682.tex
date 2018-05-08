@@ -114,8 +114,7 @@ R136.
 
 In \Secref{sec:sample}, we describe the data selection and validation
 process for VFTS 682 and for stars in the surrounding used to
-calculate and remove the mean motion of the
-region. \Secref{sec:results} presents our main findings. We conclude
+define the local reference frame. \Secref{sec:results} presents our main findings. We conclude
 by discussing the implications for theories of
 star formation, N-body interactions, and binary evolution in
 \Secref{sec:discussion}.
@@ -130,7 +129,7 @@ source id 4657685637907503744. The star has a
 been used to reconstruct its astrometric solution \citep[][]{lindengren:18}. Its G-band
 magnitude is 15.65, cf. the V-band magnitude of 16.08
 \citep[][]{evans:11, bestenlehner:11}, and the reported
-\texttt{astrometric\_noise} = 0. These values suggest that the Gaia
+\texttt{astrometric\_excess\_noise} = 0. These values suggest that the Gaia
 data for VFTS682 are trustworthy. However, the effective temperature
 reported is one order of magnitude lower than what found by
 \cite{bestenlehner:11}, and the best fit parallax of this star is
@@ -170,15 +169,25 @@ this work for each of these quantities.
 To compare the astrometry of VFTS682 and derive its peculiar motion,
 we then select data from the Gaia DR2 catalog for two regions: the
 ``surroundings'' of VFTS 682, and the ``R136 cluster''. The
-surrounding region is defined by all the stars within 10 arcminutes from
-VFTS682 \todo{without a pm and with G mag<17 for VFTS completeness and
-to focus on massive stars only}. This includes the subset of stars which we consider to be
-part of R136. We include all the stars for which a value of the proper
-motion components and the corresponding errors are available.
+surrounding region is defined by all the stars in a target of 10 arcminutes around
+VFTS682 fulfilling the following criteria: we require a G-band
+magnitude brighter than 17, to mimic the completeness threshold for
+the VFTS survey, \texttt{visibility\_period} >= 5, and
+\texttt{astrometric\_excess\_noise} <= 1. This selection yields
+roughly 17800 stars, including the subset of stars which we consider to be
+part of R136, discussed below. We further require  these stars to have finite proper
+motion components and relative errors, reducing further the sample to
+14856 stars. % A more strict sample selection for the surroundings can
+% be found in \cite{lennon:18}.
+
 The ``R136 cluster'' is effectively defined by taking all the stars
 within 25 arcseconds from R136a, one of the most massive members of
-the cluster itself \citep[][]{crowther:10}. \todo{improve definition
-  of stars from R136 -- check with Danny}
+the cluster itself \citep[][]{crowther:10}, requiring the same
+``quality'' criteria applied above. Because of the magnitude cut
+however, this would yield an incredibly small sample of 15 stars only
+% which makes no sense at all
+\todo{improve definition
+  of stars from R136, describe accordingly -- check with Danny}
 
 Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
 the 30 Doradus region as a whole, since the parallax for VFTS682
@@ -186,6 +195,7 @@ listed in the Gaia DR2 catalog is negative.
 
 The data retrieved, and the ipython notebook used for the analysis
 presented here will be made available at \todo{probably git repo on bitbucket?}. 
+
 \section{The kinematics of VFTS682}
 \label{sec:results}
 
@@ -222,7 +232,9 @@ from \cite{schneider:18}
 \bibliographystyle{aa}
 \bibliography{bibliography/vfts682}
 
-
+% \begin{acknowledgements}
+%  I am grateful to S.~Torres who helped me p
+% \end{acknowledgements}
 \end{document}
 
 
