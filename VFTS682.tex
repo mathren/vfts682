@@ -71,7 +71,7 @@ process. Moreover, observations of young massive stars reveal a
 complicated multipliticy structure which requires
 explanation \citep[][]{kobulnicky:07,mason:09,sana:11,sana:12,kiminki:12,chini:12,kobulnicky:14,almeida:17,demarco:17}. Understanding massive star formation, possibly as a
 function of metallicity, is a key question given the present and upcoming
-transient survey \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{} which
+transient survey \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{}\todo{ref} which
 will reveal transients associated to massive stars
 evolution and death.
 
@@ -105,17 +105,16 @@ disruption scenario to be relevant for this cluster.
 In this study, we combine the radial velocity measurements from the
 VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2
 to reconstruct the three-dimensional velocity of VFTS682, and test the
-null hypothesis that this star was ejected from R136. \todo{check the
-  following} Our results indicate that R136 is the likely origin of
-this star, and therefore isolated star formation is \emph{not}
-required to explain it. However, we find a mild discrepancy between the
-apparent age of VFTS682, its kinematic age, and the age estimates for
-R136. 
-
-In \Secref{sec:sample}, we describe the data selection and validation
-process for VFTS 682 and for stars in the surrounding used to
-define the local reference frame. \Secref{sec:results} presents our main findings. We conclude
-by discussing the implications for theories of
+hypothesis that this star was ejected from R136. We discuss in
+\Secref{sec:sample} the data for VFTS682, and the selection of stars
+used to define a local reference frame. Our results
+indicate that R136 is a bona fide runaway star (\Secref{sec:runaway}), therefore isolated star formation is \emph{not}
+required to explain it. We also find that a dynamical ejection from
+R136 is compatible with the direction of its velocity
+vector. \todo{double check the following}
+However, we find a mild discrepancy between the apparent age of
+VFTS682, its kinematic age, and the age estimates for R136 (\Secref{sec:r136_origin}).  We conclude
+with a very brief discussion on the implications for theories of
 star formation, N-body interactions, and binary evolution in
 \Secref{sec:discussion}.
 
@@ -220,7 +219,7 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
 \label{sec:results}
 
 \subsection{Is it a runaway star?}
-
+\label{sec:runaway}
 We first address the question of whether VFTS682 is a typical star
 from the kinematic point of view, or whether it is a runaway star with
 a significantly large peculiar velocity compared to its surrounding population. The former is what should
@@ -228,13 +227,15 @@ be expected if it formed where we observe it today, in relative
 isolation from other massive stars.
 
 Using the 437 stars selected as the ``surrounding population'' in
-\Secref{sec:sample}, we find averaged proper motion components of
-$\mu_\mathrm{RA} = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
-$\mu_\mathrm{DE} = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
+\Secref{sec:sample} and shown in blue in \Figref{fig:main}, we find averaged proper motion components of
+$\langle\mu_\mathrm{RA}\rangle = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
+$\langle\mu_\mathrm{DE}\rangle = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
 proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\mu^\mathrm{sur}_\mathrm{RA} = 0.14\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
-0.09\pm 0.08\,\mathrm{mas\ yr^{-1}}$. These can be converted in the
+$\mu^\mathrm{sur}_\mathrm{RA} = 0.15\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
+0.09\pm 0.08\,\mathrm{mas\ yr^{-1}}$. %% note that the error budget is
+% dominated by VFTS682
+These can be converted in the
 the components of the transverse velocity $v^\mathrm{sur}_\mathrm{RA}=35\pm17\,\kms$,
 $v^\mathrm{sur}_\mathrm{DE}=22\pm19\,\kms$, assuming a distance of
 50\,kpc (we do not account for the uncertainty in the distance
@@ -245,19 +246,21 @@ the line of sight, allowing us to calculate the speed of the star:
 \begin{equation}
   \label{eq:speed}
   v = \sqrt{\left(v^\mathrm{sur}_\mathrm{RA}\right)^2
-    +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 61 \pm 1
+    +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 61 \pm 22
   \, \kms \ .
 \end{equation}
-This value for the peculiar 3D velocity of VFTS682 make it a ``bona
-fide'' runaway star.
-
-\todo{errors are wrong}
+This value for the three-dimensional speed of VFTS682 with respect the
+surrounding stars make it a ``bona fide'' runaway star.
 
 \subsection{Does it come from the R136 cluster?}
+\label{sec:r136_origin}
+
 The inset plot in \Figref{fig:main} shows a zoom in of the region
 around R136 which includes VFTS682. To test the hypothesis that the
-star was indeed ejected from this region, we check the relative
-orientation of its proper motion. The error cone, obtained by
+star was indeed ejected from this region, we check the
+orientation of its proper motion relative to the group of stars
+selected to represent the R136 cluster in \Secref{sec:sample}. We
+further consider also the kinematic age of the star. The error cone, obtained by
 propagating the errors on the proper motion components indicates that
 R136 is indeed the most likely origin, as expected by \cite{fujii:11,
   banerjee:12}.
