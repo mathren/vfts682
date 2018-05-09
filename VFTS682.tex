@@ -194,9 +194,9 @@ the cluster itself \citep[][]{crowther:10}, requiring the same
   of stars from R136, describe accordingly -- check with Danny}
 
 Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
-the 30 Doradus region as a whole, since the parallax for VFTS682
-listed in the Gaia DR2 catalog is negative. %% this is what makes the
-                                %% LOS velocity useless...how to improve?
+the 30 Doradus region as a whole.% , since the parallax for VFTS682
+% listed in the Gaia DR2 catalog is negative. %% this is what makes the
+%                                 % LOS velocity useless...how to improve?
 
 For each of the two local rest frames (``surroundings'' and ``R136
 cluster''), we compute the average transverse velocity as:
@@ -220,20 +220,38 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
 \label{sec:results}
 
 \subsection{Is it a runaway star?}
-We first address the question of whether VFTS682 is a typical star in
-its surroundings from the kinematic point of view, or whether it is a
-runaway star with a significantly large peculiar velocity. The former is what should
-be expected if it formed where we observe it today, in relative
-isolation from other massive stars. We calculate the velocity relative
-to the general population in its surroundings, shown as blue dots in
-the large panel of \Figref{fig:main}, assuming a distance of
-$D=50$\,kpc.
 
-\todo{discuss numbers found, refer to figure}
-likely conclusion looking at the general region: it is a ``bona
-  fide'' runaway star with velocity components $\left(v_\mathrm{RA},
-    v_\mathrm{DE}, v_\mathrm{rad}\right)$ =
-  $\left(\todo{XX},\todo{YY},\todo{ZZ}\right)$, corresponding to $v\equiv\sqrt{v_\mathrm{RA}^2+v_\mathrm{DE}^2+v_\mathrm{rad}^2}=\todo{AA}\,\kms$.
+We first address the question of whether VFTS682 is a typical star
+from the kinematic point of view, or whether it is a runaway star with
+a significantly large peculiar velocity compared to its surrounding population. The former is what should
+be expected if it formed where we observe it today, in relative
+isolation from other massive stars.
+
+Using the 437 stars selected as the ``surrounding population'' in
+\Secref{sec:sample}, we find averaged proper motion components of
+$\mu_\mathrm{RA} = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
+$\mu_\mathrm{DE} = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
+proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
+components of proper motion of the star relative to the surrounding region
+$\mu^\mathrm{sur}_\mathrm{RA} = 0.14\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
+0.09\pm 0.08\,\mathrm{mas\ yr^{-1}}$. These can be converted in the
+the components of the transverse velocity $v^\mathrm{sur}_\mathrm{RA}=35\pm17\,\kms$,
+$v^\mathrm{sur}_\mathrm{DE}=22\pm19\,\kms$, assuming a distance of
+50\,kpc (we do not account for the uncertainty in the distance
+estimate when propagating errors). The radial velocity from
+\cite{bestenlehner:11} then gives the third component along
+the line of sight, allowing us to calculate the speed of the star:
+
+\begin{equation}
+  \label{eq:speed}
+  v = \sqrt{\left(v^\mathrm{sur}_\mathrm{RA}\right)^2
+    +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 61 \pm 1
+  \, \kms \ .
+\end{equation}
+This value for the peculiar 3D velocity of VFTS682 make it a ``bona
+fide'' runaway star.
+
+\todo{errors are wrong}
 
 \subsection{Does it come from the R136 cluster?}
 The inset plot in \Figref{fig:main} shows a zoom in of the region
