@@ -187,11 +187,10 @@ requirement of having parallaxes smaller than $1\,\mathrm{mas\
   yr^{-1}}$ does not reduces further our sample. This selection yields 437 stars.
 
 The ``R136 cluster'' is effectively defined by taking all the stars
-within 25 arcseconds from R136a, one of the most massive members of
+in a region of 50 arcseconds around R136a, one of the most massive members of
 the cluster itself \citep[][]{crowther:10}, requiring the same
-``quality'' criteria applied above. This selection yields 62 stars.
-\todo{improve definition
-  of stars from R136, describe accordingly -- check with Danny}
+``quality'' criteria applied above. This selection yields 42 stars.
+\todo{improve definition of stars from R136, describe accordingly -- check with Danny}
 
 Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
 the 30 Doradus region as a whole.% , since the parallax for VFTS682
@@ -229,8 +228,8 @@ isolation from other massive stars.
 
 Using the 437 stars selected as the ``surrounding population'' in
 \Secref{sec:sample} and shown in blue in \Figref{fig:main}, we find averaged proper motion components of
-$\langle\mu_\mathrm{RA}\rangle = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
-$\langle\mu_\mathrm{DE}\rangle = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
+$\langle\mu_\mathrm{RA}^\mathrm{sur}\rangle = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
+$\langle\mu_\mathrm{DE}^\mathrm{sur}\rangle = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
 proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
 $\mu^\mathrm{sur}_\mathrm{RA} = 0.15\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
@@ -245,8 +244,8 @@ estimate when propagating errors). The radial velocity from
 the line of sight, allowing us to calculate the speed of the star:
 
 \begin{equation}
-  \label{eq:speed}
-  v = \sqrt{\left(v^\mathrm{sur}_\mathrm{RA}\right)^2
+  \label{eq:speed_around}
+  v^\mathrm{sur} = \sqrt{\left(v^\mathrm{sur}_\mathrm{RA}\right)^2
     +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 61 \pm 22
   \, \kms \ .
 \end{equation}
@@ -257,14 +256,46 @@ surrounding stars make it a ``bona fide'' runaway star.
 \label{sec:r136_origin}
 
 The inset plot in \Figref{fig:main} shows a zoom in of the region
-around R136 which includes VFTS682. To test the hypothesis that the
-star was indeed ejected from this region, we check the
-orientation of its proper motion relative to the group of stars
-selected to represent the R136 cluster in \Secref{sec:sample}. We
-further consider also the kinematic age of the star. The error cone, obtained by
+around R136 which includes VFTS682. Stars belonging to our ``R136
+cluster'' group are shown in green (see \Secref{sec:sample}), together with their proper motion
+as listed in the Gaia DR2 catalog.
+To test the hypothesis that VFTS682 was indeed ejected from this region, we check the
+orientation of its proper motion relative to these stars. We further
+consider also the kinematic age of the star.
+
+We begin by evaluating the average proper motion for the stars
+representing the cluster. This is necessary to constrain the actual velocity
+obtained by VFTS682 at its ejection. By using \Eqref{eq:mean} we find  
+$\langle\mu_\mathrm{RA}^{R136}\rangle = 1.750\pm0.008\,\mathrm{mas\ yr^{-1}}$
+and $\langle\mu_\mathrm{DE}^\mathrm{R136}\rangle =
+0.742\pm0.009\,\mathrm{mas\ yr^{-1}}$. Therefore, using the values
+from \Tabref{tab:vfts682}, we obtain the components of the proper
+motion for VFTS682 relative to R136 $\mu^{R136}_\mathrm{RA} = 0.09\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^{R136}_\mathrm{DE} =
+0.04\pm 0.08\,\mathrm{mas\ yr^{-1}}$.\todo{improve numbers by
+  selecting better sample}.
+\todo{discuss if direction is compatible
+The error cone, obtained by
 propagating the errors on the proper motion components indicates that
 R136 is indeed the most likely origin, as expected by \cite{fujii:11,
   banerjee:12}.
+}
+
+Assuming again a distance of 50\,kpc and
+not considering the error on the distance, we can convert these into
+the components of the tangential velocity relative to R136,
+$v^\mathrm{R136}_\mathrm{RA}=21 \pm 18\, \kms$ and $v^\mathrm{R136}_\mathrm{DE}=10
+\pm 21\,\kms$. Finally, using the peculiar line of sight velocity
+from \cite{bestenlehner:11}, we obtain the three-dimensional peculiar
+velocity of VFTS682 with respect to R136
+
+\begin{equation}
+  \label{eq:speed_R136}
+  v^\mathrm{sur} = \sqrt{\left(v^{R136}_\mathrm{RA}\right)^2
+    +\left(v^{R136}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 51 \pm 23
+  \, \kms \ .
+\end{equation}
+
+
 
 \todo{kinematic age}
 
