@@ -197,11 +197,54 @@ the 30 Doradus region as a whole, since the parallax for VFTS682
 listed in the Gaia DR2 catalog is negative. %% this is what makes the
                                 %% LOS velocity useless...how to improve?
 
+For each of the two local rest frames (``surroundings'' and ``R136
+cluster''), we compute the average transverse velocity as:
+
+\begin{equation}
+  \label{eq:mean}
+  \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
+      \mu_i}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i}} \ \ , \
+  \ \Delta \langle \mu_i\rangle = \frac{\sqrt{N}}{\sum_\mathrm{stars}
+    \frac{1}{\Delta \mu_i}} \ \ ,
+\end{equation}
+where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
+on the proper motion component reported by Gaia, and the sums run over
+all the $N$ stars of the frame considered. We evaluate each proper motion
+component separately. 
+
 The data retrieved, and the ipython notebook used for the analysis
 presented here will be made available at \todo{probably git repo on bitbucket?}. 
 
 \section{The kinematics of VFTS682}
 \label{sec:results}
+
+\subsection{Is it a runaway star?}
+We first address the question of whether VFTS682 is a typical star in
+its surroundings from the kinematic point of view, or whether it is a
+runaway star with a significantly large peculiar velocity. The former is what should
+be expected if it formed where we observe it today, in relative
+isolation from other massive stars. We calculate the velocity relative
+to the general population in its surroundings, shown as blue dots in
+the large panel of\Figref{fig:main}, assuming a distance of
+$D=50$\,kpc.
+
+\todo{discuss numbers found, refer to figure}
+likely conclusion looking at the general region: it is a ``bona
+  fide'' runaway star with velocity components $\left(v_\mathrm{RA},
+  v_\mathrm{DE}, v_\mathrm{rad}\right) = \left(\todo{XX},\todo{YY},
+  \todo{ZZ}\right)$, corresponding to $v\equiv\sqrt{v_\mathrm{RA}^2+v_\mathrm{DE}^2+v_\mathrm{rad}^2}=\todo{AA}\,\kms$.
+
+\subsection{Does it come from the R136 cluster?}
+The inset plot in \Figref{fig:main} shows a zoom in of the region
+around R136 which includes VFTS682. To test the hypothesis that the
+star was indeed ejected from this region, we check the relative
+orientation of its proper motion. The error cone, obtained by
+propagating the errors on the proper motion components indicates that
+R136 is indeed the most likely origin, as expected by \cite{fujii:11,
+  banerjee:12}.
+
+\todo{kinematic age}
+
 
 \begin{figure*}[htbp]
   \centering
@@ -210,8 +253,6 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
     R136. \todo{orient properly, load  picture on background, add cone of uncertainty}}
   \label{fig:main}
 \end{figure*}
-
-
 
 \section{Summary and Discussion}
 \label{sec:discussion}
