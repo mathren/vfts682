@@ -123,20 +123,25 @@ star formation, N-body interactions, and binary evolution in
 \label{sec:sample}
 
 VFTS682 is labeled in the Gaia DR2
-catalog\footnote{\url{https://gea.esac.esa.int/archive/}} with the
+catalog\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}} with the
 source id 4657685637907503744. The star has a
 \texttt{visibility\_period} = 17, which counts how many observations have
-been used to reconstruct its astrometric solution \citep[][]{lindengren:18}. Its G-band
+been used to reconstruct its astrometric solution
+\citep[][]{lindengren:18}. Its reported G-band
 magnitude is 15.65, cf. the V-band magnitude of 16.08
 \citep[][]{evans:11, bestenlehner:11}, and the reported
 \texttt{astrometric\_excess\_noise} = 0. These values suggest that the Gaia
 data for VFTS682 are trustworthy. However, the effective temperature
-reported is one order of magnitude lower than what found by
+reported in Gaia DR2 is one order of magnitude lower than what found by
 \cite{bestenlehner:11}, and the best fit parallax of this star is
 negative. We do not use the effective temperature of the star anywhere
 in this study, and we attribute the unphysical value of the parallax
 to the large distance to the LMC. Our main findings do not rely on the
-parallax value reported in the Gaia catalog.
+parallax nor the effective temperature values reported in the Gaia DR2
+catalog.
+
+%% should I really mention the line of sight velocity? Not really
+%% using it...
 
 We retrieve for VFTS682 the position in right ascension (RA) and declination (DE)
 in the IGCS frame \cite[][]{brown:18}, its
@@ -174,24 +179,23 @@ VFTS682 fulfilling the following criteria: we require a G-band
 magnitude brighter than 17, to mimic the completeness threshold for
 the VFTS survey, \texttt{visibility\_period} >= 5, and
 \texttt{astrometric\_excess\_noise} <= 1. This selection yields
-roughly 17800 stars, including the subset of stars which we consider to be
+roughly 1330 stars, including the subset of stars which we consider to be
 part of R136, discussed below. We further require  these stars to have finite proper
 motion components and relative errors, reducing further the sample to
-14856 stars. % A more strict sample selection for the surroundings can
+1323 stars. % A more strict sample selection for the surroundings can
 % be found in \cite{lennon:18}.
 
 The ``R136 cluster'' is effectively defined by taking all the stars
 within 25 arcseconds from R136a, one of the most massive members of
 the cluster itself \citep[][]{crowther:10}, requiring the same
-``quality'' criteria applied above. Because of the magnitude cut
-however, this would yield an incredibly small sample of 15 stars only
-% which makes no sense at all
+``quality'' criteria applied above. This selection yields 62 stars.
 \todo{improve definition
   of stars from R136, describe accordingly -- check with Danny}
 
 Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
 the 30 Doradus region as a whole, since the parallax for VFTS682
-listed in the Gaia DR2 catalog is negative.
+listed in the Gaia DR2 catalog is negative. %% this is what makes the
+                                %% LOS velocity useless...how to improve?
 
 The data retrieved, and the ipython notebook used for the analysis
 presented here will be made available at \todo{probably git repo on bitbucket?}. 
@@ -203,8 +207,7 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
   \centering
   \includegraphics[width=\textwidth]{./figures/main_plot}  
   \caption{position and projected relative velocity to
-    R136. \todo{load pretty picture on background, check scale, clean
-      foreground stars with parallax, add cone of uncertainty}}
+    R136. \todo{orient properly, load  picture on background, add cone of uncertainty}}
   \label{fig:main}
 \end{figure*}
 
@@ -226,7 +229,7 @@ presented here will be made available at \todo{probably git repo on bitbucket?}.
   what is its total mass and relaxation time?
 \end{itemize}
 
-Random notes: vsini<200 form \cite{schneider:18}, age $1\pm 0.2$\,Myr
+Random notes: $v\sin(i)<200\,\mathrm{km\ s^{-1}}$ form \cite{schneider:18}, age $1.0\pm 0.2$\,Myr
 from \cite{schneider:18}
 
 \bibliographystyle{aa}
