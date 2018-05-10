@@ -62,11 +62,9 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \section{Introduction}
 \label{sec:intro}
-\todo{go to major star formation immediately}
-\todo{sentence 2:debate of isolated or not}
-\todo{paragraph 2 about }
+
 How do massive stars form is one longstanding question in astrophysics
-\cite{lada:03, zinnecker:07}. This because they are intrinsically rare
+\citep[e.g.,][]{lada:03, zinnecker:07}, because they are intrinsically rare
 \citep[e.g.,][]{salpeter:55,kroupa:01, schneider:18}, evolve fast, and
 remain enshrouded in their parent cloud during the formation
 process. Moreover, observations of young massive stars reveal a
@@ -77,41 +75,35 @@ transient survey \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{}\todo{ref} which
 will reveal transients associated to massive stars
 evolution and death.
 
-Two competing classes of models for massive star formation exist, one predicting 
-that massive stars can form in relative isolation \todo{ref}, the other that
-they always form in cluster and/or associations, and therefore massive
-stars should be rarely isolated \todo{ref}.
-
-
+Two competing classes of models for massive star formation exist. One class predicts 
+that massive stars can form in relative isolation \todo{ref}, while the other predicts
+they always form in cluster and/or associations, and therefore
+isolated massive stars should necessarily peculiar velocities to reach
+an isolated position on the sky\todo{ref}.
 
 The second data release (DR2) from the Gaia satellite
 \cite[][]{gaia:16,brown:18} allows us to test
 these hypothesis using one particular star, VFTS682. 
-This star is a
-very massive \citep[$M_\mathrm{ZAMS}\simeq150\,M_\odot$,][]{bestenlehner:11,schneider:18} WNh5 star in the 30 Doradus region
-of the Large Magellanic Cloud (LMC), and it is presently observed at a
+This star belongs to the 30 Doradus region in the Large Magellanic
+Cloud (LMC), and has an inferred initial mass of $M_\mathrm{ZAMS}=150.0^{+28.7}_{-17.4}\,M_\odot$
+\citep[][]{bestenlehner:11,schneider:18}. Its spectral type is WNh5, and it is presently observed at a
 projected distance of $\sim$$29$\,pc from the nearest cluster of
-massive stars R136 \citep[][]{bestenlehner:11}. Based on the extremely high mass of this star and
-its present day apparent isolation, \cite{bestenlehner:11} proposed it
-might be a candidate for isolated star formation, or a ``slow runaway'' ejected
-from R136 in the past. This second option is also supported by the
-N-body simulations of \cite{fujii:11, banerjee:12}.   Many other
-very massive stars are present in the surroundings of R136, and a more
-detailed analysis on the larger sample is desirable.
-\todo{this paper raised the debate/interest on VFTS682}
+massive stars R136 \citep[also known as NGC2070][]{bestenlehner:11}. The inferred mass loss
+rate is $\sim10^{-XX}\,M_\odot \ \mathrm{yr}^{-1}$ \todo{ref}.
 
-\todo{vfts682 is interesting also because}
-
-Massive stars can in principle be ejected from R136 as a consequence of dynamical
-interactions \citep[][]{poveda:67,leonard:91, evans:10, fujii:11,
-  allison:12, oh:16}, or by the disruption of a binary by the first
-core-collapse supernova
-\citep[][]{zwicky:57,blaauw:61,dedonder:97,eldridge:11,renzo:18}. However,
-R136 has an estimated age of $\lesssim2$\,Myr \citep[][]{sabbi:12}, which is
-shorter than the shortest stellar lifetime
-\citep[$\sim$3\,Myr, e.g.,][]{zapartas:17}, so one would not expect the binary
-disruption scenario to be relevant for this cluster. \todo{move up}
-
+Based on the extremely high mass of this star and
+its present-day apparent isolation, \cite{bestenlehner:11} proposed it
+could be a candidate for isolated star formation, or a ``slow runaway'' ejected
+from R136 in the past. Their study raised the interest in the origin
+of this star. \cite{fujii:11, banerjee:12} carried out N-body
+simulations of massive young stellar clusters and concluded that the
+ejection of such a massive object from R136 through dynamical
+interactions \citep[e,g,][]{poveda:67} would be possible.
+The competing ejection mechanism, the disruption of a binary
+system by a core-collapse event \citep[][]{zwicky:57, blaauw:61}, is
+thought to be ruled out, since the cluster has an estimated age of
+$\lesssim2$\,Myr \citep[][]{sabbi:12}, which is shorter than the shortest stellar lifetime
+\citep[$\sim$3\,Myr, e.g.,][]{zapartas:17}.
 
 In this study, we combine the radial velocity measurements from the
 VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2
@@ -119,12 +111,12 @@ to reconstruct the three-dimensional velocity of VFTS682, and test the
 hypothesis that this star was ejected from R136. We discuss in
 \Secref{sec:sample} the data for VFTS682, and the selection of stars
 used to define a local reference frame. Our results
-indicate that R136 is a bona fide runaway star (\Secref{sec:runaway}), therefore isolated star formation is \emph{not}
+indicate that R136 is a bona fide runaway star (\Secref{sec:runaway}),
+therefore isolated star formation is \emph{not}
 required to explain it. We also find that a dynamical ejection from
 R136 is compatible with the direction of its velocity
-vector. \todo{double check the following}
-However, we find a mild discrepancy between the apparent age of
-VFTS682, its kinematic age, and the age estimates for R136 (\Secref{sec:r136_origin}).  We conclude
+vector. 
+We conclude
 with a very brief discussion on the implications for theories of
 star formation, N-body interactions, and binary evolution in
 \Secref{sec:discussion}.
@@ -181,12 +173,15 @@ this work for each of these quantities.
   \label{tab:vfts682}
 \end{table}
 
-To compare the astrometry of VFTS682 and derive its peculiar motion,
-we then select data from the Gaia DR2 catalog for two regions: the
-``surroundings'' of VFTS 682, and the ``R136 cluster''. The
-surrounding region is defined by all the stars in a target of 10 arcminutes around
-VFTS682 fulfilling the following criteria: we require \texttt{visibility\_period} $\geq$ 5,
-\texttt{astrometric\_excess\_noise} < 1, the error on the proper
+We define a local standard frame to derive the peculiar velocity
+of VFTS682 by selecting from the Gaia DR2 catalog a sample of nearby
+stars, following closely the approach of \cite{lennon:18}.
+We select all the stars in a target of 0.2 degrees around R136
+(NGC2070) fulfilling the following criteria. First, we require G-band
+magnitude brighter than 17, correspondingly roughly to the
+completeness level of the VFTS survey \citep[here we implicitly assume
+G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
+\texttt{astrometric\_excess\_noise} < 1, the errors on the proper
 motion components to be smaller than 0.1\,$\mathrm{mas\ yr^{-1}}$,
 and the proper motion components themselves to be smaller than
 2\,$\mathrm{mas\ yr^{-1}}$ in absolute value. At the distance to the
@@ -194,23 +189,11 @@ LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the 
 of the proper motions removes stars that would have projected
 tangential velocities in excess of $\sim$500\,$\kms$, which are most
 likely to be foreground stars. We checked that the additional
-requirement of having parallaxes smaller than $1\,\mathrm{mas\
-  yr^{-1}}$ does not reduces further our sample. This selection yields 437 stars.
+requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
+not reduces further our sample. 
 
-The ``R136 cluster'' is effectively defined by taking all the stars
-in a region of 50 arcseconds around R136a, one of the most massive members of
-the cluster itself \citep[][]{crowther:10}, requiring the same
-``quality'' criteria applied above. This selection yields 42 stars.
-\todo{improve definition of stars from R136, describe accordingly -- check with Danny}
-
-Throughout this study, we assume the same distance of $50$\,kpc to the star, and to
-the 30 Doradus region as a whole.% , since the parallax for VFTS682
-% listed in the Gaia DR2 catalog is negative. %% this is what makes the
-%                                 % LOS velocity useless...how to improve?
-
-For each of the two local rest frames (``surroundings'' and ``R136
-cluster''), we compute the average transverse velocity as:
-
+We calculate the averaged proper motion components for the whole
+region using 
 \begin{equation}
   \label{eq:mean}
   \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
@@ -219,11 +202,13 @@ cluster''), we compute the average transverse velocity as:
     \frac{1}{\Delta \mu_i}} \ \ ,
 \end{equation}
 where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
-on the proper motion component reported by Gaia, and the sums run over
-all the $N$ stars of the frame considered. We evaluate each proper motion
-component separately. 
-
-The data retrieved, and the ipython notebook used for the analysis
+on the proper motion component reported by Gaia. The sums run over
+all the $N=651$ stars in our selected sample. We evaluate each proper motion
+component separately. For simplicity, throughout this study, we assume the same
+distance of $50$\,kpc to the star \citep[][]{lebouteiller:08}, and to
+the 30 Doradus region as a whole. We do not consider the error bars on
+the distance determination when converting proper motions into
+physical velocities. The data retrieved, and the ipython notebook used for the analysis
 presented here will be made available at \todo{probably git repo on bitbucket?}. 
 
 \section{The kinematics of VFTS682}
@@ -237,18 +222,18 @@ a significantly large peculiar velocity compared to its surrounding population. 
 be expected if it formed where we observe it today, in relative
 isolation from other massive stars.
 
-Using the 437 stars selected as the ``surrounding population'' in
-\Secref{sec:sample} and shown in blue in \Figref{fig:main}, we find averaged proper motion components of
-$\langle\mu_\mathrm{RA}^\mathrm{sur}\rangle = 1.695\pm0.003\,\mathrm{mas\ yr^{-1}}$ and
-$\langle\mu_\mathrm{DE}^\mathrm{sur}\rangle = 0.691\pm0.003\,\mathrm{mas\ yr^{-1}}$. Subtracting these values from the
+Using the 651 stars selected as described in \Secref{sec:sample} and shown in blue in \Figref{fig:main}, we find averaged proper motion components of
+$\langle\mu_\mathrm{RA}^\mathrm{sur}\rangle = 1.683\pm0.002\,\mathrm{mas\ yr^{-1}}$ and
+$\langle\mu_\mathrm{DE}^\mathrm{sur}\rangle =
+0.672\pm0.003\,\mathrm{mas\ yr^{-1}}$. We note that these values are
+in good agreement with what found by \cite{lennon:18}. Subtracting these values from the
 proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\mu^\mathrm{sur}_\mathrm{RA} = 0.15\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
-0.09\pm 0.08\,\mathrm{mas\ yr^{-1}}$. %% note that the error budget is
-% dominated by VFTS682
+$\mu^\mathrm{sur}_\mathrm{RA} = 0.16\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
+0.11\pm 0.08\,\mathrm{mas\ yr^{-1}}$.
 These can be converted in the
-the components of the transverse velocity $v^\mathrm{sur}_\mathrm{RA}=35\pm17\,\kms$,
-$v^\mathrm{sur}_\mathrm{DE}=22\pm19\,\kms$, assuming a distance of
+the components of the transverse velocity $v^\mathrm{sur}_\mathrm{RA}=38\pm17\,\kms$,
+$v^\mathrm{sur}_\mathrm{DE}=26\pm19\,\kms$, assuming a distance of
 50\,kpc (we do not account for the uncertainty in the distance
 estimate when propagating errors). The radial velocity from
 \cite{bestenlehner:11} then gives the third component along
@@ -257,58 +242,59 @@ the line of sight, allowing us to calculate the speed of the star:
 \begin{equation}
   \label{eq:speed_around}
   v^\mathrm{sur} = \sqrt{\left(v^\mathrm{sur}_\mathrm{RA}\right)^2
-    +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 61 \pm 22
+    +\left(v^\mathrm{sur}_\mathrm{DE}\right)^2+\left(\delta
+      v_\mathrm{rad}\right)^2} = 64 \pm 21 
   \, \kms \ .
 \end{equation}
 This value for the three-dimensional speed of VFTS682 with respect the
-surrounding stars make it a ``bona fide'' runaway star.
+surrounding stars make it the most massive ``bona fide'' runaway star
+known to date.
 
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
-The inset plot in \Figref{fig:main} shows a zoom in of the region
-around R136 which includes VFTS682. Stars belonging to our ``R136
-cluster'' group are shown in green (see \Secref{sec:sample}), together with their proper motion
-as listed in the Gaia DR2 catalog.
-To test the hypothesis that VFTS682 was indeed ejected from this region, we check the
-orientation of its proper motion relative to these stars. We further
-consider also the kinematic age of the star.
+% The inset plot in \Figref{fig:main} shows a zoom in of the region
+% around R136 which includes VFTS682. Stars belonging to our ``R136
+% cluster'' group are shown in green (see \Secref{sec:sample}), together with their proper motion
+% as listed in the Gaia DR2 catalog.
+% To test the hypothesis that VFTS682 was indeed ejected from this region, we check the
+% orientation of its proper motion relative to these stars. We further
+% consider also the kinematic age of the star.
 
-We begin by evaluating the average proper motion for the stars
-representing the cluster. This is necessary to constrain the actual velocity
-obtained by VFTS682 at its ejection. By using \Eqref{eq:mean} we find  
-$\langle\mu_\mathrm{RA}^{R136}\rangle = 1.750\pm0.008\,\mathrm{mas\ yr^{-1}}$
-and $\langle\mu_\mathrm{DE}^\mathrm{R136}\rangle =
-0.742\pm0.009\,\mathrm{mas\ yr^{-1}}$. Therefore, using the values
-from \Tabref{tab:vfts682}, we obtain the components of the proper
-motion for VFTS682 relative to R136 $\mu^{R136}_\mathrm{RA} = 0.09\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^{R136}_\mathrm{DE} =
-0.04\pm 0.08\,\mathrm{mas\ yr^{-1}}$.\todo{improve numbers by
-  selecting better sample}.
-\todo{discuss if direction is compatible
-The error cone, obtained by
-propagating the errors on the proper motion components indicates that
-R136 is indeed the most likely origin, as expected by \cite{fujii:11,
-  banerjee:12}.
-}
+% We begin by evaluating the average proper motion for the stars
+% representing the cluster. This is necessary to constrain the actual velocity
+% obtained by VFTS682 at its ejection. By using \Eqref{eq:mean} we find  
+% $\langle\mu_\mathrm{RA}^{R136}\rangle = 1.750\pm0.008\,\mathrm{mas\ yr^{-1}}$
+% and $\langle\mu_\mathrm{DE}^\mathrm{R136}\rangle =
+% 0.742\pm0.009\,\mathrm{mas\ yr^{-1}}$. Therefore, using the values
+% from \Tabref{tab:vfts682}, we obtain the components of the proper
+% motion for VFTS682 relative to R136 $\mu^{R136}_\mathrm{RA} = 0.09\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^{R136}_\mathrm{DE} =
+% 0.04\pm 0.08\,\mathrm{mas\ yr^{-1}}$.\todo{improve numbers by
+%   selecting better sample}.
+% \todo{discuss if direction is compatible
+% The error cone, obtained by
+% propagating the errors on the proper motion components indicates that
+% R136 is indeed the most likely origin, as expected by \cite{fujii:11,
+%   banerjee:12}.
+% }
 
-Assuming again a distance of 50\,kpc and
-not considering the error on the distance, we can convert these into
-the components of the tangential velocity relative to R136,
-$v^\mathrm{R136}_\mathrm{RA}=21 \pm 18\, \kms$ and $v^\mathrm{R136}_\mathrm{DE}=10
-\pm 21\,\kms$. Finally, using the peculiar line of sight velocity
-from \cite{bestenlehner:11}, we obtain the three-dimensional peculiar
-velocity of VFTS682 with respect to R136
+% Assuming again a distance of 50\,kpc and
+% not considering the error on the distance, we can convert these into
+% the components of the tangential velocity relative to R136,
+% $v^\mathrm{R136}_\mathrm{RA}=21 \pm 18\, \kms$ and $v^\mathrm{R136}_\mathrm{DE}=10
+% \pm 21\,\kms$. Finally, using the peculiar line of sight velocity
+% from \cite{bestenlehner:11}, we obtain the three-dimensional peculiar
+% velocity of VFTS682 with respect to R136
 
-\begin{equation}
-  \label{eq:speed_R136}
-  v^\mathrm{sur} = \sqrt{\left(v^{R136}_\mathrm{RA}\right)^2
-    +\left(v^{R136}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 51 \pm 23
-  \, \kms \ .
-\end{equation}
+% \begin{equation}
+%   \label{eq:speed_R136}
+%   v^\mathrm{sur} = \sqrt{\left(v^{R136}_\mathrm{RA}\right)^2
+%     +\left(v^{R136}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 51 \pm 23
+%   \, \kms \ .
+% \end{equation}
 
-\todo{number above not trustworthy}
 
-\todo{kinematic age}
+\subsection{Kinematic age}
 
 
 \begin{figure*}[htbp]
@@ -324,7 +310,7 @@ velocity of VFTS682 with respect to R136
   \label{fig:main}
 \end{figure*}
 
-\section{Summary and Discussion}
+\section{Discussion}
 \label{sec:discussion}
 
 \todo{compare to Lennon: time of ejection is the same? what does it
@@ -344,9 +330,24 @@ velocity of VFTS682 with respect to R136
 \item estimate the influence of the gravitational potential of R136,
   what is its total mass and relaxation time?
 \end{itemize}
+\section{Summary}
+
+1. Gaia data confirm a 150Msun runaway with v~60, thus the most
+massive known to date
+2. directions suggest ejection from R136, confirming prediction of
+fuji+ banerjee+
+2b. This fits with the observation from crowther of M>300Msun in R136
+(and mention vfts682 has the same spectral type): the most likely
+mechanism needs encounter with 2 more massive -> additional evidence
+for Crowther claim
+3. comment on final fate (BH)
 
 Random notes: $v\sin(i)<200\,\mathrm{km\ s^{-1}}$ form \cite{schneider:18}, age $1.0\pm 0.2$\,Myr
 from \cite{schneider:18}
+
+Many other very massive stars are present in the surroundings this cluster, and a more
+detailed analysis on the larger sample is desirable.
+
 
 \bibliographystyle{aa}
 \bibliography{bibliography/vfts682}
