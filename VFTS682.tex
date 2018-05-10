@@ -230,7 +230,9 @@ in good agreement with what found by \cite{lennon:18}. Subtracting these values 
 proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
 $\mu^\mathrm{sur}_\mathrm{RA} = 0.16\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^\mathrm{sur}_\mathrm{DE} =
-0.11\pm 0.08\,\mathrm{mas\ yr^{-1}}$.
+0.11\pm 0.08\,\mathrm{mas\ yr^{-1}}$. We note that the error budget is
+dominated by the errors on the proper motion components of VFTS682.
+
 These can be converted in the
 the components of the transverse velocity $v^\mathrm{sur}_\mathrm{RA}=38\pm17\,\kms$,
 $v^\mathrm{sur}_\mathrm{DE}=26\pm19\,\kms$, assuming a distance of
@@ -253,48 +255,28 @@ known to date.
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
-% The inset plot in \Figref{fig:main} shows a zoom in of the region
-% around R136 which includes VFTS682. Stars belonging to our ``R136
-% cluster'' group are shown in green (see \Secref{sec:sample}), together with their proper motion
-% as listed in the Gaia DR2 catalog.
-% To test the hypothesis that VFTS682 was indeed ejected from this region, we check the
-% orientation of its proper motion relative to these stars. We further
-% consider also the kinematic age of the star.
+The red arrow in \Figref{fig:main} shows the proper motion of VFTS682
+relative to the region, and the lighter red arrows show the possible
+range of directions within the uncertainties in the measured proper
+motion. It is clear that the most likely origin of the star is R136,
+as predicted by \cite{fujii:11, banerjee:12}.
 
-% We begin by evaluating the average proper motion for the stars
-% representing the cluster. This is necessary to constrain the actual velocity
-% obtained by VFTS682 at its ejection. By using \Eqref{eq:mean} we find  
-% $\langle\mu_\mathrm{RA}^{R136}\rangle = 1.750\pm0.008\,\mathrm{mas\ yr^{-1}}$
-% and $\langle\mu_\mathrm{DE}^\mathrm{R136}\rangle =
-% 0.742\pm0.009\,\mathrm{mas\ yr^{-1}}$. Therefore, using the values
-% from \Tabref{tab:vfts682}, we obtain the components of the proper
-% motion for VFTS682 relative to R136 $\mu^{R136}_\mathrm{RA} = 0.09\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu^{R136}_\mathrm{DE} =
-% 0.04\pm 0.08\,\mathrm{mas\ yr^{-1}}$.\todo{improve numbers by
-%   selecting better sample}.
-% \todo{discuss if direction is compatible
-% The error cone, obtained by
-% propagating the errors on the proper motion components indicates that
-% R136 is indeed the most likely origin, as expected by \cite{fujii:11,
-%   banerjee:12}.
-% }
+%\subsection{Kinematic age}
 
-% Assuming again a distance of 50\,kpc and
-% not considering the error on the distance, we can convert these into
-% the components of the tangential velocity relative to R136,
-% $v^\mathrm{R136}_\mathrm{RA}=21 \pm 18\, \kms$ and $v^\mathrm{R136}_\mathrm{DE}=10
-% \pm 21\,\kms$. Finally, using the peculiar line of sight velocity
-% from \cite{bestenlehner:11}, we obtain the three-dimensional peculiar
-% velocity of VFTS682 with respect to R136
+We can therefore consider the kinematic age for this star assuming
+that it originates from the cluster,
 
-% \begin{equation}
-%   \label{eq:speed_R136}
-%   v^\mathrm{sur} = \sqrt{\left(v^{R136}_\mathrm{RA}\right)^2
-%     +\left(v^{R136}_\mathrm{DE}\right)^2+\left(\delta v_\mathrm{rad}\right)^2} = 51 \pm 23
-%   \, \kms \ .
-% \end{equation}
-
-
-\subsection{Kinematic age}
+\begin{equation}
+  \label{eq:kin_age}
+  \tau_\mathrm{kin} = \frac{d_\parallel}{v_\parallel} =
+  \frac{29\,\mathrm{pc}}{46\,\kms} \simeq 0.63\, \mathrm{Myr} \ \ ,
+\end{equation}
+where $d_\parallel =29$\,pc is the projected distance from VFTS682 to
+the core of R136 \citep[][]{bestenlehner:11}, $v_\parallel = 46\pm
+17\,\kms$ is the speed of the star relative to the cluster projected on the sky, obtained
+using the relative proper motion components calculated in
+\Secref{sec:runaway}, and we use the approximation $1 \kms \simeq 1
+\mathrm{pc \ Myr^{-1}}$.
 
 
 \begin{figure*}[htbp]
@@ -358,7 +340,7 @@ detailed analysis on the larger sample is desirable.
   ID 076.C-0888, processed and released by the ESO VOS/ADP group.
   This research made use of APLpy, an open-source plotting package for Python \cite{robitaille:12}.
   We are grateful to S.~Torres for extremely useful discussions on the
-  Gaia DR2 dataset.
+  Gaia DR2 dataset, and to M.~C.~Ramirez-Tannus for help with APLpy.
 \end{acknowledgements}
 \end{document}
 
