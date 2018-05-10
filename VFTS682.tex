@@ -19,7 +19,7 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 %Selma's comments
 \definecolor{Wildstrawberry}{rgb}{1.0, 0.26, 0.64}
-\newcommand{\SdM}[1]{{\color{Wildstrawberry}\bf{#1}}}
+\newcommand{\SdM}[1]{{{\color{Wildstrawberry}\bf{#1}}}}
 \newcommand{\newtext}[1]{{\color{ForestGreen}\bf{#1}}}
 
 \renewcommand{\labelitemii}{$\bullet$}
@@ -41,7 +41,7 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \title{VFTS682: a confirmed dynamical ejection?}
 
-\author{M.~Renzo\inst{1} \and S.~E.~de~Mink\inst{1} \todo{etc...}%\and
+\author{M.~Renzo\inst{1} \and S.~E.~de~Mink\inst{1} \and \SdM{D.J. Lennon et al.} \todo{etc...}%\and
   % S.~Justham\inst{2,3} \and A.~de~Koter\inst{1} \todo{etc..order to be decided}
   .} 
 
@@ -63,63 +63,32 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \section{Introduction}
 \label{sec:intro}
 
-How do massive stars form is one longstanding question in astrophysics
-\citep[e.g.,][]{lada:03, zinnecker:07}, because they are intrinsically rare
-\citep[e.g.,][]{salpeter:55,kroupa:01, schneider:18}, evolve fast, and
-remain enshrouded in their parent cloud during the formation
-process. Moreover, observations of young massive stars reveal a
-complicated multipliticy structure which requires
-explanation \citep[][]{sana:12,sana:17}. Understanding massive star formation, possibly as a
-function of metallicity, is a key question given the present and upcoming
-transient survey \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{}\todo{ref} which
-will reveal transients associated to massive stars
+\SdM{
+
+How do massive stars form is one of the major longstanding questions in astrophysics
+\citep[e.g.,][]{zinnecker:07}. Obtaining clues from observations has been challenging, because massive stars are intrinsically rare, 
+%\citep[e.g.,][]{salpeter:55,kroupa:01, schneider:18}, 
+evolve fast, typically reside in dense groups and they remain enshrouded in their parent cloud during the formation
+process.  Major progress has been made on the theoretical side,  \citep[e.g.][]{Kuiper+2015Rosen+2016}, but the simulations are computationally very expensive. They can typically not yet resolve the length scales that are of interest to understand the 
+high level of multiplicity among massive stars  \citep[][]{sana:12,sana:17}.  Understanding massive star formation, and its possible dependence on environment and metallicity, is crucial for understanding the role massive stars play within their host galaxies as sources of feedback, but also for understanding the transients that mark their death and the compact remnants they leave behind.  This is therefore a key question for the present and upcoming transient surveys \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{}\todo{ref} which  will reveal transients associated to massive stars
 evolution and death.
 
-Two competing classes of models for massive star formation exist. One class predicts 
-that massive stars can form in relative isolation \todo{ref}, while the other predicts
-they always form in cluster and/or associations, and therefore
-isolated massive stars should necessarily peculiar velocities to reach
-an isolated position on the sky\todo{ref}.
+In has been conjectured that most, if not all, stars form in clusters \cite{lada:03}, where massive stars are thought to  form preferentially in the dense cores of clusters. In this picture, field stars are primarily the result of the dissolution of dense groups. 
+ However, a significant population of massive stars has been  in relative isolation,  far from dense clusters or OB associations. The origin of this population still remains debated \citep{Lamb+2016}.   One hypothesis is that they  formed in the field, but this poses a challenge for the theories of star formation.  The alternative hypothesis is that these massive stars  formed in clusters, and then been ejected from their birth locations.  Such ejections may result from   \citep[e,g,][]{poveda:67} or from the dsiruption of binary systems by the supernova of the companion star  \citep[][]{zwicky:57, blaauw:61}. 
+ 
+ A very interesting contribution to the debate whether or not massive stars an form in relative isolation was presented in recent years by  \cite{bestenlehner:11}, who discuss the case of the very massive star VFTS682.   This star is located in the field of the 30 Doradus region in the Large Magellanic Cloud (LMC) and was studied as part of the multi-epoch spectroscopic VLT-FLAMES Tarantula Survey (VFTS) of massive stars \citep{Evans+2011}.  With an spectral type  WNh5, an inferred initial mass of $M_\mathrm{ZAMS}=150.0^{+28.7}_{-17.4}\,M_\odot$  and a mass loss rate of  $\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$  \citep[][]{bestenlehner:11,schneider:18} it belongs to the most extreme objects in the region.  It is reminiscent of the very  massive stars, aka monster stars, identified by  \citet{Crowther+2010} and \citet{Crowther+2016}. 
+ 
+Most remarkable is the location of  VFTS682.  It is located at a projected distance of $\sim$$29$\,pc from the core of the central ionizing star cluster R136.   \citet{bestenlehner:11} discuss two possibilities for the  origin of VFTS 682. Quoting directly from their abstract:  "either (i) the star either formed in situ, which would have profound implications for the formation mechanism of massive stars, or (ii) VFTS 682 is a slow runaway star that originated from the dense cluster R136, which would make it the most massive runaway known to date."  
 
-The second data release (DR2) from the Gaia satellite
-\cite[][]{gaia:16,brown:18} allows us to test
-these hypothesis using one particular star, VFTS682. 
-This star belongs to the 30 Doradus region in the Large Magellanic
-Cloud (LMC), and has an inferred initial mass of $M_\mathrm{ZAMS}=150.0^{+28.7}_{-17.4}\,M_\odot$
-\citep[][]{bestenlehner:11,schneider:18}. Its spectral type is WNh5, and it is presently observed at a
-projected distance of $\sim$$29$\,pc from the nearest cluster of
-massive stars R136 \citep[also known as NGC2070][]{bestenlehner:11}. The inferred mass loss
-rate is $\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$ \todo{ref}.
+In this study we report on our analysis of Gaia data that was was part of the second data release (DR2) \cite[][]{gaia:16,brown:18}.  We combine the radial velocity measurements from the VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2 to reconstruct the three-dimensional velocity of VFTS682, and test the hypothesis that this star was ejected from R136. 
 
-Based on the extremely high mass of this star and
-its present-day apparent isolation, \cite{bestenlehner:11} proposed it
-could be a candidate for isolated star formation, or a ``slow runaway'' ejected
-from R136 in the past. Their study raised the interest in the origin
-of this star. \cite{fujii:11, banerjee:12} carried out N-body
-simulations of massive young stellar clusters and concluded that the
-ejection of such a massive object from R136 through dynamical
-interactions \citep[e,g,][]{poveda:67} would be possible.
-The competing ejection mechanism, the disruption of a binary
-system by a core-collapse event \citep[][]{zwicky:57, blaauw:61}, is
-thought to be ruled out, since the cluster has an estimated age of
-$\lesssim2$\,Myr \citep[][]{crowther:10,sabbi:12}, which is shorter than the shortest stellar lifetime
-\citep[$\sim$3\,Myr, e.g.,][]{zapartas:17}.
+Our results indicate that VFTS 682 is a bona fide runaway star.  The direction an magnitude of the velocity vector is full consistent with dynamical ejection from R136.  Its inferred age is consistent with the inferred travel time. This means that the hypothesis that VFTS 682 is formed in relative isolation is rejected.  This makes  VFTS 682 the most massive runaway star known to date. 
 
-In this study, we combine the radial velocity measurements from the
-VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2
-to reconstruct the three-dimensional velocity of VFTS682, and test the
-hypothesis that this star was ejected from R136. We discuss in
-\Secref{sec:sample} the data for VFTS682, and the selection of stars
-used to define a local reference frame. Our results
-indicate that R136 is a bona fide runaway star (\Secref{sec:runaway}),
-therefore isolated star formation is \emph{not}
-required to explain it. We also find that a dynamical ejection from
-R136 is compatible with the direction of its velocity
-vector. 
-We conclude
-with a very brief discussion on the implications for star formation,
-cluster evolution, and stellar physics studies in
-\Secref{sec:discussion}.
+}
+
+% make sure to cite this in the conclusion \cite{fujii:11, banerjee:12}
+
+
 
 \section{Gaia DR2 data selection}
 \label{sec:sample}
