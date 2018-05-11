@@ -76,8 +76,11 @@ Previous spectroscopic studies identified VFTS682 as one of the most massive sta
 %
 We use the unprecedented proper motions from the second Gaia data
 release (DR2) to investigate the kinematics of this object. We show
-that VFTS 682 is a bonafide runaway star moving with a relative
-velocity of about $64\pm21\kms$ away from the star cluster R136.  The
+that VFTS 682 is a bonafide runaway star moving away from the star
+cluster R136 with a relative
+projected two-dimensional speed of about $\sim$$40\pm20 \kms$velocity,
+implying a three-dimensional speed of about $\sim$$60\pm20\kms$ when
+accounting for the velocity component along the line of sight.  The
 inferred age, distance, and the magnitude and direction of the
 velocity are consistent with a dynamical ejection scenario from the cluster. 
 %
@@ -88,6 +91,7 @@ This would make VFTS 682 the most massive runaway star known to date.  It proves
 \keywords{stars: kinematics, stars: runaways, stars: individual: VFTS682}
 \maketitle{}
 
+\todo{recheck all numbers}
 \section{Introduction}
 \label{sec:intro}
 
@@ -151,10 +155,6 @@ Our results indicate that VFTS 682 is a bona fide runaway star.  The direction a
 \section{Observations}
 \label{sec:sample}
 
-% feels like unnecessary here...
-% In this section we summarize the remarkable properties derived for VFTS682 \todo{?}\Secref{data:vfts683}
-% in earlier studies and we discuss we Gaia data in \Secref{data:gaia}.
-
 \subsection{ Overview of VFTS682 from previous studies \label{data:vfts683}}
 
 The star VFTS682  \citep{evans:11}, located at right ascension (RA)
@@ -170,8 +170,8 @@ with high confidence from the absence of radial velocity variations.
 
 \citet{bestenlehner:11} further analyzed the spectra using the non-LTE
 model atmosphere code CMFGEN \citep{hillier:98} to derive the stellar
-parameters and surface abundances. They inferred a peculiar extinction
-($R_V\simeq4.7$), leading to a surprisingly high luminosity
+parameters and surface abundances. They inferred an extinction
+of $R_V\simeq4.7$, leading to the high luminosity
 $\log_{10}(L/L_\odot) =  6.5\pm0.2$. \citep{schneider:18} estimated
 the present-day mass of VFTS682 at  $137.8^{+27.5}_ {-15.9}\Msun$, an
 apparent age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial mass
@@ -188,15 +188,23 @@ estimated current masses are even higher. However, VFTS682 stands
 out by its isolation at a projected offset of 29\,pc from the center
 of the cluster \citep{bestenlehner:11}.  
 
-Further worth noticing is the variability of the star.
-\citep{bestenlehner:11} discuss the Optical Gravitational Lensing
+Further worth noticing is the variability of the
+star. \citet{parker:93} reported B and V magnitudes roughly 0.5\,dex
+lower than what found by \citet{evans:11}. \citet{bestenlehner:11} discuss the Optical Gravitational Lensing
 Experiment (OGLE-III) light curves \citep{udalski:08} and show a
 variability in the V-band of the $\sim$10\% level on a timescale of years.
-The comment that this is unusual for Wolf-Rayet and more reminiscent
+They commented that this is unusual for Wolf-Rayet and more reminiscent
 of Luminous Blue Variable (LBV) stars. 
 
-\todo{Report mass loss rate.  Report LOS velocity.}
-\citep{parker:93}
+We obtain the peculiar radial velocity $\delta v_\mathrm{rad}$ of VFTS682 as the difference
+between the average radial velocity of the 30 Doradus region
+($270\pm10\kms$) minus the radial velocity measured from the NV $\lambda4944$
+line for VFTS682  \citep[$300\pm10\kms$, ][]{bestenlehner:11}. We implicitly assume that the use
+of a slightly different reference frame for $\delta v_\mathrm{rad}$ does not
+introduce significant errors. We also note that the determination of
+radial velocities for emission-lines stars is difficult because of the
+presence of an optically thick, likely non-homogeneous, and variable
+wind hiding the stellar surface. 
 
 \subsection{New data from Gaia DR2  \label{data:gaia}}
 
@@ -213,14 +221,10 @@ of Luminous Blue Variable (LBV) stars.
     DEC \hfill [degree] & -69.07 $\pm$  0.05  & \\
     $\mu_\mathrm{RA}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}1.84 $\pm$ 0.07 & \\
     $\mu_\mathrm{DEC}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}0.78 $\pm$ 0.08& \\
-    $\delta v_\mathrm{rad}$  \hfill[$\kms$] & \phantom{0}-45 $\pm$ 25 & \cite{bestenlehner:11}\\
+    $\delta v_\mathrm{rad}$  \hfill[$\kms$] & \phantom{0}-30 $\pm$ 20 & \cite{bestenlehner:11}\\
 \tableline
   \end{tabular}
-  \tablecomments{The peculiar radial
-    velocity $\delta v_\mathrm{rad}$ is obtained as the difference
-    between the average radial velocity of the 30 Doradus region
-    ($270\pm10\kms$) minus the radial velocity measured from the HeII $\lambda4686$
-    line for VFTS682 ($315\pm15\kms$).}
+  % \tablecomments{}
     \end{center}
   \label{tab:vfts682}
 \end{table}
@@ -234,15 +238,7 @@ of Luminous Blue Variable (LBV) stars.
 The Gaia Data Release 2, which became available on 25 April 2018,
 provides the five-parameter astrometric solution (positions,
 parallaxes, and proper motion components) for more than a billion
-sources \citep{brown:18}.%  \todo{why do we care about the
-%   median? I'm
-%   selecting data with errors smaller than this, and I'm not using
-%   fainter stars!I think this is not useful here} The median uncertainty in the proper motion
-% components the corresponding uncertainties are $0.05\,\masyr$ for
-% bright sources  ($G<14$ mag) and $0.2\masyr$ at $G=17\,\mathrm{mag}$
-% \citep{lindegren:18}.  The uncertainties quoted above correspond to $xx\kms$ and $yy\kms$ respectively.  This unprecedented accuracy allows the identification of bright runaway stars at the distance to the LMC, 50\,kpc. 
-
-VFTS682 is identified with the id 4657685637907503744 in the Gaia DR2
+sources \citep{brown:18}. VFTS682 is identified with the id 4657685637907503744 in the Gaia DR2
 catalog\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}}. Gaia
 reports a G-band magnitude of 15.65. The star has a
 \texttt{visibility\_period} = 17, which counts how many observations have
@@ -284,7 +280,8 @@ of the proper motions removes stars that would have projected
 tangential velocities in excess of $\sim$500\,$\kms$, which are most
 likely to be foreground stars. We checked that the additional
 requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
-not reduces further our sample. 
+not reduces further our sample. Finally, we remove clear outliers from
+the proper motion distribution 
 
 We calculate the averaged proper motion components for the whole
 region using 
@@ -336,16 +333,14 @@ $\delta v_\mathrm{DEC}=26\pm19\,\kms$, assuming a distance of
 The radial velocity from
 \cite{bestenlehner:11} then gives the third component along
 the line of sight, allowing us to calculate the three-dimensional
-peculiar speed of the star\footnote{We implicitly assume that the use
-  of a different reference frame for $\delta v_\mathrm{rad}$ does not
-  introduce significant errors.}:
+peculiar speed of the star:
 
 \begin{equation}
   \label{eq:speed_around}
   v_\mathrm{pec} = \sqrt{\left(\delta v_\mathrm{RA}\right)^2
     +\left(\delta v_\mathrm{DEC}\right)^2+\left(\delta
-      v_\mathrm{rad}\right)^2} = 64 \pm 21 
-  \, \kms \ .
+      v_\mathrm{rad}\right)^2} = 55 \pm 18 
+  \kms \ .
 \end{equation}
 This value for the three-dimensional speed of VFTS682 with respect the
 surrounding stars make it the most massive ``bona fide'' runaway star
@@ -368,15 +363,16 @@ that it originates from the cluster,
 \begin{equation}
   \label{eq:kin_age}
   \tau_\mathrm{kin} = \frac{d_\parallel}{v_\parallel} \simeq
-  \frac{29\,\mathrm{pc}}{46\,\kms} \simeq 0.6\pm\,0.2 \mathrm{Myr} \ \ ,
+  \frac{29\,\mathrm{pc}}{46\,\kms} \simeq 0.6\pm\,0.2\, \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel =29$\,pc is the projected distance from VFTS682 to
 the core of R136 \citep[][]{bestenlehner:11}, $v_\parallel \equiv \sqrt{\left(\delta v_\mathrm{RA}\right)^2
     +\left(\delta v_\mathrm{DEC}\right)^2} =46\pm
-17\,\kms$ is the speed of the star relative to the cluster projected on the sky, obtained
+18\,\kms$ is the speed of the star relative to the cluster projected on the sky, obtained
 using the relative proper motion components calculated in
-\Secref{sec:runaway}, and we use the approximation $1 \kms \simeq 1
-\mathrm{pc \ Myr^{-1}}$. As in the rest of this study, we neglect for
+\Secref{sec:runaway}.% , and we use the approximation $1 \kms \simeq 1
+% \mathrm{pc \ Myr^{-1}}$.
+As in the rest of this study, we neglect for
 simplicity the error on the distance estimates.
 
 The kinematic age $\tau_\mathrm{kin}$ is smaller than the apparent age
@@ -386,15 +382,15 @@ ejection.
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{./figures/main_plot_good}  
+  \includegraphics[width=0.48\textwidth]{./figures/main_plot_good}  
   \caption{The red solid arrow indicates the proper motion of VFTS682
     relative to the region, starting from the present day position of
     the star. The orange arrows indicate the possible
     directions of projected motion within the errors, and are extended
-    backwards to illustrate the uncertainty on the origin of the
+    backwards (dashed) to illustrate the uncertainty on the origin of the
     star. The blue stars
     are a subset of those we use to define the local rest
-    frame. \todo{load color picture on background, clip away outliers}}
+    frame. \todo{load color picture on background}}
   
   \label{fig:main}
 \end{figure}
@@ -459,7 +455,7 @@ cluster is indeed younger than the shortest stellar lifetime
 system of VFTS682 is excluded since the region is to young for stars
 to have experience core-collapse already.
 
-\todo{check \cite{banerjee} and rewrite next paragraph, they
+\todo{check \cite{banerjee:12} and rewrite next paragraph, they
   have stuff} Unfortunately, their simulations did not include stars more
 massive than $100\,M_\odot$, so it is difficult to predict, based on
 the existence of VFTS682, how many other stars should have been
