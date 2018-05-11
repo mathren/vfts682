@@ -1,21 +1,26 @@
-\documentclass{aa}
+\documentclass[apjl,twocolumn]{emulateapj}
+
 \usepackage{graphicx}
 \usepackage[varg]{txfonts}
-\usepackage[%draft, 
-colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
-\usepackage{amsmath}
+
+\usepackage[pagebackref,breaklinks,colorlinks,citecolor=blue]{hyperref}        
+\renewcommand*{\backref}[1]{[#1]}  % gives neat back references in the pdf
+%\usepackage[%draft, 
+%colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{aas_macros}
+%\usepackage{amsmath} % clashes with emulateapjj for some reaons
 \usepackage[usenames]{xcolor}
 \usepackage{comment}
 \usepackage{multirow}
-\usepackage{chngpage}
-\usepackage{lscape}
+%\usepackage{chngpage}
+%\usepackage{lscape}
 \usepackage{url}
 \newcommand{\todo}[1]{{\large $\blacksquare$~\textbf{\color{red}[#1]}}~$\blacksquare$}
 \newcommand{\udef}{\stackrel{\mathrm{def}}{=}}
 % for tree diagram
-\usepackage{forest}
-\usepackage{tikz-qtree}
-\usetikzlibrary{shadows,trees}
+%\usepackage{forest}
+%\usepackage{tikz-qtree}
+%\usetikzlibrary{shadows,trees}
 
 %Selma's comments
 \definecolor{Wildstrawberry}{rgb}{1.0, 0.26, 0.64}
@@ -24,7 +29,10 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
 \renewcommand{\labelitemii}{$\bullet$}
 \newcommand{\kms}{{\,\mathrm{km\ s^{-1}}}}
-\newcommand{\Msun}{{\mathrm{M}_\odot}}
+\newcommand{\Msun}{{\,\mathrm{M}_\odot}}
+\newcommand{\Lsun}{{\,\mathrm{L}_\odot}}
+\newcommand{\masyr}{{\,\mathrm{mas}\,\mathrm{yr}^{-1}}}
+
 
 \DeclareRobustCommand{\Eqref}[1]{Eq.~\ref{#1}}
 \DeclareRobustCommand{\Figref}[1]{Fig.~\ref{#1}}
@@ -39,23 +47,41 @@ colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
   
 \begin{document}
 
-\title{VFTS682: a confirmed dynamical ejection?}
+\title{ \SdM{Gaia identifies VFTS682 as the most massive, dynamically ejected runaway star known to date}}
 
-\author{M.~Renzo\inst{1} \and S.~E.~de~Mink\inst{1} \and \SdM{D.J. Lennon et al.} \todo{etc...}%\and
+\author{M.~Renzo$^{1}$\and S.~E.~de~Mink$^{1}$ \and \SdM{D.J. Lennon$^{2}$ et al.} \todo{... add coauthors...}%\and
   % S.~Justham\inst{2,3} \and A.~de~Koter\inst{1} \todo{etc..order to be decided}
   .} 
 
-\institute{{Astronomical Institute Anton Pannekoek, University of
-    Amsterdam, 1098 XH Amsterdam, The Netherlands}
+\affil{$^{1}$Astronomical Institute Anton Pannekoek, University of
+    Amsterdam, 1098 XH Amsterdam, The Netherlands
+    $^{2}$ ...
+    $^{3}$ ... 
   % \and{School of Astronomy \& Space Science, University of the Chinese
   %   Academy of Sciences, Beijing 100012, China}
   % \and{National Astronomical Observatories, Chinese Academy of
   %   Sciences, Beijing 100012, China}
 }
   
-\offprints{M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
+\thanks{M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
 \date{}
-\abstract{}
+\begin{abstract}
+...\\
+\SdM{Mathieu: please use emulate apj template for this.  We would be submitting there. }...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+...\\
+\end{abstract}
 
 \keywords{stars: kinematics, stars: runaways, stars: individual: VFTS682}
 \maketitle{}
@@ -69,38 +95,59 @@ How do massive stars form is one of the major longstanding questions in astrophy
 \citep[e.g.,][]{zinnecker:07}. Obtaining clues from observations has been challenging, because massive stars are intrinsically rare, 
 %\citep[e.g.,][]{salpeter:55,kroupa:01, schneider:18}, 
 evolve fast, typically reside in dense groups and they remain enshrouded in their parent cloud during the formation
-process.  Major progress has been made on the theoretical side,  \citep[e.g.][]{Kuiper+2015Rosen+2016}, but the simulations are computationally very expensive. They can typically not yet resolve the length scales that are of interest to understand the 
+process.  Major progress has been made on the theoretical side,  \citep[e.g.][]{Kuiper+2015,Rosen+2016}, but the simulations are computationally very expensive. They can typically not yet resolve the length scales that are of interest to understand the 
 high level of multiplicity among massive stars  \citep[][]{sana:12,sana:17}.  Understanding massive star formation, and its possible dependence on environment and metallicity, is crucial for understanding the role massive stars play within their host galaxies as sources of feedback, but also for understanding the transients that mark their death and the compact remnants they leave behind.  This is therefore a key question for the present and upcoming transient surveys \citep[e.g., LSST, BlackGem, LIGO/Virgo O3][]{}\todo{ref} which  will reveal transients associated to massive stars
 evolution and death.
 
 In has been conjectured that most, if not all, stars form in clusters \cite{lada:03}, where massive stars are thought to  form preferentially in the dense cores of clusters. In this picture, field stars are primarily the result of the dissolution of dense groups. 
  However, a significant population of massive stars has been  in relative isolation,  far from dense clusters or OB associations. The origin of this population still remains debated \citep{Lamb+2016}.   One hypothesis is that they  formed in the field, but this poses a challenge for the theories of star formation.  The alternative hypothesis is that these massive stars  formed in clusters, and then been ejected from their birth locations.  Such ejections may result from   \citep[e,g,][]{poveda:67} or from the dsiruption of binary systems by the supernova of the companion star  \citep[][]{zwicky:57, blaauw:61}. 
  
- A very interesting contribution to the debate whether or not massive stars an form in relative isolation was presented in recent years by  \cite{bestenlehner:11}, who discuss the case of the very massive star VFTS682.   This star is located in the field of the 30 Doradus region in the Large Magellanic Cloud (LMC) and was studied as part of the multi-epoch spectroscopic VLT-FLAMES Tarantula Survey (VFTS) of massive stars \citep{Evans+2011}.  With an spectral type  WNh5, an inferred initial mass of $M_\mathrm{ZAMS}=150.0^{+28.7}_{-17.4}\,M_\odot$  and a mass loss rate of  $\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$  \citep[][]{bestenlehner:11,schneider:18} it belongs to the most extreme objects in the region.  It is reminiscent of the very  massive stars, aka monster stars, identified by  \citet{Crowther+2010} and \citet{Crowther+2016}. 
+ A very interesting contribution to the debate whether or not massive stars an form in relative isolation was presented in recent years by  \cite{bestenlehner:11}, who discuss the case of the very massive star VFTS682.   This star is located in the field of the 30 Doradus region in the Large Magellanic Cloud (LMC) and was studied as part of the multi-epoch spectroscopic VLT-FLAMES Tarantula Survey (VFTS) of massive stars \citep{Evans+2011}.  It's spectral type WNh5,  inferred present-day mass of   $138^{+xx}_{-xx}\,M_\odot$
  
-Most remarkable is the location of  VFTS682.  It is located at a projected distance of $\sim$$29$\,pc from the core of the central ionizing star cluster R136.   \citet{bestenlehner:11} discuss two possibilities for the  origin of VFTS 682. Quoting directly from their abstract:  "either (i) the star either formed in situ, which would have profound implications for the formation mechanism of massive stars, or (ii) VFTS 682 is a slow runaway star that originated from the dense cluster R136, which would make it the most massive runaway known to date."  
+ an inferred initial mass of $150^{+28.7}_{-17.4}\,M_\odot$  and a mass loss rate of  $\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$  \citep[][]{bestenlehner:11,schneider:18} it belongs to the most extreme objects in the region.  It is reminiscent of the very  massive stars, a.k.a. ``monster stars'', identified by  \citet{Crowther+2010} and \citet{Crowther+2016}. 
+ 
+Most remarkable is the location of  VFTS682, at a projected distance of $\sim$$29$\,pc from the core of the central ionizing star cluster R136.   \citet{bestenlehner:11} discuss two possibilities for the  origin of VFTS 682. Quoting directly from their abstract:  "either (i) the star either formed in situ, which would have profound implications for the formation mechanism of massive stars, or (ii) VFTS 682 is a slow runaway star that originated from the dense cluster R136, which would make it the most massive runaway known to date."   
 
 In this study we report on our analysis of Gaia data that was was part of the second data release (DR2) \cite[][]{gaia:16,brown:18}.  We combine the radial velocity measurements from the VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2 to reconstruct the three-dimensional velocity of VFTS682, and test the hypothesis that this star was ejected from R136. 
 
-Our results indicate that VFTS 682 is a bona fide runaway star.  The direction an magnitude of the velocity vector is full consistent with dynamical ejection from R136.  Its inferred age is consistent with the inferred travel time. This means that the hypothesis that VFTS 682 is formed in relative isolation is rejected.  This makes  VFTS 682 the most massive runaway star known to date. 
-
+Our results indicate that VFTS 682 is a bona fide runaway star.  The direction an magnitude of the velocity vector is fully consistent with dynamical ejection from R136.  Its inferred age is consistent with the inferred travel time. This means that the hypothesis that VFTS 682 is formed in relative isolation is rejected.  This makes VFTS 682, with an inferred present day mass well above a hundred solar masses, the most massive runaway star known to date. 
 }
+
 
 % make sure to cite this in the conclusion \cite{fujii:11, banerjee:12}
 
 
 
-\section{Gaia DR2 data selection}
+\section{Observations}
 \label{sec:sample}
+\SdM{
+In this section we summarize the remarkable properties derived for VFTS682 \Secref{data:vfts683} in earlier studies and we discuss how we Gaia data in 
+\Secref{data:gaia}.
 
-VFTS682 is labeled in the Gaia DR2
-catalog\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}} with the
-source id 4657685637907503744. The star has a
+\subsection{ Overview of the stellar parameters of VFTS682 derived in previous studies \label{data:vfts683}}
+
+The star VFTS682  \citep{Evans+2011}, located at  RA 05:38:55.510  Dec -69:04:26.72 \todo{format properly}
+was originally classified as a young stellar object \citep{Gruendl+2009} based on its mid-infrared excess.  \citet{Evans+2011} classified the object a Wolf-Rayet star using spectroscopic observations taken a part of the VLT-FLAMES Tarantula survey.  The spectra available covered $\lambda$4000--7000 and were taken at multiple epochs. \citep{Bestenlehner+2011} studied this object in more detail used and looked for radial velocity variations. This allowed them to exclude the presence of a close companion with high confidence.  
+
+\citep{Bestenlehner+2011} further analyzed the spectra using the non-LTE model atmosphere code CMFGEN \citep{Hillier+1998} to derive the stellar parameters and surface abundances. They derive a find a peculiar extinction ($R_V \sim 4.7$), leading to a surprisingly high luminosity $\log_{10} L (\rm{L_\odot}) =  6.5\pm0.2$. Bayesian analysis with the Bonsai code \citep{Schneider+2017} against  evolutionary models by \citet{Brott+2011} and \citet{Kohler+2015} leads to an estimated present-day mass of  $138^{+28}_ {-16}\Msun$, an age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial masse of $150^{+29}_{-17}\Msun$.  This places around the ``canonical upper limit'' of $150\Msun$  by \citet{Figer2005}.
+
+The star is very similar to R136a3, located inside the star cluster R136, \citep{Crowther+2010}  for which \citet{Crowther+2016} report a current mass estimate of $180^{30}_{-30\Msun}$. The R136 cluster hosts two further very massive WN5h stars R1361 and R136a2, whose estimated current masses are even higher.   However, VFTS682 stands out by its location a projected offset of 32\,pc from the center of the cluster.  
+
+Further worth noticing is the variability of the star.  \citep{Bestenlehner+2011} discuss the Optical Gravitational Lensing Experiment (OGLE-III) light curves \citep{Udalski+2008} and show a variability in the V-band of the 10\% level on a timescale of years.  The comment that this is unusual for Wolf-Rayet and more reminiscent of Luminous Blue Variables. 
+
+\todo{Report mass loss rate.  Report LOS velocity.}
+
+%\citep{Parker1993}
+
+\subsection{Kinematic data from Gaia DR2  \label{data:gaia}}
+
+The Gaia Data Release 2, which became available on 25 April 2018, provides the five-parameter astrometric solution (positions, parallaxes, and proper motions) for more than a bilion sources \citep{Gaia-Collaboration+2018}.  The median uncertainty in the proper motion components the corresponding uncertainties are $0.05\,\masyr$ for bright sources  ($G<14$ mag) and $0.2\masyr$ at $G=17\,\mathrm{mag}$ \citep{Lindegren+2018}.  The uncertainties quoted above to $xx\kms$ and $yy\kms$ respectively.  This unprecedented accuracy allows the identification of bright runaway stars at the distance to the LMC, 50\,kpc. 
+
+VFTS682 is identified with the gaia source} with id 4657685637907503744 in the Gaia DR2
+catalog\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}}. Gaia reports a G-band magnitude is 15.65. The star has a
 \texttt{visibility\_period} = 17, which counts how many observations have
 been used to reconstruct its astrometric solution
-\citep[][]{lindengren:18}. Its reported G-band
-magnitude is 15.65, cf. the V-band magnitude of 16.08
-\citep[][]{evans:11, bestenlehner:11}, and the reported
+\citep[][]{lindengren:18}, and the reported
 \texttt{astrometric\_excess\_noise} = 0. These values suggest that the Gaia
 data for VFTS682 are trustworthy. However, the effective temperature
 reported in Gaia DR2 is one order of magnitude lower than what found by
@@ -112,7 +159,7 @@ parallax nor the effective temperature values reported in the Gaia DR2
 catalog.
 
 %% should I really mention the line of sight velocity? Not really
-%% using it...
+%% using it... 
 
 We retrieve for VFTS682 the position in right ascension (RA) and declination (DEC)
 in the IGCS frame \cite[][]{brown:18}, its
@@ -122,27 +169,39 @@ region as a whole, we instead use the VFTS data
 as quoted in \cite{bestenlehner:11}. \Tabref{tab:vfts682} lists the values adopted throughout
 this work for each of these quantities.
 
-\begin{table}[tbp]
-  \centering
-    \caption{Astrometric parameters for VFTS682. The peculiar radial
-    velocity $\delta v_\mathrm{rad}$ is obtained as the difference
-    between the average radial velocity of the 30 Doradus region
-    ($270\pm10\kms$) minus the radial velocity measured from the HeII $\lambda4686$
-    line for VFTS682 ($315\pm15\kms$).}
 
-  \begin{tabular}[htbp]{l|c|c}
-    Parameter & Value & Source\\ \hline\hline
+\begin{table}
+\begin{center}
+    \caption{Astrometric parameters for VFTS682. }
+%
+  \begin{tabular}{l|c|c}
+  \tableline
+\tableline
+    Parameter & Value & Source\\ 
+    \tableline
     RA \hfill[degree] &  \phantom{-}84.73 $\pm$  0.03 & \multirow{4}{*}{Gaia DR2}\\
     DEC \hfill [degree] & -69.07 $\pm$  0.05  & \\
     $\mu_\mathrm{RA}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}1.84 $\pm$ 0.07 & \\
     $\mu_\mathrm{DEC}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}0.78 $\pm$ 0.08& \\
     $\delta v_\mathrm{rad}$  \hfill[$\kms$] & \phantom{0}-45 $\pm$ 25 & \cite{bestenlehner:11}\\
-    \hline
+\tableline
   \end{tabular}
+  \tablecomments{The peculiar radial
+    velocity $\delta v_\mathrm{rad}$ is obtained as the difference
+    between the average radial velocity of the 30 Doradus region
+    ($270\pm10\kms$) minus the radial velocity measured from the HeII $\lambda4686$
+    line for VFTS682 ($315\pm15\kms$).}
+    \end{center}
   \label{tab:vfts682}
 \end{table}
 
-We define a local standard frame to derive the peculiar velocity
+%% Any table notes must follow the \end{tabular} command.
+
+%%% change \tablenotetext{a} -> \tablenotetext{1} etc. to omit LaTeX errors
+%%% Karol Kozio? for ShareLaTeX
+
+
+We define a local standard frame \SdM{of reference} to derive the peculiar velocity
 of VFTS682 by selecting from the Gaia DR2 catalog a sample of nearby
 stars, following closely the approach of \cite{lennon:18}.
 We select all the stars in a target of 0.2 degrees around R136
@@ -343,8 +402,9 @@ massive VFTS682 was ejected later than VFTS16 from the same cluster.
 \end{itemize}
 
 
+\todo{Merge Selma's my\_bib bibtex file with Mathieu's and prevent double refs. }
 \bibliographystyle{aa}
-\bibliography{bibliography/vfts682}
+\bibliography{bibliography/vfts682,my_bib}
 
 \begin{acknowledgements}
   We are grateful to S.~Torres for extremely useful discussions on the
