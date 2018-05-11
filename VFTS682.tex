@@ -1,10 +1,10 @@
 \documentclass[apjl,twocolumn]{emulateapj}
 \usepackage{graphicx}
 \usepackage[varg]{txfonts}
-\usepackage[pagebackref,breaklinks,colorlinks,citecolor=blue]{hyperref}        
+%\usepackage[pagebackref,breaklinks,colorlinks,citecolor=blue]{hyperref}        
+\usepackage[%draft, 
+pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \renewcommand*{\backref}[1]{[#1]}  % gives neat back references in the pdf
-%\usepackage[%draft, 
-%colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage{aas_macros}
 %\usepackage{amsmath} % clashes with emulateapjj for some reaons
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -50,7 +50,7 @@
 
 \author{M.~Renzo$^{1}$, S.~E.~de~Mink$^{1}$, D.~J.~Lennon$^{2}$,
   S.~Justham$^{3,4}$, J.~Vink$^{5}$, F.~R.~Schneider$^6$,
-  J.~Bestenlehner, A.~de~Koter$^{1}$ \todo{... add coauthors...} }
+  J.~Bestenlehner$^7$, A.~de~Koter$^{1}$}
 
 \affil{$^{1}$Astronomical Institute Anton Pannekoek, University of
     Amsterdam, 1098 XH Amsterdam, The Netherlands \\
@@ -60,7 +60,9 @@
      $^4$ {National Astronomical Observatories, Chinese Academy of
        Sciences, Beijing 100012, China}\\
      $^5$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
-     $^6$ {Department of Physics, University of Oxford, Keble Road, Oxford OX1 3RH, UK}  
+     $^6$ {Department of Physics, University of Oxford, Keble Road,
+       Oxford OX1 3RH, UK} \\
+     $^7$ {Department of Physics and Astronomy, Hicks Building, Hounsfield Road, University of Sheffield, Sheffield S3 7RH, UK}
 }
   
 \thanks{M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
@@ -155,7 +157,7 @@ Our results indicate that VFTS 682 is a bona fide runaway star.  The direction a
 
 The star VFTS682  \citep{evans:11}, located at right ascension (RA)
 05$^\mathrm{h}$38$^\mathrm{m}$55.510$^\mathrm{s}$  and declination
-(DEC) -69:04:26.72 in the ICGS frame \citep[][]{brown:18}
+(DEC) -69:04:26.72 in the ICGS frame \todo{check coordinates} \citep[][]{brown:18}
 was originally classified as a young stellar object \citep{gruendl:09}
 based on its mid-infrared excess.  \citet{evans:11} classified the
 object as Wolf-Rayet star of spectral type WNh5 using spectra from the
@@ -332,7 +334,9 @@ $\delta v_\mathrm{DEC}=26\pm19\,\kms$, assuming a distance of
 The radial velocity from
 \cite{bestenlehner:11} then gives the third component along
 the line of sight, allowing us to calculate the three-dimensional
-peculiar speed of the star:
+peculiar speed of the star\footnote{We implicitly assume that the use
+  of a different reference frame for $\delta v_\mathrm{rad}$ does not
+  introduce significant errors.}:
 
 \begin{equation}
   \label{eq:speed_around}
