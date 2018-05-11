@@ -44,19 +44,22 @@
   
 \begin{document}
 
-\title{Gaia identifies VFTS682 as the most massive, dynamically ejected runaway star known to date}
+\title{Gaia identifies VFTS682 as the most massive % , dynamically
+                                % ejected %% to fit in one line
+  runaway star known to date}
 
 \author{M.~Renzo$^{1}$, S.~E.~de~Mink$^{1}$, D.~J.~Lennon$^{2}$,
-  S.~Justham$^{3,4}$, J.~Vink$^{5}$, A.~de~Koter$^{1}$ \todo{... add coauthors...} }
+  S.~Justham$^{3,4}$, J.~Vink$^{5}$, F.~R.~Schneider$^6$, A.~de~Koter$^{1}$ \todo{... add coauthors...} }
 
 \affil{$^{1}$Astronomical Institute Anton Pannekoek, University of
     Amsterdam, 1098 XH Amsterdam, The Netherlands \\
     $^{2}$ ESA, European Space Astronomy Centre, Apdo. de Correos 78, E-28691 Villanueva de la Ca\~nada, Madrid, Spain \\
-    $^{3}$ 
-  % \and{School of Astronomy \& Space Science, University of the Chinese
-  %   Academy of Sciences, Beijing 100012, China}
-  % \and{National Astronomical Observatories, Chinese Academy of
-  %   Sciences, Beijing 100012, China}
+    $^{3}$ {School of Astronomy \& Space Science, University of the Chinese
+    Academy of Sciences, Beijing 100012, China}\\
+     $^4$ {National Astronomical Observatories, Chinese Academy of
+       Sciences, Beijing 100012, China}\\
+     $^5$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
+     $^6$ {Department of Physics, University of Oxford, Keble Road, Oxford OX1 3RH, UK}  
 }
   
 \thanks{M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
@@ -66,9 +69,14 @@ The formation and fates of the most massive stars remains one of the most elusiv
 %
 Previous spectroscopic studies identified VFTS682 as one of the most massive stars known. It resides in the field of the 30 Dor region in the Large Magellanic Cloud at a projected distance of 29\,pc of the star cluster R136. The lack of a detected offset in radial velocity derived from the spectra, lead to speculations whether such extreme stars can form in relative isolation. 
 %
-We use Gaia's unprecedented proper motion measurements to investigate the kinematics of this object. We show that VFTS 682 is a bonafide runaway star moving with a relative velocity of about $60\kms$ away from the star cluster R136.  The inferred age, distance, and the magnitude and direction of the velocity are consistent a dynamical ejection scenario from the cluster. 
+We use the unprecedented proper motions from the second Gaia data
+release (DR2) to investigate the kinematics of this object. We show
+that VFTS 682 is a bonafide runaway star moving with a relative
+velocity of about $64\pm21\kms$ away from the star cluster R136.  The
+inferred age, distance, and the magnitude and direction of the
+velocity are consistent with a dynamical ejection scenario from the cluster. 
 %
-If correct, this would make VFTS 682 the most massive dynamically ejected runaway star known to date.  It proves that star clusters are capable of ejecting their most massive members. We discuss the implications for the existence of stars with masses well above the canonical upper mass limit inside the cluster, the internal dynamics in dense star clusters and the final fate of this object. 
+This would make VFTS 682 the most massive runaway star known to date.  It proves that star clusters are capable of ejecting their most massive members. We discuss the implications for the existence of stars with masses well above $100\Msun$ inside the cluster, the internal dynamics in dense star clusters and the final fate of this object. 
 
 \end{abstract}
 
@@ -85,7 +93,13 @@ evolve fast, typically reside in dense groups and they remain enshrouded in thei
 process.  Major progress has been made on the theoretical side,
 \citep[e.g.][]{kuiper:15,rosen:16}, but simulations cannot yet resolve
 the smallest length scales that are of interest to understand the 
-high level of multiplicity among massive stars  \citep[][]{sana:12,sana:17}.  Understanding massive star formation, and its possible dependence on environment and metallicity, is crucial for understanding the role massive stars play within their host galaxies as sources of feedback, but also for understanding the transients that mark their death and the compact remnants they leave behind.  This is therefore a key question for the present and upcoming transient surveys e.g., LSST and LIGO/Virgo,
+high level of multiplicity among massive stars  \citep[e.g.,][]{bate:09, sana:17}.  Understanding massive star formation, and its
+possible dependence on environment and metallicity, is crucial for
+understanding the role massive stars play within their host galaxies
+as sources of feedback, but also for understanding the transients that
+mark their death and the compact remnants they leave behind.  This is
+therefore a key question for the present and upcoming transient
+surveys e.g., Large Synoptic Spectroscopic Survey and LIGO/Virgo,
 %\citep[][]{}\todo{ref} . Blackgem is still hypothetical and a very tiny project compared to the others.  
 which  will reveal transients associated to massive stars
 evolution and death.
@@ -93,27 +107,29 @@ evolution and death.
 In has been proposed that most, if not all, stars form in clusters \citep{lada:03}, where massive stars are thought to  form preferentially in the dense cores of clusters. In this picture, field stars are primarily the result of the dissolution of dense groups. 
 However, a significant population of massive stars exists in relative
 isolation,  far from dense clusters or OB associations. The origin of
-this population still remains debated \citep{lamb:16}.   One
+this population still remains debated \citep{lamb:16,ward:18}.   One
 hypothesis is that they  formed in the field, but this poses a
-challenge for the theories of star formation.  The alternative
-hypothesis is that these massive stars  formed in clusters, and then
-been ejected from their birth locations.  Such ejections may result
+challenge for the theories of star formation. The alternative
+hypothesis is that these massive stars formed in clusters, and then
+been ejected from their birth locations. Such ejections may result
 from dynamical interactions \citep[e.g.,][]{poveda:67} or from the disruption of binary systems by the core-collapse of the companion star \citep[e.g.,][]{zwicky:57, blaauw:61}. 
  
 An interesting contribution to the debate on whether or not massive
 stars an form in relative isolation was presented by
-\cite{bestenlehner:11}, who discuss the case of the very massive star
+\cite{bestenlehner:11, bressert:12}, who discuss the case of the very massive star
 VFTS682.   This star is located in the field of the 30 Doradus region
 in the Large Magellanic Cloud (LMC) and was studied as part of the
 multi-epoch spectroscopic VLT-FLAMES Tarantula Survey (VFTS) of
 massive stars \citep{evans:11}.  Its spectral type is WNh5 and its 
 present-day mass is $137.8^{+27.5}_{-15.9}\,M_\odot$,
 \citep{schneider:18}. These correspond to an inferred initial mass of
-$150.0^{+28.7}_{-17.4}\,M_\odot$ and a mass loss rate of
-$\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$
-\citep[][]{bestenlehner:11,schneider:18}, which make it one of the
+$150.0^{+28.7}_{-17.4}\,M_\odot$ and a wind mass loss rate of
+$\sim10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$ inferred from the
+spectral analysis not accounting for clumping
+\citep[][]{bestenlehner:11}, which make it one of the
 most extreme objects in the region.  It is reminiscent of the very
-massive stars, a.k.a. ``monster stars'', identified by
+massive stars % , a.k.a. ``monster stars'',
+identified by
 \citet{crowther:10, crowther:16} in the core of the
 R136 cluster. 
  
@@ -124,14 +140,15 @@ origin of VFTS 682. Quoting directly from their abstract: "either (i) the star e
 
 In this study we report on our analysis the data from the second Gaia data release (DR2) \cite[][]{gaia:16,brown:18}.  We combine the radial velocity measurements from the VFTS survey \citep[][]{evans:11} with the proper motion from Gaia DR2 to reconstruct the three-dimensional velocity of VFTS682, and test the hypothesis that this star was ejected from R136. 
 
-Our results indicate that VFTS 682 is a bona fide runaway star.  The direction an magnitude of the velocity vector is fully consistent with dynamical ejection from R136.  Its inferred age is consistent with the inferred travel time. This means that the hypothesis that VFTS 682 is formed in relative isolation is rejected.  This makes VFTS 682, with an inferred present day mass well above a hundred solar masses, the most massive runaway star known to date. 
+Our results indicate that VFTS 682 is a bona fide runaway star.  The direction and magnitude of the velocity vector is fully consistent with dynamical ejection from R136.  Its inferred age is consistent with the inferred travel time. This means that the hypothesis that VFTS 682 is formed in relative isolation is rejected.  This makes VFTS 682, with an inferred present day mass well above a hundred solar masses, the most massive runaway star known to date. 
 
 
 \section{Observations}
 \label{sec:sample}
 
-In this section we summarize the remarkable properties derived for VFTS682 \todo{?}\Secref{data:vfts683}
-in earlier studies and we discuss we Gaia data in \Secref{data:gaia}.
+% feels like unnecessary here...
+% In this section we summarize the remarkable properties derived for VFTS682 \todo{?}\Secref{data:vfts683}
+% in earlier studies and we discuss we Gaia data in \Secref{data:gaia}.
 
 \subsection{ Overview of VFTS682 from previous studies \label{data:vfts683}}
 
@@ -153,9 +170,10 @@ parameters and surface abundances. They inferred a peculiar extinction
 $\log_{10}(L/L_\odot) =  6.5\pm0.2$. \citep{schneider:18} estimated
 the present-day mass of VFTS682 at  $137.8^{+27.5}_ {-15.9}\Msun$, an
 apparent age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial mass
-of $150.0^{+28.7}_{-17.4}\Msun$, using the Bayesian analysis tool Bonsai
+of $150.0^{+28.7}_{-17.4}\Msun$, using the Bayesian analysis tool Bonnsai
 \citep{schneider:17}, based on the evolutionary models from
-\citet{brott:11, kohler:15}. These values place VFTS682 around the ``canonical upper limit'' of $\sim$$150\Msun$  by \citet{figer:05}.
+\citet{brott:11, kohler:15}. These values place VFTS682 around the
+``canonical upper limit'' of $\sim$$150\Msun$ by \citet{figer:05}.
 
 The star is very similar from the spectral point of view to R136a3, located inside the star cluster
 R136, \citep{crowther:10}  for which \citet{crowther:16} report a
@@ -226,7 +244,7 @@ reports a G-band magnitude of 15.65. The star has a
 been used to reconstruct its astrometric solution
 \citep[][]{lindengren:18}, and the reported
 \texttt{astrometric\_excess\_noise} = 0. These values suggest that the Gaia
-data for VFTS682 are trustworthy. However, the effective temperature
+data for VFTS682 are reliable. However, the effective temperature
 reported in Gaia DR2 is one order of magnitude lower than what found by
 \cite{bestenlehner:11}, and the best fit parallax of this star is
 negative. We do not use the effective temperature of the star anywhere
@@ -276,7 +294,7 @@ where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
 on the proper motion component reported by Gaia. The sums run over
 all the $N=651$ stars in our selected sample. We evaluate each proper motion
 component separately. For simplicity, throughout this study, we assume the same
-distance of $50$\,kpc to the star \citep[][]{lebouteiller:08}, and to
+distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
 the 30 Doradus region as a whole. We do not consider the error bars on
 the distance determination when converting proper motions into
 physical velocities. The data retrieved, and the ipython notebook used for the analysis
@@ -298,7 +316,7 @@ subset is shown in blue in \Figref{fig:main}), we find averaged proper motion co
 $\langle\mu_\mathrm{RA}\rangle = 1.683\pm0.002\,\mathrm{mas\ yr^{-1}}$ and
 $\langle\mu_\mathrm{DEC}\rangle =
 0.672\pm0.003\,\mathrm{mas\ yr^{-1}}$. We note that these values are
-in good agreement with what found by \cite{lennon:18}. Subtracting these values from the
+in good agreement with what is found by \cite{lennon:18}. Subtracting these values from the
 proper motions of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
 $\mu_\mathrm{RA} = 0.16\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu_\mathrm{DEC} =
@@ -308,8 +326,9 @@ dominated by the errors on the proper motion components of VFTS682.
 These can be converted in the
 the components of the relative transverse velocity $\delta v_\mathrm{RA}=38\pm17\,\kms$,
 $\delta v_\mathrm{DEC}=26\pm19\,\kms$, assuming a distance of
-50\,kpc (we do not account for the uncertainty in the distance
-estimate when propagating errors). The radial velocity from
+50\,kpc. % (we do not account for the uncertainty in the distance
+% estimate when propagating errors).
+The radial velocity from
 \cite{bestenlehner:11} then gives the third component along
 the line of sight, allowing us to calculate the three-dimensional
 peculiar speed of the star:
@@ -332,7 +351,7 @@ The red arrow in \Figref{fig:main} shows the proper motion of VFTS682
 relative to the region, and the lighter red arrows show the possible
 range of directions within the uncertainties in the measured proper
 motion. It is clear that the most likely origin of the star is R136,
-as predicted from numerical N-body simulations by \cite{fujii:11, banerjee:12}.
+as suggested based on numerical N-body simulations by \cite{fujii:11, banerjee:12}.
 
 %\subsection{Kinematic age}
 
@@ -342,7 +361,7 @@ that it originates from the cluster,
 \begin{equation}
   \label{eq:kin_age}
   \tau_\mathrm{kin} = \frac{d_\parallel}{v_\parallel} \simeq
-  \frac{29\,\mathrm{pc}}{46\,\kms} \simeq 0.63\, \mathrm{Myr} \ \ ,
+  \frac{29\,\mathrm{pc}}{46\,\kms} \simeq 0.6\pm\,0.2 \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel =29$\,pc is the projected distance from VFTS682 to
 the core of R136 \citep[][]{bestenlehner:11}, $v_\parallel \equiv \sqrt{\left(\delta v_\mathrm{RA}\right)^2
@@ -350,7 +369,8 @@ the core of R136 \citep[][]{bestenlehner:11}, $v_\parallel \equiv \sqrt{\left(\d
 17\,\kms$ is the speed of the star relative to the cluster projected on the sky, obtained
 using the relative proper motion components calculated in
 \Secref{sec:runaway}, and we use the approximation $1 \kms \simeq 1
-\mathrm{pc \ Myr^{-1}}$.
+\mathrm{pc \ Myr^{-1}}$. As in the rest of this study, we neglect for
+simplicity the error on the distance estimates.
 
 The kinematic age $\tau_\mathrm{kin}$ is smaller than the apparent age
 of the star age of $1.0\pm 0.2$\,Myr from \cite{schneider:18}, which
@@ -376,7 +396,7 @@ ejection.
 Based on our results, we can claim that VFTS682 is the most massive
 runaway known to date, with a peculiar three-dimensional speed of $64\pm21\,\kms$. This means that isolated star formation is
 \emph{not} required to explain this star. Its proper motion suggests that it was ejected from the cluster R136
-$\sim$$0.6$\,Myr ago. Because of the exceptionally large mass
+$0.6\pm0.2$\,Myr ago. Because of the exceptionally large mass
 of this star, this raises the question of which stars must populate
 the core of the cluster.
 
@@ -385,7 +405,7 @@ massive star among those interacting \todo{ref}. This means that, just
 based on the kinematic properties of VFTS682, we would expect several
 stars with initial masses larger than $\sim$$150\,M_\odot$ in the
 cluster R136.
-This can be considered an independent confirmation of the detection
+This is consistent with the detection
 of extremely massive stars by \cite{crowther:10} in the core of the
 cluster. The projected rotational equatorial velocity of VFTS682
 reported by \cite{schneider:18} is $v\sin(i)<200\,\kms$, which is in
@@ -462,12 +482,13 @@ massive VFTS682 was ejected later than VFTS16 from the same cluster.
 \bibliography{bibliography/vfts682}
 
 \begin{acknowledgements}
+  \small
   We are grateful to S.~Torres for 
   very useful discussions on the
   Gaia DR2 dataset, and to M.~C.~Ramirez-Tannus for invaluable help.
   SdM has received funding under the European Unions Horizon 2020 research and innovation programme from the European Research
   Council (ERC) (Grant agreement No. 715063).
-  This work has made use of data from the ESA space mission Gaia (http://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, http://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. 
+  This work has made use of data from the ESA space mission Gaia (\url{http://www.cosmos.esa.int/gaia}), processed by the Gaia Data Processing and Analysis Consortium (DPAC, \url{http://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. 
   The background image of \Figref{fig:main} is based on observations
   made with ESO Telescopes at the La Silla Observatory under programme
   ID 076.C-0888, processed and released by the ESO VOS/ADP group.
