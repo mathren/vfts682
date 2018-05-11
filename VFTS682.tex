@@ -9,7 +9,7 @@
 %colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \usepackage{aas_macros}
 %\usepackage{amsmath} % clashes with emulateapjj for some reaons
-\usepackage[usenames]{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{comment}
 \usepackage{multirow}
 %\usepackage{chngpage}
@@ -24,7 +24,9 @@
 
 %Selma's comments
 \definecolor{Wildstrawberry}{rgb}{1.0, 0.26, 0.64}
-\newcommand{\SdM}[1]{{{\color{Wildstrawberry}{#1}}}}
+\newcommand{\SdM}[1]{{{\color{Sepia}{#1}}}}
+%\renewcommand{\SdM}[1]{{{{#1}}}}
+
 \newcommand{\newtext}[1]{{\color{ForestGreen}\bf{#1}}}
 
 \renewcommand{\labelitemii}{$\bullet$}
@@ -49,13 +51,13 @@
 
 \title{ \SdM{Gaia identifies VFTS682 as the most massive, dynamically ejected runaway star known to date}}
 
-\author{M.~Renzo$^{1}$\and S.~E.~de~Mink$^{1}$ \and \SdM{D.J. Lennon$^{2}$ et al.} \todo{... add coauthors...}%\and
+\author{M.~Renzo$^{1}$, S.~E.~de~Mink$^{1}$, \SdM{D.J. Lennon$^{2}$ et al.} \todo{... add coauthors...}%\and
   % S.~Justham\inst{2,3} \and A.~de~Koter\inst{1} \todo{etc..order to be decided}
   .} 
 
 \affil{$^{1}$Astronomical Institute Anton Pannekoek, University of
-    Amsterdam, 1098 XH Amsterdam, The Netherlands
-    $^{2}$ ...
+    Amsterdam, 1098 XH Amsterdam, The Netherlands \\
+    $^{2}$ ESA, European Space Astronomy Centre, Apdo. de Correos 78, E-28691 Villanueva de la Ca\~nada, Madrid, Spain \\
     $^{3}$ ... 
   % \and{School of Astronomy \& Space Science, University of the Chinese
   %   Academy of Sciences, Beijing 100012, China}
@@ -408,8 +410,13 @@ massive VFTS682 was ejected later than VFTS16 from the same cluster.
 \bibliography{bibliography/vfts682,my_bib}
 
 \begin{acknowledgements}
-  We are grateful to S.~Torres for extremely useful discussions on the
+  We are grateful to S.~Torres for 
+  %extremely 
+  very useful discussions on the
   Gaia DR2 dataset, and to M.~C.~Ramirez-Tannus for invaluable help.
+  \SdM{SdM has received funding under the European Unions Horizon 2020 research and innovation programme from the European Research
+Council (ERC) (Grant agreement No. 715063).
+   This work has made use of data from the ESA space mission Gaia (http://www.cosmos.esa.int/gaia), processed by the Gaia Data Processing and Analysis Consortium (DPAC, http://www.cosmos.esa.int/web/gaia/dpac/consortium). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the Gaia Multilateral Agreement. }
   The background image of \Figref{fig:main} is based on observations
   made with ESO Telescopes at the La Silla Observatory under programme
   ID 076.C-0888, processed and released by the ESO VOS/ADP group.
