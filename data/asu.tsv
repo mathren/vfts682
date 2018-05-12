@@ -74,8 +74,8 @@
 #Column	RV	(F7.2)	? Spectroscopic radial velocity in the solar barycentric reference frame (radial_velocity)	[ucd=spect.dopplerVeloc.opt;pos.barycenter]
 #Column	e_RV	(F5.2)	? Radial velocity error (radial_velocity_error) (30)	[ucd=stat.error;spect.dopplerVeloc.opt;pos.barycenter]
 DR2Name|RA_ICRS|e_RA_ICRS|DE_ICRS|e_DE_ICRS|Source|Plx|e_Plx|pmRA|e_pmRA|pmDE|e_pmDE|epsi|Gmag|e_Gmag|RV|e_RV
- |deg|mas|deg|mas| |mas|mas|mas/yr|mas/yr|mas/yr|mas/yr|mas|mag|mag|km/s|km/s
-----------------------------|---------------|-------|---------------|-------|-------------------|----------|-------|---------|------|---------|------|------|-------|------|-------|-----
+# |deg|mas|deg|mas| |mas|mas|mas/yr|mas/yr|mas/yr|mas/yr|mas|mag|mag|km/s|km/s
+#----------------------------|---------------|-------|---------------|-------|-------------------|----------|-------|---------|------|---------|------|------|-------|------|-------|-----
 Gaia DR2 4657679384433945344|084.78053651583| 0.0308|-69.12946394353| 0.0366|4657679384433945344|   -0.0923| 0.0338|    1.692| 0.061|    0.691| 0.062| 0.103|15.3562|0.0006|       |
 Gaia DR2 4657679453131840896|084.70083676503| 0.0272|-69.13636409262| 0.0284|4657679453131840896|   -0.0463| 0.0281|    1.524| 0.054|    0.619| 0.059| 0.089|14.8696|0.0007|       |
 Gaia DR2 4657679487513112960|084.66195467287| 0.0367|-69.13738176632| 0.0298|4657679487513112960|    0.0181| 0.0325|    1.696| 0.064|    0.673| 0.056| 0.000|12.4812|0.0017|       |
