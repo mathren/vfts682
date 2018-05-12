@@ -243,12 +243,6 @@ wind hiding the stellar surface.
   \label{tab:vfts682}
 \end{table}
 
-% %% Any table notes must follow the \end{tabular} command.
-
-% %%% change \tablenotetext{a} - \tablenotetext{1} etc. to omit LaTeX errors
-% %%% Karol Kozio? for ShareLaTeX
-
-
 The Gaia Data Release 2, which became available on 25 April 2018,
 provides the five-parameter astrometric solution (positions,
 parallaxes, and proper motion components) for more than a billion
@@ -278,45 +272,45 @@ this work for each of these quantities.
 
 
 We define a local standard frame of reference to derive the peculiar velocity
-of VFTS682 by selecting from the Gaia DR2 catalog a sample of nearby
-stars, following closely the approach of \cite{vandermarel:02,lennon:18}.
-We select all the stars in a target of 0.2 degrees around R136
+of VFTS682 with respect to the cluster R136 by selecting from the Gaia DR2 catalog following closely the approach of \cite{vandermarel:02,lennon:18}.
+We select all the stars in a target of 0.05 degrees around R136
 (NGC2070) fulfilling the following criteria. First, we require G-band
 magnitude brighter than 17, correspondingly roughly to the
 completeness level of the VFTS survey \citep[here we implicitly assume
 G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
 \texttt{astrometric\_excess\_noise} $< 1$, the errors on the proper
-motion components to be smaller than 0.1\,$\mathrm{mas\ yr^{-1}}$,
-and the proper motion components themselves to be smaller than
-2\,$\mathrm{mas\ yr^{-1}}$ in absolute value. At the distance to the
-LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the cut on the values
-of the proper motions removes stars that would have projected
-tangential velocities in excess of $\sim$500\,$\kms$, which are most
-likely to be foreground stars. We checked that the additional
-requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
-not reduces further our sample. This yields a sample of 651 stars,
-from which remove six clear outliers from
-the proper motion distribution, ending up with 645 stars to define the
-local rest frame. 
+motion components to be smaller than 0.07\,$\mathrm{mas\
+  yr^{-1}}$. At the distance to the LMC, $0.1\mathrm{mas\
+  yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}, therefore this
+corresponds to requiring transverse velocities smaller than $\sim$$17\kms$. We
+remove obvious foreground stars by requiring parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
+% At the distance to the
+% LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the cut on the values
+% of the proper motions removes stars that would have projected
+% tangential velocities in excess of $\sim$500\,$\kms$, which are most
+% likely to be foreground stars. We checked that the additional
+% requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
+% not reduces further our sample.
+This selection yields a sample of 69 stars.% ,
 
 We calculate the averaged proper motion components for the whole
 region using 
 \begin{equation}
   \label{eq:mean}
   \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
-      \mu_i}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i}} \ \ , \
+      \mu_i^2}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i^2}} \ \ , \
   \ \Delta \langle \mu_i\rangle = \frac{\sqrt{N}}{\sum_\mathrm{stars}
-    \frac{1}{\Delta \mu_i}} \ \ ,
+    \frac{1}{\Delta \mu_i^2}} \ \ ,
 \end{equation}
 where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
 on the proper motion component reported by Gaia. The sums run over
-all the $N=646$ stars in our selected sample. We evaluate each proper motion
+all the $N=69$ stars in our selected sample. We evaluate each proper motion
 component separately. For simplicity, throughout this study, we assume the same
 distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
 the 30 Doradus region as a whole. We do not consider the error bars on
 the distance determination when converting proper motions into
 physical velocities. The data retrieved, and the ipython notebook used for the analysis
-presented here will be made available at \todo{probably git repo on bitbucket?}. 
+presented here will be made available at \todo{git repo bitbucket?}. 
 
 \section{The kinematics of VFTS682}
 \label{sec:results}
