@@ -219,11 +219,12 @@ presence of an optically thick, likely non-homogeneous, and variable
 wind hiding the stellar surface. 
 
 \subsection{New data from Gaia DR2  \label{data:gaia}}
+%% using
+%% /scratch/mathieu/MMPS/SCRIPTS_dirty/my_script/binaries/binary_c/30Dor/vfts682/data/asu.tsv to find average
 
 \begin{table}[t]
 \begin{center}
     \caption{Astrometric parameters for VFTS682. }
-%
   \begin{tabular}{l|c|c}
   \tableline
 \tableline
@@ -281,9 +282,9 @@ G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
 \texttt{astrometric\_excess\_noise} $< 1$, the errors on the proper
 motion components to be smaller than 0.07\,$\mathrm{mas\
   yr^{-1}}$. At the distance to the LMC, $0.1\mathrm{mas\
-  yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}, therefore this
-corresponds to requiring transverse velocities smaller than $\sim$$17\kms$. We
-remove obvious foreground stars by requiring parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
+  yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}. We
+remove obvious foreground stars by requiring the absolute value of
+the reported parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
 % At the distance to the
 % LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the cut on the values
 % of the proper motions removes stars that would have projected
@@ -291,7 +292,7 @@ remove obvious foreground stars by requiring parallaxes smaller than $0.1\,\math
 % likely to be foreground stars. We checked that the additional
 % requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
 % not reduces further our sample.
-This selection yields a sample of 69 stars.% ,
+This selection yields a sample of 66 stars.% ,
 
 We calculate the averaged proper motion components for the whole
 region using 
@@ -304,7 +305,7 @@ region using
 \end{equation}
 where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
 on the proper motion component reported by Gaia. The sums run over
-all the $N=69$ stars in our selected sample. We evaluate each proper motion
+all the $N=66$ stars in our selected sample. We evaluate each proper motion
 component separately. For simplicity, throughout this study, we assume the same
 distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
 the 30 Doradus region as a whole. We do not consider the error bars on
@@ -325,19 +326,18 @@ isolation from other massive stars.
 
 Using the 651 stars selected as described in \Secref{data:gaia} (a
 subset is shown in blue in \Figref{fig:main}), we find averaged proper motion components of
-$\langle\mu_\mathrm{RA}\rangle = 1.683\pm0.002\,\mathrm{mas\ yr^{-1}}$ and
-$\langle\mu_\mathrm{DEC}\rangle =
-0.672\pm0.003\,\mathrm{mas\ yr^{-1}}$. We note that these values are
+$\langle\mu_\mathrm{RA}\rangle = 1.7240\pm0.0002\,\mathrm{mas\ yr^{-1}}$ and
+$\langle\mu_\mathrm{DEC}\rangle =0.6986\pm0.0003\,\mathrm{mas\ yr^{-1}}$. We note that these values are
 in good agreement with what is found by \cite{lennon:18}. Subtracting these values from the
 proper motion of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\mu_\mathrm{RA} = 0.16\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu_\mathrm{DEC} =
-0.11\pm 0.08\,\mathrm{mas\ yr^{-1}}$. We note that the error budget is
+$\mu_\mathrm{RA} = 0.12\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\mu_\mathrm{DEC} =
+0.08\pm 0.08\,\mathrm{mas\ yr^{-1}}$. We note that the error budget is
 dominated by the errors on the proper motion components of VFTS682.
 
 These can be converted into
-the components of the relative transverse velocity $\delta v_\mathrm{RA}=38\pm17\,\kms$,
-$\delta v_\mathrm{DEC}=26\pm19\,\kms$, assuming a distance of
+the components of the relative transverse velocity $\delta v_\mathrm{RA}=28\pm16\,\kms$,
+$\delta v_\mathrm{DEC}=20\pm19\,\kms$, assuming a distance of
 50\,kpc. % (we do not account for the uncertainty in the distance
 % estimate when propagating errors).
 The radial velocity from
@@ -349,7 +349,7 @@ peculiar speed of the star:
   \label{eq:speed_around}
   v_\mathrm{pec} = \sqrt{\left(\delta v_\mathrm{RA}\right)^2
     +\left(\delta v_\mathrm{DEC}\right)^2+\left(\delta
-      v_\mathrm{rad}\right)^2} = 55 \pm 18 
+      v_\mathrm{rad}\right)^2} = 46 \pm 18 
   \kms \ .
 \end{equation}
 This value for the three-dimensional speed of VFTS682 with respect the
@@ -365,8 +365,6 @@ range of directions within the uncertainties in the measured proper
 motion. It is clear that the most likely origin of the star is R136,
 as suggested based on numerical N-body simulations by \cite{fujii:11}
 and \cite{banerjee:12}.
-
-%\subsection{Kinematic age}
 
 We can therefore consider the kinematic age for this star assuming
 that it originates from the cluster,
