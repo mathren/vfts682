@@ -352,13 +352,13 @@ emphasize their sensitivity to the choice of stars adopted to define
 the reference frame. Subtracting these values from the
 proper motion of VFTS 682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\delta\mu_\mathrm{RA} = 0.12\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\delta\mu_\mathrm{DEC} =
+$\delta\mu_\mathrm{RA}^{Gaia} = 0.12\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\delta\mu_\mathrm{DEC}^{Gaia} =
 0.08\pm 0.08\,\mathrm{mas\ yr^{-1}}$. The error budget is
 dominated by the errors on the proper motion components of VFTS 682.
 
 These can be converted into
-the components of the relative transverse velocity $\delta v_\mathrm{RA}=28\pm16\,\kms$,
-$\delta v_\mathrm{DEC}=20\pm19\,\kms$, assuming a distance of
+the components of the relative transverse velocity $\delta v_\mathrm{RA}^{Gaia}=28\pm16\,\kms$,
+$\delta v_\mathrm{DEC}^{Gaia}=20\pm19\,\kms$, assuming a distance of
 50\,kpc. % (we do not account for the uncertainty in the distance
 % estimate when propagating errors).
 The radial velocity from
@@ -368,15 +368,53 @@ peculiar speed of the star:
 
 \begin{equation}
   \label{eq:speed_around}
-  v_\mathrm{pec} = \sqrt{\left(\delta v_\mathrm{RA}\right)^2
-    +\left(\delta v_\mathrm{DEC}\right)^2+\left(\delta
-      v_\mathrm{rad}\right)^2} = 46 \pm 18 
+  v_\mathrm{pec}^{Gaia} = \sqrt{\left(\delta v_\mathrm{RA}^{Gaia}\right)^2
+    +\left(\delta v_\mathrm{DEC}^{Gaia}\right)^2+\left(\delta
+      v_\mathrm{rad}^{VFTS}\right)^2} = 46 \pm 18 
   \kms \ .
 \end{equation}
 This value for the three-dimensional speed of VFTS 682 with respect the
 surrounding stars make it the most massive ``bona fide'' runaway star
 known to date.
 
+
+
+\section{Validation with HST proper motions}
+
+Recently, \citet{platais:18} used HST observations (based on GO-12499
+\& 13359 observations with WFC3/UVIS and on archival WFPC2 and
+GO-12499 with both cameras, \citealt{platais:15}) to determine the
+proper motion of massive stars in the 30 Doradus region. For
+large distances ($\gtrsim50$\,kpc), HST data can compete or even
+exceed Gaia data in quality.
+
+In the catalog from \citet{platais:18} they listed the proper motion
+components of VFTS682 relative to the field, providing a
+measure of the motion of this star completely independent from
+ours. HST images of VFTS682 are not saturated in any epoch \todo{?},
+thanks to the large extinction toward this star. They found proper
+motion components relative to the field
+$\delta\mu_\mathrm{RA}^\mathrm{HST} = 0.01\pm0.13\,\mathrm{mas\
+  yr^{-1}}$ and
+$\delta\mu_\mathrm{DEC}^\mathrm{HST}=0.2\pm0.1\,\mathrm{mas\
+  yr^{-1}}$.
+
+Since these measures are completely independent from ours, we can take
+an average weighted with $1/\delta \mu_i^2$ (cf.~notation in
+\Eqref{eq:mean}), obtaining $\delta\mu_\mathrm{RA}=\pm\,\mathrm{mas\
+  yr^{-1}}$ and $\delta\mu_\mathrm{DEC}=\pm\,\mathrm{mas\
+  yr^{-1}}$.
+
+
+
+
+% %% pure HST physical velocities
+% \todo{done in the train: to be checked} Converting these into physical velocities we obtain 
+% $\delta v_\mathrm{RA}=2.3\pm30\,\kms$, $\delta v_\mathrm{DEC}=47\pm\,23\kms$, corresponding to
+% $v_\parallel^\mathrm{HST} = 47\pm\,1\kms$.
+
+\todo{redo below with average HST+Gaia?Actually redo also calculation
+  of $v_\mathrm{pec}$...}
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
@@ -420,14 +458,12 @@ ejection.
     backwards (dashed) to illustrate the uncertainty on the origin of the
     star. The blue stars
     are a subset of those we use to define the local rest
-    frame. \todo{load color picture on background}}
+    frame. \todo{load color picture on background}\todo{show
+      separately arrows fro Gaia/HST and combination? Or show only
+      combination? Right now it's Gaia only}}
   
   \label{fig:main}
 \end{figure}
-
-\section{Validation with HST proper motions}
-\todo{HST data from \citet{platais:18} pmx = -pmRA = -0.07 +/-  0.18
-  pmDEC = 0.18 +/- 0.19 marcsec/yr. }
 
 
 \section{Discussion}
