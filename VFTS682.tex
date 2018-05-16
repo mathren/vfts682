@@ -75,6 +75,11 @@ pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
      $^{}$ {Department of Physics, University of Oxford, Keble Road,
        Oxford OX1 3RH, UK} \\
        $^{}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}   
+    $^{}$ {Space Telescope Science Institute, 3700 San Martin Drive,
+       Baltimore, MD 21218, USA}\\
+      {Center for Astrophysical Sciences, Department of Physics \& Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA}\\
+     $^{}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
+     $^{}$ {National Research Council, Herzberg Astronomy \& Astrophysics, 5071 West Saanich Road, Victoria, BC, V9E 2E7, Canada}     
 }
   
 %\thanks{Corresponding author:  M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
@@ -88,8 +93,15 @@ We use the unprecedented proper motions from the second \emph{Gaia} data
 release (DR2) to investigate the kinematics of this object. We show
 that VFTS 682 is a bonafide runaway star moving away from the star
 cluster R136 with a relative
+<<<<<<< HEAD
 projected two-dimensional speed of about $\sim$$34\pm17 \kms$ \todo{Double Check
   error!},
+||||||| merged common ancestors
+projected two-dimensional speed of about $\sim$$34\pm1 \kms$ \todo{fix
+  error!},
+=======
+projected two-dimensional speed of about $\sim$$34\pm17\kms$ ,
+>>>>>>> b331f2c44c2249e7f927160eec9aad797dfd9173
 implying a three-dimensional speed of about $\sim$$40\pm20\kms$ when
 accounting for the velocity component along the line of sight. The
 inferred age, distance, and the magnitude and direction of the
@@ -248,19 +260,30 @@ wind hiding the stellar surface.
     \caption{Astrometric parameters for VFTS 682. }
   \begin{tabular}{l|c|c}
   \tableline
-\tableline
-    Parameter & Value & Source\\ 
     \tableline
-    RA \hfill[degree] &  \phantom{-}84.73 $\pm$  0.03 & \multirow{4}{*}{\emph{Gaia} DR2}\\
-    DEC \hfill [degree] & -69.07 $\pm$  0.05  & \\
-    $\mu_\mathrm{RA}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}1.84 $\pm$ 0.07 & \\
-    $\mu_\mathrm{DEC}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & \phantom{-0}0.78 $\pm$ 0.08& \\
-    $\delta v_\mathrm{rad}$  \hfill[$\kms$] & \phantom{-0}30 $\pm$ 20 & \cite{bestenlehner:11}\\
-\tableline
+    Parameter & Value & Source\\
+    \tableline
+    RA \hfill[degree] &  \phantom{-}84.73 % $\pm$  0.03
+                      & \multirow{4}{*}{\emph{Gaia} DR2}\\[5pt]
+    DEC \hfill [degree] & -69.07 % $\pm$  0.05
+                      & \\[5pt]
+    \cline{1-2}
+    $\delta\mu_\mathrm{RA}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.12$\pm$0.07 & \\[5pt]
+    $\delta\mu_\mathrm{DEC}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.08$\pm$0.08 & \\[5pt]
+    \hline
+    $\delta\mu_\mathrm{RA}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.01$\pm$0.13 & \multirow{2}{*}{\cite{platais:18}}\\[5pt]
+    $\delta\mu_\mathrm{DEC}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] &
+                                                                      0.2$\pm$0.1 &
+    \\[5pt]
+    \hline
+    $\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
+    \tableline
   \end{tabular}
-  \tablecomments{\todo{the error on position is in milliarcsec, not
-      degrees! Fix this, Roeland is right! Also, report relative pm,
-      not absolute}}
+  \tablecomments{We do not list the error on the RA and DEC positions,
+    which can be retrieved from the Gaia DR2 catalog and are of order
+    $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$. We adopt the peculiar
+    radial velocity calculated using the  NV $\lambda4944$ line, which is
+    less sensitive to the wind velocity structure.}
     \end{center}
   \label{tab:vfts682}
 \end{table}
@@ -385,14 +408,31 @@ known to date.
 \section{Validation with HST proper motions}
 \todo{maybe rename to Astrometry from HST and make sec. 2.1.1 or 2.2
   but above Gaia data?}
-Recently, \citet{platais:18} used HST observations (based on GO-12499
-\& 13359 observations with WFC3/UVIS and on archival WFPC2 and
-GO-12499 with both cameras, see \citealt{platais:15}) to determine the
-proper motion of massive stars in the 30 Doradus region. Our star of
-interest is not saturated in any HST image \todo{?},
-because of the large extinction toward this star. For
+
+Recently, \citet{platais:18} presented Hubble Space Telescope (HST)  astrometry and proper
+motions in the 30 Doradus region based on two epochs of
+observations; the first epoch (GO-12499; P.I.: D.~J.~Lennon)
+in October 3-8 2011 and the second epoch (GO-13359) in
+October 6-11 2014, both using the F775W filter.
+The second epoch was designed to match the pointing and
+orientation of the first epoch as exactly as possible so
+that the displacement measurements could be purely differential.
+While most bright massive stars (V$<$14) were saturated in
+their data and missing from that catalog, due to its
+high extinction, E(B-V)=0.9, this star is faint enough
+to be included in that catalog. Its proper motions are
+listed in \Tabref{tab:vfts682} \todo{add}. For
 large distances ($\gtrsim50$\,kpc), HST data can compete or even
 exceed Gaia data in quality.
+
+
+
+% Recently, \citet{platais:18} used HST observations (based on GO-12499
+% \& 13359 observations with WFC3/UVIS and on archival WFPC2 and
+% GO-12499 with both cameras, see \citealt{platais:15}) to determine the
+% proper motion of massive stars in the 30 Doradus region. Our star of
+% interest is not saturated in any HST image \todo{?},
+% because of the large extinction toward this star.
 
 The catalog from \citet{platais:18} lists the proper motion
 components of VFTS682 relative to the field, providing a
