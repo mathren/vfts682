@@ -256,11 +256,14 @@ between the average radial velocity of the 30 Doradus region
 ($270\pm10\kms$) minus the radial velocity measured from the NV $\lambda4944$
 line for VFTS 682  \citep[$300\pm10\kms$, ][]{bestenlehner:11}. We implicitly assume that the use
 of a slightly different reference frame for $\delta v_\mathrm{rad}$ does not
-introduce significant errors. We also note that the determination of
+introduce significant errors. \cite{bressert:12} also noted that VFTS
+682 shows a significant radial velocity offset compared to the nebular
+lines from the gas surrounding it, suggesting peculiar motion in the
+line of sight direction. However, the determination of
 radial velocities for emission-lines stars is difficult because of the
 presence of an optically thick, likely non-homogeneous, and variable
-wind obscuring the stellar surface. The error quoted above on the
-radial velocity only include statistical uncertainties from the
+wind obscuring the stellar surface. The errors quoted above on the
+radial velocities include only statistical uncertainties from the
 spectral analysis, and not the systematic errors arising from the
 modeling of emission line stars.
 
@@ -352,12 +355,12 @@ $\delta\mu_\mathrm{DEC}^\mathrm{HST}=0.2\pm0.1\,\mathrm{mas\
     which can be retrieved from the Gaia DR2 catalog and are of order
     $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$. We adopt the peculiar
     radial velocity calculated using the  NV $\lambda4944$ line, which is
-    less sensitive to the wind velocity structure.}
+    less sensitive to the wind velocity structure (see also \Secref{data:vfts683}).}
     \end{center}
   \label{tab:vfts682}
 \end{table}
 
-The \emph{Gaia} Data Release 2, which became available on 25 April 2018,
+The second \emph{Gaia} Data Release (DR2), which became available on 25 April 2018,
 provides the five-parameter astrometric solution (positions,
 parallaxes, and proper motion components) for more than a billion
 sources \citep{brown:18}. VFTS 682 is identified with the source id 4657685637907503744 in the \emph{Gaia} DR2
@@ -368,7 +371,8 @@ been used to reconstruct its astrometric solution
 \citep[][]{lindengren:18}, and the reported
 \texttt{astrometric\_excess\_noise} = 0. These values suggest that the \emph{Gaia}
 data for VFTS 682 are reliable. However, the effective temperature
-reported in \emph{Gaia} DR2 is one order of magnitude lower than what found by
+reported in \emph{Gaia} DR2, based on the spectral fitting around the
+CaII triplet, is one order of magnitude lower than what found by
 \cite{bestenlehner:11}, and the best fit parallax of this star is
 negative \citep[see, e.g.,][]{hogg:18}. We do not use the effective temperature of the star anywhere
 in this study, and we attribute the unphysical value of the parallax
@@ -377,27 +381,35 @@ parallax nor the effective temperature values reported in the \emph{Gaia} DR2
 catalog.
 
 We retrieve for VFTS 682 the position in RA and DEC
-in the IGCS frame \cite[][]{brown:18}, its
+in the International Celestial Reference System \cite[][]{brown:18}, its
 proper motion components ($\mu_\mathrm{RA}$, and $\mu_\mathrm{DEC}$,
 respectively). For the radial velocity of VFTS 682 and of the 30 Doradus
 region as a whole, we instead use the VFTS data
 as quoted in \cite{bestenlehner:11}. \Tabref{tab:vfts682} lists the values adopted throughout
 this work for each of these quantities.
 
+We follow \citet{lennon:18} to define a local frame of reference and derive the peculiar velocity
+of VFTS 682 with respect to the cluster R136. Their selection (see
+their Sec.~2.1) of 153
+bright ($G<17$) stars around R136 with reliable astrometric data from
+\emph{Gaia} DR2 yields $\mu_\mathrm{RA}=1.74\pm0.13\,\mathrm{mas\
+  yr^{-1}}$ and $\mu_\mathrm{DEC}=0.70\pm0.20\,\mathrm{mas\ yr^{-1}}$
+for the components of the mean motion of the region projected on the sky.
 
-We define a local standard frame of reference to derive the peculiar velocity
-of VFTS 682 with respect to the cluster R136 by selecting from the \emph{Gaia} DR2 catalog following closely the approach of \cite{vandermarel:02,lennon:18}.
-We select all the stars in a target of 0.05 degrees around R136
-(NGC2070) fulfilling the following criteria. First, we require a G-band
-magnitude brighter than 17, corresponding roughly to the
-completeness level of the VFTS survey \citep[here we implicitly assume
-G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
-\texttt{astrometric\_excess\_noise} $< 1$, and the errors on the proper
-motion components to be smaller than 0.07\,$\mathrm{mas\
-  yr^{-1}}$. At the distance to the LMC, $0.1\mathrm{mas\
-  yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}. We
-remove obvious foreground stars by requiring the absolute value of
-the reported parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
+
+% We define a local standard frame of reference to derive the peculiar velocity
+% of VFTS 682 with respect to the cluster R136 by selecting from the \emph{Gaia} DR2 catalog following closely the approach of \cite{vandermarel:02,lennon:18}.
+% We select all the stars in a target of 0.05 degrees around R136
+% (NGC2070) fulfilling the following criteria. First, we require a G-band
+% magnitude brighter than 17, corresponding roughly to the
+% completeness level of the VFTS survey \citep[here we implicitly assume
+% G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
+% \texttt{astrometric\_excess\_noise} $< 1$, and the errors on the proper
+% motion components to be smaller than 0.07\,$\mathrm{mas\
+%   yr^{-1}}$. At the distance to the LMC, $0.1\mathrm{mas\
+%   yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}. We
+% remove obvious foreground stars by requiring the absolute value of
+% the reported parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
 % At the distance to the
 % LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the cut on the values
 % of the proper motions removes stars that would have projected
@@ -405,29 +417,28 @@ the reported parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
 % likely to be foreground stars. We checked that the additional
 % requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
 % not reduces further our sample.
-This selection yields a sample of 66 stars.% ,
+% This selection yields a sample of 66 stars.% ,
 
-We calculate the averaged proper motion components for the whole
-region using 
-\begin{equation}
-  \label{eq:mean}
-  \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
-      \mu_i^2}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i^2}} \ \ , \
-  \ \Delta \langle \mu_i\rangle = \frac{\sqrt{N}}{\sum_\mathrm{stars}
-    \frac{1}{\Delta \mu_i^2}} \ \ ,
-\end{equation}
-where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
-on the proper motion component reported by \emph{Gaia}. The sums run over
-all the $N=66$ stars in our selected sample. We evaluate each proper motion
-component separately. For simplicity, throughout this study, we assume the same
+% We calculate the averaged proper motion components for the whole
+% region using 
+% \begin{equation}
+%   \label{eq:mean}
+%   \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
+%       \mu_i^2}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i^2}} \ \ , \
+%   \ \Delta \langle \mu_i\rangle = \frac{\sqrt{N}}{\sum_\mathrm{stars}
+%     \frac{1}{\Delta \mu_i^2}} \ \ ,
+% \end{equation}
+% where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
+% on the proper motion component reported by \emph{Gaia}. The sums run over
+% all the $N=66$ stars in our selected sample. We evaluate each proper motion
+% component separately.
+For simplicity, throughout this study, we assume the same
 distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
 the 30 Doradus region as a whole. We do not consider the error bars on
 the distance determination when converting proper motions into
-physical velocities. The data retrieved, and the ipython notebook used for the analysis
-presented here will be made available at \todo{git repo bitbucket?}. 
+physical velocities. % The data retrieved, and the ipython notebook used for the analysis
+% presented here will be made available at \todo{git repo bitbucket?}. 
 
-\todo{nebular lines to compare velocity of the gas?}
-\todo{fix numbers}
 
 \section{The kinematics of VFTS 682}
 \label{sec:results}
