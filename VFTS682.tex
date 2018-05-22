@@ -249,7 +249,7 @@ lower than what found by \citet{evans:11}. \citet{bestenlehner:11} discuss the O
 Experiment (OGLE-III) light curves \citep{udalski:08} and show a
 variability in the V-band at $\sim$10\% level on a timescale of years.
 They commented that this is unusual for Wolf-Rayet stars and more reminiscent
-of Luminous Blue Variable (LBV) stars. 
+of Luminous Blue Variable (LBV) stars \citep[e.g.,][]{langer:94}. 
 
 We obtain the peculiar radial velocity $\delta v_\mathrm{rad}$ of VFTS 682 as the difference
 between the average radial velocity of the 30 Doradus region
@@ -383,7 +383,11 @@ catalog.
 We retrieve for VFTS 682 the position in RA and DEC
 in the International Celestial Reference System \cite[][]{brown:18}, its
 proper motion components ($\mu_\mathrm{RA}$, and $\mu_\mathrm{DEC}$,
-respectively). For the radial velocity of VFTS 682 and of the 30 Doradus
+respectively). While \emph{Gaia} DR2 data can be correlated, this is
+not an issue for VFTS682, and for simplicity we treat them as
+uncorrelated in the following.
+
+For the radial velocity of VFTS 682 and of the 30 Doradus
 region as a whole, we instead use the VFTS data
 as quoted in \cite{bestenlehner:11}. \Tabref{tab:vfts682} lists the values adopted throughout
 this work for each of these quantities.
@@ -434,8 +438,8 @@ for the components of the mean motion of the region projected on the sky.
 % component separately.
 For simplicity, throughout this study, we assume the same
 distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
-the 30 Doradus region as a whole. We do not consider the error bars on
-the distance determination when converting proper motions into
+the 30 Doradus region as a whole. We do not consider the error on
+the distance determination ($\lesssim2\%$) when converting proper motions into
 physical velocities. % The data retrieved, and the ipython notebook used for the analysis
 % presented here will be made available at \todo{git repo bitbucket?}. 
 
@@ -451,18 +455,20 @@ a significantly large peculiar velocity compared to its surrounding population. 
 be expected if it formed where we observe it today, in relative
 isolation from other massive stars.
 
-Using the stars selected as described in \Secref{data:gaia} (a
-subset is shown in blue in \Figref{fig:main}), we find averaged proper motion components of
-$\langle\mu_\mathrm{RA}\rangle = 1.7240\pm0.0002\,\mathrm{mas\ yr^{-1}}$ and
-$\langle\mu_\mathrm{DEC}\rangle = 0.6986\pm0.0003\,\mathrm{mas\
-  yr^{-1}}$. These values are
-in good agreement with what is found by \cite{lennon:18}. However, we
-emphasize their sensitivity to the choice of stars adopted to define
-the reference frame. Subtracting these values from the
+% Using the stars selected as described in \Secref{data:gaia} (a
+% subset is shown in blue in \Figref{fig:main}), we find averaged proper motion components of
+% $\langle\mu_\mathrm{RA}\rangle = 1.7240\pm0.0002\,\mathrm{mas\ yr^{-1}}$ and
+% $\langle\mu_\mathrm{DEC}\rangle = 0.6986\pm0.0003\,\mathrm{mas\
+%   yr^{-1}}$. These values are
+% in good agreement with what is found by \cite{lennon:18}. However, we
+% emphasize their sensitivity to the choice of stars adopted to define
+% the reference frame.
+Subtracting the mean proper motion components given by
+\citep{lennon:18} from the
 proper motion of VFTS 682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\delta\mu_\mathrm{RA}^{Gaia} = 0.12\pm 0.07\,\mathrm{mas\ yr^{-1}}$ and $\delta\mu_\mathrm{DEC}^{Gaia} =
-0.08\pm 0.08\,\mathrm{mas\ yr^{-1}}$. The error budget is
+$\delta\mu_\mathrm{RA}^{Gaia} = \pm \,\mathrm{mas\ yr^{-1}}$ and $\delta\mu_\mathrm{DEC}^{Gaia} =
+\pm \,\mathrm{mas\ yr^{-1}}$. The error budget is
 dominated by the errors on the proper motion components of VFTS 682.
 
 These can be converted into
@@ -486,8 +492,6 @@ This value for the three-dimensional speed of VFTS 682 with respect to
 the surrounding stars make it the most massive ``bona fide'' runaway star
 known to date.
 
-
-
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
@@ -500,7 +504,7 @@ and \cite{banerjee:12}.
 
 We can therefore consider the kinematic age for this star assuming
 that it originates from the cluster,
-
+\todo{lennon: use pm for kin age and not kms}
 \begin{equation}
   \label{eq:kin_age}
   \tau_\mathrm{kin} = \frac{d_\parallel}{v_\parallel} \simeq
