@@ -299,9 +299,10 @@ $\delta\mu_\mathrm{DEC}^\mathrm{HST}=0.2\pm0.1\,\mathrm{mas\
   yr^{-1}}$, corresponding to a relative proper motion 
 
 \begin{equation}
-  \label{eq:pm_around}
+  \label{eq:pm_around_HST}
   \delta \mu^{HST} = \sqrt{\left(\delta\mu_\mathrm{RA}^{HST}\right)^2+\left(\delta\mu_\mathrm{DEC}^{HST}\right)^2}
-  = 0.20 \pm 0.15 \ \ .
+  = 0.20 \pm 0.15\,\mathrm{mas\
+  yr^{-1}} \ \ .
 \end{equation}
 
 These proper motion components can also be converted into projected
@@ -468,7 +469,8 @@ two-dimensional relative proper motion of
 \begin{equation}
   \label{eq:pm_gaia_around}
   \delta \mu^{Gaia} = \sqrt{\left(\delta\mu_\mathrm{RA}^{Gaia}\right)^2+\left(\delta\mu_\mathrm{DEC}^{Gaia}\right)^2}
-  = 0.13\pm 0.09 \ \ .
+  = 0.13\pm 0.09\,\mathrm{mas\
+  yr^{-1}} \ \ .
 \end{equation}
 
 Figure \Figref{fig:pm_polar} shows the distribution in relative proper motion
@@ -527,36 +529,41 @@ require confirmation with future astrometric data.
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
-The red arrow in \Figref{fig:main} shows the proper motion of VFTS 682
-relative to the region, and the lighter red arrows show the possible
-range of directions within the uncertainties in the measured proper
-motion. It is clear that the most likely origin of the star is R136,
+Assuming that the best estimate of the peculiar velocity of VFTS 682
+are reliable, we now address the question of its likely origin.
+
+The red arrow in \Figref{fig:main} shows the direction of relative proper motion of
+VFTS 682 from \emph{Gaia} DR2 (see \Eqref{eq:pm_gaia_around}), and the orange arrows show the possible
+range of directions within the uncertainties in the measured relative proper
+motion. These arrows cross at the present-day location of VFTS 682 and
+are prolonged in the direction opposite to the motion to illustrate
+the possible range of origins. The green arrow shows the direction of
+the relative proper motion from HST (see \Eqref{eq:pm_around_HST}),
+but we omit to show the possible range of directions from HST data, since it is
+insufficiently constrained to be useful.
+
+Although the large uncertainties on the relative proper motion
+components results in a wide range of possible directions, it is clear that the most likely origin of the star is R136,
 as suggested based on numerical N-body simulations by \cite{fujii:11}
 and \cite{banerjee:12}.
 
 We can therefore consider the kinematic age for this star assuming
 that it originates from the cluster,
-\todo{lennon: use pm for kin age and not kms}
+
 \begin{equation}
   \label{eq:kin_age}
-  \tau_\mathrm{kin} = \frac{d_\parallel}{v_\parallel} \simeq
-  \frac{29\,\mathrm{pc}}{34\,\kms} \simeq 0.85\pm\,0.02\, \mathrm{Myr} \ \ ,
+  \tau_\mathrm{kin} = \frac{d_\parallel}{\delta\mu_\mathrm{RA}^\mathrm{Gaia}} \simeq
+  \frac{119.4\,\mathrm{arcsec}}{0.13\,\mathrm{mas\ yr^{-1}}} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
 \end{equation}
-where $d_\parallel =29$\,pc is the projected distance from VFTS 682 to
-the core of R136 \citep[][]{bestenlehner:11}, $v_\parallel \equiv \sqrt{\left(\delta v_\mathrm{RA}\right)^2
-  +\left(\delta v_\mathrm{DEC}\right)^2} =34\pm
-1\,\kms$ is the speed of the star relative to the cluster projected on the sky, obtained
-using the relative proper motion components calculated in
-\Secref{sec:runaway}.% , and we use the approximation $1 \kms \simeq 1
-% \mathrm{pc \ Myr^{-1}}$.
+where $d_\parallel = 119.4\,\mathrm{arcsec}$ is the angular distance from VFTS 682 to
+the core of R136 \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
 As in the rest of this study, we neglect for
-simplicity the error on the distance estimates, which amounts to about
-$\sim$$2.2\%$, and is negligible compared to other uncertainties.
+simplicity the error on the distance estimates, because it is negligible compared to other uncertainties.
 
 The kinematic age $\tau_\mathrm{kin}$ is similar or smaller than the apparent age
 of the star of $1.0\pm 0.2$\,Myr from \cite{schneider:18}, which
 corroborates the idea that the star is the result of a dynamical
-ejection. 
+ejection very soon in the cluster evolution. \todo{address Norbert comments on age determination}.
 
 \begin{figure}[tbp]
   \centering
