@@ -1,26 +1,24 @@
-\documentclass[a4paper,fleqn,usenatbib]{mnras}
-\usepackage{newtxtext,newtxmath}
-\usepackage[T1]{fontenc}
-\usepackage{ae,aecompl}
-
-
-%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
-
-% Only include extra packages if you really need them. Common packages are:
-\usepackage{graphicx}	% Including figure files
-\usepackage{amsmath}	% Advanced maths commands
-\usepackage{amssymb}	% Extra maths symbols
+\documentclass[apjl,twocolumn]{emulateapj}
+\usepackage{graphicx}
+\usepackage[varg]{txfonts}
+%\usepackage[pagebackref,breaklinks,colorlinks,citecolor=blue]{hyperref}        
 \usepackage[%draft, 
-% pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue
-]{hyperref}
+pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\renewcommand*{\backref}[1]{[#1]}  % gives neat back references in the pdf
+\usepackage{aas_macros}
+%\usepackage{amsmath} % clashes with emulateapjj for some reaons
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{url}
+\usepackage{comment}
 \usepackage{multirow}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
+%\usepackage{chngpage}
+%\usepackage{lscape}
+\usepackage{url}
 \newcommand{\todo}[1]{{\large $\blacksquare$~\textbf{\color{red}[#1]}}~$\blacksquare$}
 \newcommand{\udef}{\stackrel{\mathrm{def}}{=}}
+% for tree diagram
+%\usepackage{forest}
+%\usepackage{tikz-qtree}
+%\usetikzlibrary{shadows,trees}
 
 %Selma's comments
 \definecolor{Wildstrawberry}{rgb}{1.0, 0.26, 0.64}
@@ -44,75 +42,45 @@
 
 \interfootnotelinepenalty=10000    % brute-forces the footnote not to break over two pages
 
-% Please keep new commands to a minimum, and use \newcommand not \def to avoid
-% overwriting existing commands. Example:
-%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
 
-%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
-
-% Title of the paper, and the short title which is used in the headers.
-% Keep the title short and informative.
-\title[\emph{Gaia} DR2 adds clues for dynamical ejections of a $\sim$$150\,M_\odot$ star]{\emph{Gaia} DR2 adds clues for dynamical ejection of a $\sim$$150\,M_\odot$ star}
-
-% The list of authors, and the short list which is used in the headers.
-% If you need two or more lines of authors, add an extra line using \newauthor
-\author[Renzo et al.]{
-M.~Renzo$^{1}$\thanks{Corresponding author: M.~Renzo
-  \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}},
-S.~E.~de~Mink$^{1}$,
-D.~J.~Lennon$^{2}$,
-R.~P.~van~der~Marel$^{3,4}$,
-I.~Platais$^{4}$,
-J. Bestenlehner$^{5}$,
-V.~H\'enault-Brunet$^{6}$,
-S.~Justham$^{7,8}$,
-A.~de~Koter$^{1}$,
-N.~Langer$^{9}$,
-H.~Sana$^{10}$,
-F.~R.~Schneider$^{11}$,
-J.~S.~Vink$^{12}$ \\
-% List of institutions
-$^{1}${Astronomical Institute Anton Pannekoek, University of
-  Amsterdam, 1098 XH Amsterdam, The Netherlands} \\
-$^{2}$ {ESA, European Space Astronomy Centre, Apdo. de Correos 78,
-  E-28691 Villanueva de la Ca\~nada, Madrid, Spain} \\
-$^{3}$ {Space Telescope Science Institute, 3700 San Martin Drive,
-  Baltimore, MD 21218, USA}\\
-$^{4}$ {Center for Astrophysical Sciences, Department of Physics \& Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA}\\
-$^{5}${Department of Physics and Astronomy, Hicks Building,
-  Hounsfield Road, University of Sheffield, Sheffield S3 7RH, UK}\\
-$^{6}$ {National Research Council, Herzberg Astronomy \&
-  Astrophysics, 5071 West Saanich Road, Victoria, BC, V9E 2E7,
-  Canada}\\
-$^{7}$ {School of Astronomy \& Space Science, University of the Chinese
-  Academy of Sciences, Beijing 100012, China}\\
-$^{8}$ {National Astronomical Observatories, Chinese Academy of
-  Sciences, Beijing 100012, China}\\
-$^{9}$ {Argelander-Instit\"ut f\"ur Astronomie, Universit\"at Bonn,
-  Auf dem H\"ugel 71, 53121, Bonn, Germany}\\
-$^{10}$ {Institute of Astronomy, KU Leuven, Celestijnenlaan 200 D, B-3001 Leuven, Belgium}\\
-$^{11}$ {Department of Physics, University of Oxford, Keble Road,
-  Oxford OX1 3RH, UK} \\
-$^{12}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}
+% \title{\emph{Gaia} DR2 identifies VFTS 682 as the most massive % , dynamically
+%                                 % ejected %% to fit in one line
+% runaway star known to date}
+\title{\emph{Gaia} DR2 adds clues for dynamical ejection of
+  a $\sim$$150\,M_\odot$ star}
+\author{M.~Renzo$^{1}$, S.~E.~de~Mink$^{1}$, D.~J.~Lennon$^{2}$,
+  R.~P.~van~der~Marel$^{3,4}$,   I.~Platais$^{4}$, J. Bestenlehner$^{5}$,
+  V.~H\'enault-Brunet$^{6}$,  S.~Justham$^{7,8}$,  A.~de~Koter$^{1}$,
+  N.~Langer$^{9}$, H.~Sana$^{10}$, F.~R.~Schneider$^{11}$, J.~S.~Vink$^{12}$}
+\affil{$^{1}${Astronomical Institute Anton Pannekoek, University of
+    Amsterdam, 1098 XH Amsterdam, The Netherlands} \\
+  $^{2}$ {ESA, European Space Astronomy Centre, Apdo. de Correos 78,
+    E-28691 Villanueva de la Ca\~nada, Madrid, Spain} \\
+  $^{3}$ {Space Telescope Science Institute, 3700 San Martin Drive,
+    Baltimore, MD 21218, USA}\\
+  $^{4}$ {Center for Astrophysical Sciences, Department of Physics \& Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA}\\
+  $^{5}${Department of Physics and Astronomy, Hicks Building,
+    Hounsfield Road, University of Sheffield, Sheffield S3 7RH, UK}\\
+  $^{6}$ {National Research Council, Herzberg Astronomy \&
+    Astrophysics, 5071 West Saanich Road, Victoria, BC, V9E 2E7,
+    Canada}\\
+  $^{7}$ {School of Astronomy \& Space Science, University of the Chinese
+    Academy of Sciences, Beijing 100012, China}\\
+  $^{8}$ {National Astronomical Observatories, Chinese Academy of
+    Sciences, Beijing 100012, China}\\
+  $^{9}$ {Argelander-Instit\"ut f\"ur Astronomie, Universit\"at Bonn,
+    Auf dem H\"ugel 71, 53121, Bonn, Germany}\\
+  $^{10}$ {Institute of Astronomy, KU Leuven, Celestijnenlaan 200 D, B-3001 Leuven, Belgium}\\
+  $^{11}$ {Department of Physics, University of Oxford, Keble Road,
+    Oxford OX1 3RH, UK} \\
+  $^{12}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
 }
 
-% These dates will be filled out by the publisher
-\date{Accepted XXX. Received YYY; in original form ZZZ}
-
-% Enter the current year, for the copyright statements etc.
-\pubyear{2018}
-
-% Don't change these lines
-\begin{document}
-\label{firstpage}
-\pagerange{\pageref{firstpage}--\pageref{lastpage}}
-\maketitle
-
-% Abstract of the paper
+ \thanks{Corresponding author:  M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
+\date{}
 \begin{abstract}
-
   The formation and fates of the most massive stars remain among the most elusive questions in stellar astrophysics. 
   % 
   Previous spectroscopic studies identified VFTS 682 as one of the most
@@ -132,17 +100,13 @@ $^{12}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}
   % 
   If confirmed by future astrometric data, this would make VFTS 682
   the most massive runaway star known to date. It would prove that star clusters are capable of ejecting their most massive members. We discuss the implications for the existence of stars with masses well above $100\Msun$ inside the cluster, the internal dynamics in dense star clusters and the final fate of this object. 
+
 \end{abstract}
 
-% Select between one and six entries from the list of approved keywords.
-% Don't make up new ones.
-\begin{keywords}
-  stars: kinematics, stars: runaways, stars: individual: VFTS 682
-\end{keywords}
+\keywords{stars: kinematics, stars: runaways, stars: individual: VFTS 682}
+\maketitle{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+\todo{trim ~1085 words}
 
 \section{Introduction}
 \label{sec:intro}
@@ -374,10 +338,10 @@ measured by the VFTS survey we obtain a three-dimensional velocity of
   \begin{center}
     \caption{Astrometric parameters for VFTS 682. }
     \begin{tabular}{l|c|c}
-      \hline
-      \hline
+      \tableline
+      \tableline
       Parameter & Value & Source\\
-      \hline
+      \tableline
       RA \hfill[degree] &  \phantom{-}84.73 % $\pm$  0.03
                         & \multirow{4}{*}{\emph{Gaia} DR2}\\[5pt]
       DEC \hfill [degree] & -69.07 % $\pm$  0.05
@@ -392,10 +356,9 @@ measured by the VFTS survey we obtain a three-dimensional velocity of
       \\[5pt]
       \hline
       $\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
-      \hline
+      \tableline
     \end{tabular}
-    % \tablecomments
-    {We do not list the error on the RA and DEC positions,
+    \tablecomments{We do not list the error on the RA and DEC positions,
       which can be retrieved from the Gaia DR2 catalog and are of order
       $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$. We adopt the peculiar
       radial velocity calculated using the  NV $\lambda4944$ line, which is
@@ -531,7 +494,7 @@ the proper motion distribution, but is not a clear outlier. Most
 relevant is the direction of the proper motion of VFTS 682, which we
 discuss in \Secref{sec:r136_origin}.
 
-\begin{figure}%[htbp]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/figure_polar_682-1.pdf}
   \caption{Polar plot of the relative proper motion components for the stars
@@ -619,7 +582,7 @@ synthesize that amount of helium, and such lower limit corresponds to
 $\sim$0.9\,Myr based on the models from \cite{kohler:15}.
 % \todo{discuss position angle}
 
-\begin{figure}%[tbp]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=0.48\textwidth]{./figures/main_plot_good_gaia_only}  
   \caption{The red solid arrow indicates the proper motion of VFTS 682
@@ -628,9 +591,8 @@ $\sim$0.9\,Myr based on the models from \cite{kohler:15}.
     directions of projected motion within the \emph{Gaia} DR2 errors, and are extended
     backwards (dashed) to illustrate the uncertainty on the origin of the
     star. The length of the prolongations is proportional to the relative proper motion
-    times the kinetic age of VFTS 682. % \todo{load color picture on background? Fig with HST data
-      % available, but confusing...}
-  }
+    times the kinetic age of VFTS 682. \todo{load color picture on background? Fig with HST data
+      available, but confusing...}}
   
   \label{fig:main}
 \end{figure}
@@ -1012,7 +974,7 @@ the central cluster itself.
 {Schneider}, F.~R.~N., {Sana}, H., {Evans}, C.~J., {et~al.} 2018, Science, 359,
   69
 
-x\bibitem[{{Smith}(2016)}]{smith:16}
+\bibitem[{{Smith}(2016)}]{smith:16}
 {Smith}, N. 2016, \mnras, 461, 3353
 
 \bibitem[{{Smith} \& {Tombleson}(2015)}]{smith:15}
@@ -1040,20 +1002,25 @@ x\bibitem[{{Smith}(2016)}]{smith:16}
 {Zwicky}, F. 1957, \zap, 44, 64
 \end{thebibliography}
 
+\begin{acknowledgements}
+  \small
+  We are grateful to S.~Torres and C.~J.~Evans for 
+  very useful discussions on the
+  \emph{Gaia} DR2 dataset, and to M.~C.~Ramirez-Tannus for invaluable help.
+  SdM has received funding under the European Unions Horizon 2020 research and innovation programme from the European Research
+  Council (ERC) (Grant agreement No. 715063). VHB acknowledges support from the NRC-Canada Plaskett Fellowship.
+  This work has made use of data from the ESA space mission \emph{Gaia} (\url{http://www.cosmos.esa.int/gaia}), processed by the \emph{Gaia} Data Processing and Analysis Consortium (DPAC, \url{http://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the \emph{Gaia} Multilateral Agreement. 
+  The background image of \Figref{fig:main} is based on observations
+  made with ESO Telescopes at the La Silla Observatory under programme
+  ID 076.C-0888, processed and released by the ESO VOS/ADP group.
+  This research made use of APLpy, an open-source plotting package for Python \citep[][]{robitaille:12}.
+\end{acknowledgements}
 
-\small
-We acknowledge invaluable help from S.~Torres, M.~C.~Ramirez-Tannus,
-and C.~J.~Evans. SdM has received funding under the European Unions Horizon 2020 research and innovation programme from the European Research Council (ERC) (Grant agreement No. 715063). VHB acknowledges support from the NRC-Canada Plaskett Fellowship. This work has made use of data from the ESA space mission \emph{Gaia} (\url{http://www.cosmos.esa.int/gaia}), processed by the \emph{Gaia} Data Processing and Analysis Consortium (DPAC, \url{http://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the \emph{Gaia} Multilateral Agreement. The background image of \Figref{fig:main} is based on observations
-made with ESO Telescopes at the La Silla Observatory under programme
-ID 076.C-0888, processed and released by the ESO VOS/ADP group.
-This research made use of APLpy, an open-source plotting package for Python \citep[][]{robitaille:12}.
-
-% Don't change these lines
-\bsp	% typesetting comment
-\label{lastpage}
 \end{document}
 
-% End of mnras_template.tex
+
+
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
