@@ -22,6 +22,6 @@ auto
 comments/*
 comments
 Ex*/*
-.ipynb-checkpoints/*
+scripts/.ipynb-checkpoints/*
 VFTS682.pdf
 figures/ESO_field/*
