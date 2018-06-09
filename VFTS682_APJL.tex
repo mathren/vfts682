@@ -563,34 +563,54 @@ require confirmation with future astrometric data.
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
-Assuming that the best estimate of the peculiar velocity of VFTS682
-are reliable, we now address the question of its likely origin.
+% Assuming that the best estimate of the peculiar velocity of VFTS682
+% are reliable, we now address the question of its likely origin.
 
 Figure~\ref{fig:mu_dist} shows the distribution in proper motion relative to R136
-of OB type and Wolf-Rayet stars included both in the VFTS survey and
-\emph{Gaia DR2} with reliable astrometric solutions. VFTS682 is not an
-extreme outlier compared to the two O-type runaways (re-)identified by
-\cite{lennon:18}. VFTS682 was expected to be a ``slow runaway'' by \citet{bestenlehner:11} in
+of OB-type and Wolf-Rayet stars included both in the VFTS survey and
+\emph{Gaia DR2} with reliable astrometric solutions. The bottom panel
+shows the distribution in angles $\theta$ between the relative proper motion
+direction and the direction from the core of R136 to the star. We
+emphasize that our subset of stars with reliable proper motion
+measurements is biased towards the fast moving objects, which results in a
+distribution of angles mildly peaked at small angles.
+
+VFTS682 is not an outlier in relative proper motion%  compared
+% to the two O-type runaways (re-)identified by \cite{lennon:18} (see
+% also below)
+. However, the star was expected to be a ``slow runaway'' by \citet{bestenlehner:11} in
 the dynamical ejection scenario. The green shade in
-\Figref{fig:mu_dist} shows the range of relative proper motions within
+\Figref{fig:mu_dist} shows the range of relative proper motions
+required to reach the present day location within
 the uncertainties on the apparent age of the star, assuming it was
-ejected from R136 very early in its life. The proper motion
-measurements from \emph{Gaia} DR2 are consistent with the hypothesis
+ejected from R136 very early in its life.
+
+Because of the large
+error bars, the angle between the relative proper motion is not very
+constraining, but it is suggestive that the best value is close to zero.
+Therefore, the relative proper motion from \emph{Gaia} DR2 are consistent with the hypothesis
 of dynamical ejection.
 
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/dist_mu_region.pdf}
-  \caption{Distribution of OB-type and Wolf-Rayet stars in proper
-    motion relative to R136. VFTS682 is not an extreme outlier, but
+  \includegraphics[width=0.5\textwidth]{figures/dist_mu_region.pdf}\\
+  \includegraphics[width=0.5\textwidth]{figures/angle_dist}
+  \caption{Top panel: distribution of OB-type and Wolf-Rayet stars in proper
+    motion relative to R136. VFTS682 is not an outlier, but
     its relative proper motion matches the expected value if it were indeed
-    ejected from R136 assuming an age of $1.0\pm0.2$\,Myr. The dark blue histogram contains 317 
+    ejected from R136 assuming an age of $1.0\pm0.2$\,Myr. The top axis shows the conversion to physical units
+    assuming a distance of 50\,kpc. Bottom panel: \todo{redo with
+      errorbars} distribution of
+    angles between the relative proper motion direction and the radial
+    direction to the star. The error bars for VFTS682 are large, but
+    the best value is in agreement with the hypothesis of dynamical
+    ejection. In both
+    panels, the dark blue histograms contain 317 
     stars with error smaller than $0.1\,\mathrm{mas \
       yr^{-1}}\simeq25\,\mathrm{km\ s^{-1}}$ at 50\,kpc, the
-    lighter blue histogram contains 36 stars with errors smaller than $0.05\,\mathrm{mas \
-      yr^{-1}}$. The top axis shows the conversion to physical units
-    assuming a distance of 50\,kpc.}
+    lighter blue histograms contain 36 stars with errors smaller than $0.05\,\mathrm{mas \
+      yr^{-1}}$. }
   \label{fig:mu_dist}
 \end{figure}
 
@@ -607,11 +627,10 @@ the possible range of origins. % The yellow arrow shows the direction of
 % but we omit to show the possible range of directions from HST data, since it is
 % insufficiently constrained to be useful.
 
-Although the large uncertainties on the relative proper motion
-components results in a wide range of possible directions,we argue that the most likely origin of the star is R136.
+% Although the large uncertainties on the relative proper motion
+% components results in a wide range of possible directions,we argue that the most likely origin of the star is R136.
 
-The kinematic age of this star, assuming it originates from the
-cluster, is
+The kinematic age of this star, assuming it originates from R136, is
 
 \begin{equation}
   \label{eq:kin_age}
@@ -619,21 +638,24 @@ cluster, is
   \frac{119.4\,\mathrm{arcsec}}{0.13\,\mathrm{mas\ yr^{-1}}} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel = 119.4\,\mathrm{arcsec}$ is the angular distance from VFTS682 to
-the core of R136 \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
+the core of the cluster \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
 As in the rest of this study, we neglect for
 simplicity the error on the distance estimates, because it is negligible compared to other uncertainties.
-
 The kinematic age $\tau_\mathrm{kin}$ is compatible with a very early
 ejection from the cluster, given is apparent age
 of $1.0\pm 0.2$\,Myr \citep{schneider:18}. % , which
 % corroborates the idea that the star is the result of a dynamical
 % ejection very soon in the cluster evolution.
-Note that the
-present-day surface helium abundance
-\citep[$Y\simeq0.5$,][]{bestenlehner:11, rubio-diez:17} puts a lower
-limit on the age of the star of $\sim$0.9\,Myr, corresponding to the time needed to
-synthesize this amount of helium in the models from \cite{kohler:15}.
-% \todo{discuss position angle}
+
+% the thing below is not relevant if it is a merger, better cut out
+% for now, since we are too long anyway
+
+%Note that the
+% present-day surface helium abundance
+% \citep[$Y\simeq0.5$,][]{bestenlehner:11, rubio-diez:17} puts a lower
+% limit on the age of the star of $\sim$0.9\,Myr, corresponding to the time needed to
+% synthesize this amount of helium in the models from \cite{kohler:15}.
+
 
 \begin{figure}%[tbp]
   \centering
