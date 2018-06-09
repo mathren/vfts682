@@ -309,7 +309,9 @@ $v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
 
 \begin{table}
   \begin{center}
-    \caption{Astrometric parameters for VFTS682. }
+    \caption{Observed and derived parameters for VFTS682. We also list
+    the average proper motion components of R136 derived by
+    \cite{lennon:18} for reference.}
     \begin{tabular}{l|c|c}
       \hline
       \hline
@@ -330,6 +332,19 @@ $v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
       \hline
       $\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
       \hline
+      present day $M$ \hfill $[M_\odot]$ & $137.8^{+27.5}_
+                                           {-15.9}$ &
+                                                     \multirow{3}{*}{\cite{schneider:18}}\\
+      $M_\mathrm{ZAMS}$\hfill $[M_\odot]$ & $150.0^{+28.7}_{-17.4}$ &
+      \\
+      age \hfill [Myr] & $1.0\pm0.2$ & \\
+      \hline
+      $\langle\mu_\mathrm{RA}\rangle$\hfill[$\mathrm{mas\ yr^{-1}}$] & $1.74\pm0.01$
+                        &  \multirow{2}{*}{\cite{lennon:18}}\\[5pt]
+      $\langle\mu_\mathrm{DEC}\rangle$\hfill[$\mathrm{mas\ yr^{-1}}$]
+                & $0.70\pm0.02$ & \\
+      \hline
+
     \end{tabular}
     \tablecomments
     {The error on the RA and DEC positions, are of order
@@ -341,6 +356,42 @@ $v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
   \end{center}
   \label{tab:vfts682}
 \end{table}
+
+
+% \begin{table}
+%   \begin{center}
+%     \caption{Astrometric parameters for VFTS682. }
+%     \begin{tabular}{l|c|c}
+%       \hline
+%       \hline
+%       Parameter & Value & Source\\
+%       \hline
+%       RA \hfill[degree] &  \phantom{-}84.73 % $\pm$  0.03
+%                         & \multirow{2}{*}{\cite{evans:11}}\\[5pt]
+%       DEC \hfill [degree] & -69.07 % $\pm$  0.05
+%                         & \\[5pt]
+%       \hline
+%       $\delta\mu_\mathrm{RA}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.10$\pm$0.07 & \multirow{2}{*}{\emph{Gaia} DR2}\\[5pt]
+%       $\delta\mu_\mathrm{DEC}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.08$\pm$0.09 & \\[5pt]
+%       \hline
+%       $\delta\mu_\mathrm{RA}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.01$\pm$0.13 & \multirow{2}{*}{\cite{platais:18}}\\[5pt]
+%       $\delta\mu_\mathrm{DEC}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] &
+%                                                                         0.2$\pm$0.1 &
+%       \\[5pt]
+%       \hline
+%       $\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
+%       \hline
+%     \end{tabular}
+%     \tablecomments
+%     {The error on the RA and DEC positions, are of order
+%       $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$ in \emph{Gaia}
+%       DR2. %REPETITION: %  We adopt the peculiar
+%       % radial velocity calculated using the  NV $\lambda4944$ line, which is
+%       % less sensitive to the wind velocity structure (see also \Secref{data:vfts683}).
+%     }
+%   \end{center}
+%   \label{tab:vfts682}
+% \end{table}
 
 The second \emph{Gaia} Data Release (DR2) % , which
 % became available on 25 April 2018 and 
@@ -512,34 +563,54 @@ require confirmation with future astrometric data.
 \subsection{Does it come from the R136 cluster?}
 \label{sec:r136_origin}
 
-Assuming that the best estimate of the peculiar velocity of VFTS682
-are reliable, we now address the question of its likely origin.
+% Assuming that the best estimate of the peculiar velocity of VFTS682
+% are reliable, we now address the question of its likely origin.
 
 Figure~\ref{fig:mu_dist} shows the distribution in proper motion relative to R136
-of OB type and Wolf-Rayet stars included both in the VFTS survey and
-\emph{Gaia DR2} with reliable astrometric solutions. VFTS682 is not an
-extreme outlier compared to the two O-type runaways (re-)identified by
-\cite{lennon:18}. VFTS682 was expected to be a ``slow runaway'' by \citet{bestenlehner:11} in
+of OB-type and Wolf-Rayet stars included both in the VFTS survey and
+\emph{Gaia DR2} with reliable astrometric solutions. The bottom panel
+shows the distribution in angles $\theta$ between the relative proper motion
+direction and the direction from the core of R136 to the star. We
+emphasize that our subset of stars with reliable proper motion
+measurements is biased towards the fast moving objects, which results in a
+distribution of angles mildly peaked at small angles.
+
+VFTS682 is not an outlier in relative proper motion%  compared
+% to the two O-type runaways (re-)identified by \cite{lennon:18} (see
+% also below)
+. However, the star was expected to be a ``slow runaway'' by \citet{bestenlehner:11} in
 the dynamical ejection scenario. The green shade in
-\Figref{fig:mu_dist} shows the range of relative proper motions within
+\Figref{fig:mu_dist} shows the range of relative proper motions
+required to reach the present day location within
 the uncertainties on the apparent age of the star, assuming it was
-ejected from R136 very early in its life. The proper motion
-measurements from \emph{Gaia} DR2 are consistent with the hypothesis
+ejected from R136 very early in its life.
+
+Because of the large
+error bars, the angle between the relative proper motion is not very
+constraining, but it is suggestive that the best value is close to zero.
+Therefore, the relative proper motion from \emph{Gaia} DR2 are consistent with the hypothesis
 of dynamical ejection.
 
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/dist_mu_region.pdf}
-  \caption{Distribution of OB-type and Wolf-Rayet stars in proper
-    motion relative to R136. VFTS682 is not an extreme outlier, but
+  \includegraphics[width=0.5\textwidth]{figures/dist_mu_region.pdf}\\
+  \includegraphics[width=0.5\textwidth]{figures/angle_dist}
+  \caption{Top panel: distribution of OB-type and Wolf-Rayet stars in proper
+    motion relative to R136. VFTS682 is not an outlier, but
     its relative proper motion matches the expected value if it were indeed
-    ejected from R136 assuming an age of $1.0\pm0.2$\,Myr. The dark blue histogram contains 317 
+    ejected from R136 assuming an age of $1.0\pm0.2$\,Myr. The top axis shows the conversion to physical units
+    assuming a distance of 50\,kpc. Bottom panel: \todo{redo with
+      errorbars} distribution of
+    angles between the relative proper motion direction and the radial
+    direction to the star. The error bars for VFTS682 are large, but
+    the best value is in agreement with the hypothesis of dynamical
+    ejection. In both
+    panels, the dark blue histograms contain 317 
     stars with error smaller than $0.1\,\mathrm{mas \
       yr^{-1}}\simeq25\,\mathrm{km\ s^{-1}}$ at 50\,kpc, the
-    lighter blue histogram contains 36 stars with errors smaller than $0.05\,\mathrm{mas \
-      yr^{-1}}$. The top axis shows the conversion to physical units
-    assuming a distance of 50\,kpc.}
+    lighter blue histograms contain 36 stars with errors smaller than $0.05\,\mathrm{mas \
+      yr^{-1}}$. }
   \label{fig:mu_dist}
 \end{figure}
 
@@ -556,11 +627,10 @@ the possible range of origins. % The yellow arrow shows the direction of
 % but we omit to show the possible range of directions from HST data, since it is
 % insufficiently constrained to be useful.
 
-Although the large uncertainties on the relative proper motion
-components results in a wide range of possible directions,we argue that the most likely origin of the star is R136.
+% Although the large uncertainties on the relative proper motion
+% components results in a wide range of possible directions,we argue that the most likely origin of the star is R136.
 
-The kinematic age of this star, assuming it originates from the
-cluster, is
+The kinematic age of this star, assuming it originates from R136, is
 
 \begin{equation}
   \label{eq:kin_age}
@@ -568,21 +638,24 @@ cluster, is
   \frac{119.4\,\mathrm{arcsec}}{0.13\,\mathrm{mas\ yr^{-1}}} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel = 119.4\,\mathrm{arcsec}$ is the angular distance from VFTS682 to
-the core of R136 \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
+the core of the cluster \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
 As in the rest of this study, we neglect for
 simplicity the error on the distance estimates, because it is negligible compared to other uncertainties.
-
 The kinematic age $\tau_\mathrm{kin}$ is compatible with a very early
 ejection from the cluster, given is apparent age
 of $1.0\pm 0.2$\,Myr \citep{schneider:18}. % , which
 % corroborates the idea that the star is the result of a dynamical
 % ejection very soon in the cluster evolution.
-Note that the
-present-day surface helium abundance
-\citep[$Y\simeq0.5$,][]{bestenlehner:11, rubio-diez:17} puts a lower
-limit on the age of the star of $\sim$0.9\,Myr, corresponding to the time needed to
-synthesize this amount of helium in the models from \cite{kohler:15}.
-% \todo{discuss position angle}
+
+% the thing below is not relevant if it is a merger, better cut out
+% for now, since we are too long anyway
+
+%Note that the
+% present-day surface helium abundance
+% \citep[$Y\simeq0.5$,][]{bestenlehner:11, rubio-diez:17} puts a lower
+% limit on the age of the star of $\sim$0.9\,Myr, corresponding to the time needed to
+% synthesize this amount of helium in the models from \cite{kohler:15}.
+
 
 \begin{figure}%[tbp]
   \centering
@@ -714,6 +787,7 @@ claim that LBV stars are typically isolated form O-type stars. The fact that VFT
 ejected runaway which might evolve into an LBV star suggests that
 N-body interactions also play a role in explaining the apparent
 isolation of at least some LBV stars. 
+
 
 \citet{lennon:18} carried out a study similar to ours on the fast
 moving O-type stars
