@@ -2,9 +2,9 @@
 \usepackage{graphicx}
 \usepackage[varg]{txfonts}
 %\usepackage[pagebackref,breaklinks,colorlinks,citecolor=blue]{hyperref}        
-\usepackage[%draft, 
-pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
-\renewcommand*{\backref}[1]{[#1]}  % gives neat back references in the pdf
+\usepackage[%draft, pagebackref,
+colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+%\renewcommand*{\backref}[1]{[#1]}  % gives neat back references in the pdf
 \usepackage{aas_macros}
 %\usepackage{amsmath} % clashes with emulateapjj for some reaons
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -32,7 +32,8 @@ pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 \newcommand{\kms}{{\,\mathrm{km\ s^{-1}}}}
 \newcommand{\Msun}{{\,\mathrm{M}_\odot}}
 \newcommand{\Lsun}{{\,\mathrm{L}_\odot}}
-\newcommand{\masyr}{{\,\mathrm{mas}\,\mathrm{yr}^{-1}}}
+\newcommand{\Myr}{{\,\mathrm{Myr}}}
+\newcommand{\masyr}{\,\mathrm{mas}\,\mathrm{yr}^{-1}}
 
 
 \DeclareRobustCommand{\Eqref}[1]{Eq.~\ref{#1}}
@@ -48,54 +49,24 @@ pagebackref,colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 % \title{\emph{Gaia} DR2 identifies VFTS 682 as the most massive % , dynamically
 %                                 % ejected %% to fit in one line
 % runaway star known to date}
-\title{Gaia's constraints on the  $\sim$$150\,M_\odot$  runaway star candidate VFTS682}
+%\title{Gaia's constraints on the  $\sim$$150\,M_\odot$  runaway star candidate VFTS682}
+\title{Gaia's constraints on the extremely massive  ($\sim$$150\,M_\odot$) runaway star candidate VFTS682}
 
-\author{M.~Renzo$^{1}$, S.~E.~de~Mink$^{1}$, D.~J.~Lennon$^{2}$,
-  R.~P.~van~der~Marel$^{3,4}$, I.~Platais$^{4}$, J. Bestenlehner$^{5}$,
+\author{M.~Renzo$^{*,1}$, S.~E.~de~Mink$^{1}$, D.~J.~Lennon$^{2}$,
+  R.~P.~van~der~Marel$^{3,4}$, I.~Platais$^{4}$, 
+  J.~Bestenlehner$^{5}$, \SdM{C.~J.~Evans$^{X}$},
   V.~H\'enault-Brunet$^{6}$,  S.~Justham$^{1,7,8}$,  A.~de~Koter$^{1}$,
-  N.~Langer$^{9}$, H.~Sana$^{10}$, F.~R.~Schneider$^{11}$, J.~S.~Vink$^{12}$}
-\affil{$^{1}${Astronomical Institute Anton Pannekoek, University of
-    Amsterdam, 1098 XH Amsterdam, The Netherlands} \\
-  $^{2}$ {ESA, European Space Astronomy Centre, Apdo. de Correos 78,
-    E-28691 Villanueva de la Ca\~nada, Madrid, Spain} \\
-  $^{3}$ {Space Telescope Science Institute, 3700 San Martin Drive,
-    Baltimore, MD 21218, USA}\\
-  $^{4}$ {Center for Astrophysical Sciences, Department of Physics \& Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA}\\
-  $^{5}${Department of Physics and Astronomy, Hicks Building,
-    Hounsfield Road, University of Sheffield, Sheffield S3 7RH, UK}\\
-  $^{6}$ {National Research Council, Herzberg Astronomy \&
-    Astrophysics, 5071 West Saanich Road, Victoria, BC, V9E 2E7,
-    Canada}\\
-  $^{7}$ {School of Astronomy \& Space Science, University of the Chinese
-    Academy of Sciences, Beijing 100012, China}\\
-  $^{8}$ {National Astronomical Observatories, Chinese Academy of
-    Sciences, Beijing 100012, China}\\
-  $^{9}$ {Argelander-Instit\"ut f\"ur Astronomie, Universit\"at Bonn,
-    Auf dem H\"ugel 71, 53121, Bonn, Germany}\\
-  $^{10}$ {Institute of Astronomy, KU Leuven, Celestijnenlaan 200 D, B-3001 Leuven, Belgium}\\
-  $^{11}$ {Department of Physics, University of Oxford, Keble Road,
-    Oxford OX1 3RH, UK} \\
-  $^{12}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
-}
+  N.~Langer$^{9}$,  \SdM{F. Najarro$^{X}$}, H.~Sana$^{10}$, F.~R.~Schneider$^{11}$, J.~S.~Vink$^{12}$}
+\affil{ $^{*}$ Corresponding author.  A list of the affiliations can be found at the end of this paper.}
 
  \thanks{Corresponding author:  M.~Renzo, \href{mailto:m.renzo@uva.nl}{m.renzo@uva.nl}}
-\date{}
 \begin{abstract}
  
- How very massive stars form is still among the most intriguing open
- questions in stellar astrophysics.  VFTS 682 is among the most
- extreme massive stars known, with an inferred initial mass of about
- $150\,M_\odot$. It is located in 30 Doradus at a projected distance of 29\,pc from the central cluster R136.  The absence of other massive stars in its immediate vicinity lead to two intriguing possible hypotheses posed in earlier work. Either it formed in relative isolation through a new mode of star formation or it was ejected dynamically from the central cluster. 
+ How very massive stars form is still among the most intriguing open  questions in stellar astrophysics.  VFTS 682 is among the most  extreme massive stars known, with an inferred initial mass of about  $150\,M_\odot$. It is located in 30 Doradus at a projected distance of 29\,pc from the central cluster R136.  The absence of other massive stars in its immediate vicinity led to two intriguing hypotheses posed in earlier work: either (a) it formed in relative isolation through a new mode of star formation or (b) it was ejected dynamically from the central cluster. 
  
-Aiming to shine light on this debate, we investigate the kinematics of  VFTS 682 as obtained by \emph{Gaia} and a \emph{Hubble Space Telescope} proper motion campaign.    We derive a projected velocity relative of to the cluster of $\sim$$30\pm20\kms$.  The direction and magnitude of the proper motion are consistent with ejection from the central cluster considering its inferred age.  However, the error bars and spread in proper motions derived for other sources in the region are substantial, which makes us cautious to derive hard conclusions.   
+Aiming to shine light on this debate, we investigate the kinematics of  VFTS 682 as obtained by \emph{Gaia} and multi-epoch \emph{Hubble Space Telescope} photometry.    We derive a projected velocity relative of to the cluster of $\sim$$30\pm20\kms$.  The direction and magnitude of the proper is consistent with what is expected if VFTS 682 was ejected as a slow runaway from the central cluster, given its distance and the inferred age.  However, the error bars are substantial and the proper motion measurements alone cannot rule out the counter hypothesis with high confidence.   
  
-If future data confirms the runaway nature, this would make the VFTS682 the most massive runaway star known to date. 
-While we cannot prove this solidly from the current data, we do
-consider this hypothesis plausible. The central cluster is known to
-harbor several other stars more massive than $150\,M_\odot$ similar in
-spectral type.  Moreover, the current record holders are O type stars
-including VFTS 16 which provides direct evidence that R136 is indeed
-capable of ejecting some of its most massive members. 
+If future data confirms the runaway nature, this would make the VFTS682 the most massive runaway star known to date.  While we cannot prove this solidly from the current data alone, we do consider this hypothesis as the most plausible because of a variety of circumstantial clues. The central cluster is known to harbor several other stars more massive than $150\,M_\odot$ similar in spectral type.  The very massive O star VFTS 16, which has recently been identified as a dynamically ejected runaway, provides direct evidence that R136 is indeed capable of ejecting some of its most massive members, consistent with the predictions by numerical simulations.
 \end{abstract}
 
 \keywords{stars: kinematics, stars: runaways, stars: individual: VFTS 682}
@@ -134,7 +105,7 @@ massive stars % , a.k.a. ``monster stars'',
  in the core of the R136 cluster \citep{dekoter:97,crowther:10, crowther:16}. 
  %
  In particular, a remarkable similarity exist between the
-spectrum of VFTS682 and R136a3 for which \citet{crowther:16} report a
+spectrum of VFTS682 and R136a3 \citep{rubio-diez:17} for which \citet{crowther:16} report a
 current mass estimate of $180^{+30}_{-30}\Msun$. R136 hosts
 at least two more very massive WN5h stars, R136a1 and R136a2, whose
 estimated current masses are even higher. 
@@ -180,54 +151,94 @@ ejected from R136.
 
 \begin{table}
   \begin{center}
-    \caption{Observed and derived parameters for VFTS682. We also list
-    the average proper motion components of R136 derived by
-    \cite{lennon:18} for reference.}
-    \begin{tabular}{ll|c|c}
+    \caption{Selected stellar parameters for VFTS682. }
+    \begin{tabular}{llc|c|c}
       \hline
       \hline
-      &Parameter & Value & Source\\
+      &Parameter & Units & Value & Ref.\\
      
        \hline
-       \multicolumn{4}{l}{\emph{Stellar Parameters VFTS 682}} \\
-     & present day $M$ \hfill $[M_\odot]$ & $137.8^{+27.5}_
+       \multicolumn{5}{l}{\emph{Selected stellar parameters VFTS 682}} \\
+     & present day mass  & $[M_\odot]$ & $137.8^{+27.5}_
                                            {-15.9}$ &
-                                                     \multirow{3}{*}{\cite{schneider:18}}\\
-      &$M_\mathrm{ZAMS}$\hfill $[M_\odot]$ & $150.0^{+28.7}_{-17.4}$ &
+                                                    \\
+      & initial mass& $[M_\odot]$ & $150.0^{+28.7}_{-17.4}$ &
       \\
-      &age \hfill [Myr] & $1.0\pm0.2$ & \\[5pt]
-       \multicolumn{4}{l}{\emph{Average Proper motion in the region}} \\         &$\langle\mu_\mathrm{RA}\rangle$\hfill[$\mathrm{mas\ yr^{-1}}$] & $1.74\pm0.01$
-                        &  \multirow{2}{*}{\cite{lennon:18}}\\[5pt]
-      &$\langle\mu_\mathrm{DEC}\rangle$\hfill[$\mathrm{mas\ yr^{-1}}$]
-                & $0.70\pm0.02$ & \\
-  %    \multicolumn{4}{l}{\emph{Position}} \\
+      &age & [Myr] & $1.0\pm0.2$ & \\
+      &mass loss rate &  & $\SdM{xxx}$ & \\
+      &helium abundance &  & $\SdM{xxx}$ & \\
+      \hline
 
-    %  &RA \hfill[degree] &  \phantom{-}84.73 % $\pm$  0.03
-   %                     & \multirow{2}{*}{\cite{evans:11}}\\[5pt]
-    %  &DEC \hfill [degree] & -69.07 % $\pm$  0.05
-     %                   & \\[5pt]
-      \multicolumn{4}{l}{\emph{Relative Proper motion}} \\                 
-      &$\delta\mu_\mathrm{RA}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.10$\pm$0.07 & \multirow{2}{*}{\emph{Gaia} DR2}\\[5pt]
-      &$\delta\mu_\mathrm{DEC}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.08$\pm$0.09 & \\[5pt]
+    \end{tabular}
+    \tablecomments
+    { 
+    }
+  \end{center}
+  \label{tab:star}
+\end{table}
 
-      &$\delta\mu_\mathrm{RA}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.01$\pm$0.13 & \multirow{2}{*}{\cite{platais:18}}\\[5pt]
-      &$\delta\mu_\mathrm{DEC}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] &
-                                                                        0.2$\pm$0.1 &
-      \\[5pt]
-      \multicolumn{4}{l}{\emph{\SdM{ Motion in polar coordinates }}} \\     
-      &$\delta v_\mathrm{rad, R136}$  \hfill[$\kms$] & xxx & \cite{This Work}\\   
-       &$\theta_\mathrm{rad, R136}$  \hfill[$\kms$] & xxx & \cite{This Work}\\   
 
-  %    &$\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
+\begin{table}
+  \begin{center}
+    \caption{Kinematics of VFTS682. }
+    \begin{tabular}{llc|c|c}
+      \hline
+      \hline
+      &Parameter & Units & Value & Ref.\\
      
+       \hline
+           \multicolumn{5}{l}{\emph{Gaia's proper motion for VFTS 682 and average of the region}} \\
+          &$\mu_\mathrm{RA}$&[$\masyr$] & $1.843\pm 0.070$
+                     & (1) \\        
+               &$\mu_\mathrm{DEC}$&[$\masyr$] & $0.786\pm 0.080$
+                     &  (1) \\        
+                 & Correlation  ($\mu_\mathrm{RA}$, $\mu_\mathrm{DEC}$) &[$\masyr$] & $0.023$
+                        & (1)  \\         
+     %  \multicolumn{5}{l}{\emph{Gaia's average proper motion in the region}} \\         
+       &$\langle\mu_\mathrm{RA}\rangle_\mathrm{R136}$&[$\masyr$] & $1.74\pm0.01$
+                        & (2) \\
+      &$\langle\mu_\mathrm{DEC}\rangle_\mathrm{R136}$&[$\masyr$]
+                & $0.70\pm0.02$ &  (2)\\
+\hline
+      
+                
+  %    \multicolumn{5}{l}{\emph{Position}} \\
+
+    %  &RA &[degree] &  \phantom{-}84.73 % $\pm$  0.03
+   %                     & \multirow{2}{*}{\cite{evans:11}}\\[5pt]
+    %  &DEC & [degree] & -69.07 % $\pm$  0.05
+     %                   & \\[5pt]
+      \multicolumn{5}{l}{\emph{Gaia's relative proper motion for VFTS 682 }} \\                 
+      &$\delta\mu_\mathrm{RA}$  &[$\masyr$] & 0.10$\pm$0.07 & (1,4) \\
+      &$\delta\mu_\mathrm{DEC}$  &[$\masyr$] & 0.08$\pm$0.09 &  (1,4) \\
+      &$\delta\mu_\mathrm{}$  &[$\masyr$] & \SdM{xxx}$\pm$\SdM{xxx} &  (1,4) \\
+                 &$v_\mathrm{2d}$  &[$\kms$] & \SdM{xxx}$\pm$\SdM{xxx} & (1,4)\\  
+ \hline     
+          \multicolumn{5}{l}{\emph{HST's independent determination of the relative proper motion for VFTS 682}} \\  
+      &$\delta\mu_\mathrm{RA, HST}$  &[$\masyr$] & 0.01$\pm$0.13 & (3) \\
+      &$\delta\mu_\mathrm{DEC, HST}$  &[$\masyr$] & 0.2$\pm$0.1 &  (3) \\
+       &$\delta\mu_\mathrm{HST}$  &[$\masyr$] & 0.20$\pm$0.15 &  (3) \\
+                  &$v_\mathrm{2d, HST}$  &[$\kms$] & \SdM{$47\pm24$}\footnote{\SdM{This can't be right, the error bar is suddenly smaller than in the mas units!}} & (3)\\  
+\hline
+      \multicolumn{5}{l}{\emph{ Direction and magnitude w.r.t the vector pointing away from R136}} \\     
+       &$\theta^{*}$  &[degrees] &  \SdM{xxx}$\pm$\SdM{xxx}  & (1,4)\\  
+        &$v_\mathrm{2d, \parallel}$  &[$\kms$] & \SdM{xxx}$\pm$\SdM{xxx} & (1,4)\\  
+ %          &$v_\mathrm{2d}$  &[$\kms$] & \SdM{xxx}$\pm$\SdM{xxx} & (1,4)\\   
+     
+\hline
+  %    &$\delta v_\mathrm{rad}$  &[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
+
 
       \hline
 
     \end{tabular}
     \tablecomments
-    {The error on the RA and DEC positions, are of order
-      $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$ in \emph{Gaia}
-      DR2. %REPETITION: %  We adopt the peculiar
+    { Proper motions are based on Gaia data unless indicated otherwise in subscript. The angle $\theta$ is defined such that $\theta=0$ corresponds to the direction pointing away from R136.
+    $^1$\cite{Gaia-Collaboration+2018}, 
+    $^2$\cite{lennon:18}, 
+    $^3$\cite{platais:18},  
+    $^4${\color{blue}This work}
+    %The error on the RA and DEC positions, are of order $\sim$$10^{-2}\masyr$ in \emph{Gaia} DR2. %REPETITION: %  We adopt the peculiar
       % radial velocity calculated using the  NV $\lambda4944$ line, which is
       % less sensitive to the wind velocity structure (see also \Secref{data:vfts683}).
     }
@@ -258,78 +269,43 @@ ejected from R136.
   \label{fig:mu_dist}
 \end{figure*}
 
-\subsection{ Overview of VFTS682 from previous studies \label{data:vfts683}}
+%\subsection{ Overview of VFTS682 from previous studies \label{data:vfts683}}
 
-The star VFTS682, located at right ascension (RA)
+The star WNh5 star VFTS682, located at right ascension (RA)
 05$^\mathrm{h}$38$^\mathrm{m}$55.510$^\mathrm{s}$  and declination
-(DEC) \mbox{-69$^\mathrm{o}$04'26.72''} J2000 \citep[][% see also
-% \Tabref{tab:vfts682} for the coordinates from \emph{Gaia} DR2
-]{evans:11}
-was originally classified as a young stellar object based on its
-mid-infrared excess \citep{gruendl:09}. \citet{evans:11} reclassified the
-object as Wolf-Rayet star of spectral type WNh5 using multi-epoch
-spectra covering $\lambda$4000--7000 from the
-VFTS survey. % The spectra available covered $\lambda$4000--7000 and
+(DEC) \mbox{-69$^\mathrm{o}$04'26.72''} J2000, was observed as part of the multi-epoch, spectroscopic VFTS campaign covering $\lambda$4000--7000 \citep[][]{evans:11}. 
+%
+%of spectral type WNh5 using multi-epoch spectra covering $\lambda$4000--7000 from the
+%VFTS survey. % The spectra available covered $\lambda$4000--7000 and
 % were taken at multiple epochs.
+%
+\citet{bestenlehner:11}  analyzed the spectra to infer the stellar parameters and measure an extinction of $A_V=4.45\pm0.12$, implying a luminosity of $\log_{10}(L/L_\odot) =  6.5\pm0.2$, making this one of the brightest stars in the region. The star is unlikely to have a close companion, because of the absence of clear radial velocity variations \citet{bestenlehner:11}.  Bayesian fits of the stellar parameters against evolutionary tracks \citep{brott:11, kohler:15} using the Bonsaii code \citep{schneider:17, schneider:18} provide estimates for the age, present mass and initial mass, indicating that this star among the most massive stars known, see Tab~ \label{tab:vfts682} for an overview of the parameters.
 
-Using the same dataset,
-\citet{bestenlehner:11} excluded the presence of a close companion
-with high confidence from the absence of radial velocity variations.
-\citet{bestenlehner:11} % further analyzed the spectra % using the non-LTE
-% % model atmosphere code CMFGEN \citep{hillier:98}
-also derived stellar
-parameters and surface abundances. They inferred an extinction
-of $A_V=4.45\pm0.12$, leading to the high luminosity
-$\log_{10}(L/L_\odot) =  6.5\pm0.2$. \citet{schneider:18} estimated
-a present-day mass for VFTS682 of $137.8^{+27.5}_ {-15.9}\Msun$, an
-apparent age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial mass
-of $150.0^{+28.7}_{-17.4}\Msun$.% , using the Bayesian analysis tool BONNSAI
-% \citep{schneider:17}, based on the evolutionary models from
-% \citet{brott:11} and \cite{kohler:15}.
-% These values place VFTS682 around the
-% ``canonical upper limit'' of $\sim$$150\Msun$ by \citet{figer:05}.
+Estimates of the radial velocity are complicated by the variable, optically thick winds that is typical for emission line stars. \citet{bestenlehner:11} estimate a mass loss rate of $10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, not accounting for the possible effect of clumping.  The V-band light curve of VFTS682  shows variations at a $\sim$10\% level on a timescale of years, which is unusual for Wolf-Rayet stars and more typical for Luminous Blue Variable (LBV) stars \citep{udalski:08, bestenlehner:11}. It also shows mid-infrared excess \citep{gruendl:09}.  We therefore caution for over-interpreting the estimates for the radial velocities, but we will summarize the estimates that have been published.  \citet{bestenlehner:11}  estimate a radial velocity (RV) of  $300\pm10\kms$ using the  N{\footnotesize V} $\lambda4944$ line, which is offset from the average radial velocity of the region, which is  $270\pm10\kms$. This is consistent with, but no proof of, a runaway nature.  \cite{bressert:12} note an offset compared between the RV of the star and the nebular lines from the gas filaments in its vicinity. This is consistent with, but also no proof of, the expectation if the star was not formed in situ.  Newer measurements based on new Xshooter data give different estimates for the RV ({\color{blue} Rubio-D{\' i}ez et al. in prep}). We will therefore refrain from using the RV measurements in this work. 
 
-\citet{bestenlehner:11} reported for VFTS682 a wind mass loss rate of
-$10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, % inferred from
-% spectral analysis assuming a smooth outflow, i.e.,
-not accounting for
-clumping. The present-day surface helium mass
-fraction is $Y=0.45\, (0.49)$ from the spectral analysis of
-\cite{bestenlehner:11} (\citealt{rubio-diez:17}). This value can be
-used to constrain the age of the star and its past evolution.
-
-% The star is very similar from the spectral point of view to R136a3, located inside the star cluster
-% R136 \citep{crowther:10}  for which \citet{crowther:16} report a
-% current mass estimate of $180^{+30}_{-30}\Msun$. The R136 cluster hosts
-% at least two more very massive WN5h stars, R136a1 and R136a2, whose
-% estimated current masses are even higher. However, VFTS682 stands
-% out by its isolation at a projected offset of 29\,pc from the center
-% of the cluster \citep{bestenlehner:11}. 
-
-Further worth noticing is the variability of the
-star. \citet{parker:93} reported B and V magnitudes roughly 0.5\,magnitude
-lower than found by \citet{evans:11}.
-\citet{bestenlehner:11} discuss the Optical Gravitational Lensing
-Experiment (OGLE-III) light curves \citep{udalski:08} and show a
-variability in the V-band at $\sim$10\% level on a timescale of years.
-They commented that this is unusual for Wolf-Rayet stars and more reminiscent
-of Luminous Blue Variable (LBV) stars. % \citep[e.g.,][]{langer:94}. 
-
-\cite{bressert:12} note that VFTS682 shows a significant radial
-velocity offset compared to the nebular lines from the gas surrounding
-it, suggesting peculiar motion in the line of sight direction.
-\citet{bestenlehner:11} quote a radial velocity measured from the
-N{\footnotesize V} $\lambda4944$ of   $300\pm10\kms$. The average radial velocity of the 30 Doradus region is 
-$270\pm10\kms$. Whether this measurement truly reflects a peculiar radial velocity is debated. The determination of radial velocities for emission-lines stars is difficult because of the presence of an optically thick, non-homogeneous, and variable wind obscuring the photosphere. The radial velocity errors quoted above are only statistical, and do not quantify the (possibly larger)
-systematic errors.  \todo{Possibly mention and cite paper in prep by Paco and student on Xshooter data?  Possibly mention (or even use) on their measurement for the RV?}
+%of $137.8^{+27.5}_ {-15.9}\Msun$, an apparent age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial mass of $150.0^{+28.7}_{-17.4}\Msun$.  Further parameters of are summarized in Table~\ref{X}.
 
 
-For simplicity, throughout this study, we assume the same
-distance of $50$\,kpc to the star \citep[][]{pietrzynski:13}, and to
-the 30 Doradus region as a whole. We do not consider the error on
-the distance determination ($\lesssim2\%$) when converting proper motions into
-physical velocities.
-%We implicitly assume that the use of a slightly different reference frame for $\delta v_\mathrm{rad}$ does not introduce significant errors. 
+%% Radial Velocity: 
+
+The distance to 30 Doradus is $50$\,kpc  \citep[][]{pietrzynski:13}. The error on the distance determination is small ($\lesssim2\%$) and the possible difference between VFTS682 and the average of the region is probably even smaller (likely $\ll 1\%$). These uncertainties are negligible compared to the errors in the proper motion discussed below.  
+
+%\citet{parker:93} reported B and V magnitudes roughly 0.5\,magnitude lower than found by \citet{evans:11}.  - Citing OGLE is enough
+
+%\SdM{\citet{bestenlehner:11} further report a wind mass loss rate of $10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, without correcting for the possible effect of clumping.  The helium surface  abundance is  $Y=0.45\, (0.49)$ \cite{bestenlehner:11} (\citealt{rubio-diez:17}).  IN TABLE ONLY TO SAFE SPACE}
+
+
+\subsection{ \emph{Gaia} astrometry for VFTS682\label{data:gaia}}
+
+
+%\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}}
+
+VFTS682 is identified with the source id 4657685637907503744 in the \emph{Gaia} DR2 catalog  as a 15.65 mag star in the G band \citep{Gaia-Collaboration+2016a, Gaia-Collaboration+2018}.   The number of visibility periods, i.e. groups of observations separated from other groups by a gap of at least 4 days, used in the astrometric solution is 17 for this star. The reported astrometric excess noise is zero. \citep[][]{lindengren:18}.  These values suggest that the \emph{Gaia} DR2  data for VFTS682 are reliable. Generally the Gaia errors are correlated, but the correlation coefficient is small for this star, see Tab.~\ref{tab:vfts682}. We can therefore treat the proper motion components as uncorrelated.
+
+To determine the relative proper motion with respect to R136, we follow  \citet{lennon:18} to define the motion of the local frame of reference using the average proper motion of nearby stars with reliable astrometric data.  They select  bright ($G<17$) stars within 0.05 degrees of R136 with and exclude sources with proper motion errors greater than $0.01\masyr$ in both co-ordinates (see their  Sect.~2.1 for further discussion).  
+
+With these we compute the relative proper motion $\delta\mu_\mathrm{RA}$ and $\delta\mu_\mathrm{DEC}$.  We also derive the angle $\theta$ between the direction of motion and the vector connecting the center of R136 with the current position of VFTS 682,  i.e. such that $\theta = 0$ is the angle expected for a star ejected from R136.    We further provide the 2D velocity projected onto the radial vector pointing away from R136 $v_\mathrm{2d, \parallel}$  and the total projected 2d velocity $v_\mathrm{2d}$.   All kinematic quantities are provided in Tab.~\ref{tab:vfts682}.
+
 
 \subsection{HST astrometry for VFTS682}
 % observations; the first epoch (GO-12499; P.I.: D.~J.~Lennon)
@@ -339,28 +315,34 @@ physical velocities.
 % orientation of the first epoch as exactly as possible so
 % that the displacement measurements could be purely differential.
 
+%For large distances ($\gtrsim50$\,kpc), HST astrometry can compete or even exceed \emph{Gaia} DR2 data in quality. \SdM{Mathieu: do you have a ref for this?}
 
-For large distances ($\gtrsim50$\,kpc), HST astrometry can compete or even exceed \emph{Gaia} DR2 data in quality.
-
-Recently, \citet{platais:18} presented HST astrometry and proper
-motions in the 30 Doradus region (GO-12499; P.I.: D.~J.~Lennon). The
-brightest stars (V$<$14) are missing from the catalogue because of
-saturation, but the high extinction towards VFTS682 makes is faint
-enough to be included. % in this catalogue.
-The  proper motions are
-listed in \Tabref{tab:vfts682}. 
+The 30 doradus region was target of an a two-epoch photometric campaign with \emph{HST} providing observations in the F775W filter in October 2011 and October 2014 (GO-12499; P.I.: D.~J.~Lennon, \citealt{Sabbi+2013}). Visually, the star is clearly isolated and does not appear to have any close neighbor. This by itself gives further confidence in ability of \emph{Gaia} to measure the proper motion reliably without being affected by crowding. 
 
 
-The catalog from \citet{platais:18} lists the proper motion
-components of VFTS682 relative to the field, providing a
-measure of the motion of this star completely independent from
-\emph{Gaia}. They found proper
-motion components relative to the field
-$\delta\mu_\mathrm{RA}^\mathrm{HST} = 0.01\pm0.13\,\mathrm{mas\
-  yr^{-1}}$ and
-$\delta\mu_\mathrm{DEC}^\mathrm{HST}=0.2\pm0.1\,\mathrm{mas\
-  yr^{-1}}$, which added in quadrature give a relative proper motion of
-$\delta \mu^{HST} =0.20 \pm 0.15\,\mathrm{mas\ yr^{-1}}$.
+ \citet{platais:18} recently analyzed the HST data for candidate runaway stars. The brightest stars (V$<$14) are missing from the catalogue because of saturation effects, but the high extinction towards VFTS682 makes it faint enough to be included.
+ Our star did not make the more conservative selection criteria for runaway stars adopted in that study. However, the measurements are useful here, since they provides a measurement of the proper motion of VFTS 682 that is completely independent from the \emph{Gaia} measurement. 
+ 
+We list their data in \Tabref{tab:vfts682}.  The errorbars are larger than we obtain from \emph{Gaia}, but the values are consistent. \SdM{Actually they are not consistent with values found in one of Danny's emails. What is going on here?} 
+
+%ID     /HST relative mu_x/HST relative mu_y/HST error_mu_x/HST error_my_y/  HST F775W mag/Gaia B-mag?/Gaia relative mu_x/  Gaia relative mu_y/Gaia error_pmRA/Gaia error_pmDec
+
+%682  -0.02   0.19 0.10 0.09 15.175 15.656   0.133   0.166 0.070   0.080
+
+
+
+
+
+
+%The catalog from \citet{platais:18} lists the proper motion components of VFTS682 relative to the field, providing a
+%measure of the motion of this star completely independent from
+%\emph{Gaia}. They found proper
+%motion components relative to the field
+%$\delta\mu_\mathrm{RA}^\mathrm{HST} = 0.01\pm0.13\,\mathrm{mas\
+%  yr^{-1}}$ and
+%$\delta\mu_\mathrm{DEC}^\mathrm{HST}=0.2\pm0.1\,\mathrm{mas\
+%  yr^{-1}}$, which added in quadrature give a relative proper motion of
+%$\delta \mu^{HST} =0.20 \pm 0.15\masyr$.
 % \begin{equation}
 %   \label{eq:pm_around_HST}
 %   \delta \mu^{HST} = \sqrt{\left(\delta\mu_\mathrm{RA}^{HST}\right)^2+\left(\delta\mu_\mathrm{DEC}^{HST}\right)^2}
@@ -368,15 +350,15 @@ $\delta \mu^{HST} =0.20 \pm 0.15\,\mathrm{mas\ yr^{-1}}$.
 %   yr^{-1}} \ \ .
 % \end{equation}
 
-These proper motion components can also be converted into projected
-velocities assuming a distance of 50\,kpc, obtaining $\delta
-v_\mathrm{RA}^{HST}=2\pm31\kms$ and $\delta
-v_\mathrm{RA}^{HST}=47\pm24\kms$% , corresponding to a two-dimensional
-% projected velocity of $47\pm24\kms$
-.
-Adding them in quadrature to the radial velocity
-measured by \citet{bestenlehner:11} we obtain a three-dimensional velocity of
-$v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
+%These proper motion components can also be converted into projected
+%velocities assuming a distance of 50\,kpc, obtaining $\delta
+%v_\mathrm{RA}^{HST}=2\pm31\kms$ and $\delta
+%v_\mathrm{RA}^{HST}=47\pm24\kms$% , corresponding to a two-dimensional
+%% projected velocity of $47\pm24\kms$
+%.
+%Adding them in quadrature to the radial velocity
+%measured by \citet{bestenlehner:11} we obtain a three-dimensional velocity of
+%$v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
 % \begin{equation}
 %   \label{eq:speed_around_HST}
 %   v_\mathrm{pec}^{HST} = \sqrt{\left(\delta v_\mathrm{RA}^{HST}\right)^2
@@ -384,123 +366,6 @@ $v_\mathrm{pec}^{HST}=56 \pm 23  \kms$.
 %       v_\mathrm{rad}^{VFTS}\right)^2} = 56 \pm 23
 %   \kms \ .
 % \end{equation}
-
-
-\subsection{New data from \emph{Gaia} DR2  \label{data:gaia}}
-
-
-
-
-% \begin{table}
-%   \begin{center}
-%     \caption{Astrometric parameters for VFTS682. }
-%     \begin{tabular}{l|c|c}
-%       \hline
-%       \hline
-%       Parameter & Value & Source\\
-%       \hline
-%       RA \hfill[degree] &  \phantom{-}84.73 % $\pm$  0.03
-%                         & \multirow{2}{*}{\cite{evans:11}}\\[5pt]
-%       DEC \hfill [degree] & -69.07 % $\pm$  0.05
-%                         & \\[5pt]
-%       \hline
-%       $\delta\mu_\mathrm{RA}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.10$\pm$0.07 & \multirow{2}{*}{\emph{Gaia} DR2}\\[5pt]
-%       $\delta\mu_\mathrm{DEC}^{Gaia}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.08$\pm$0.09 & \\[5pt]
-%       \hline
-%       $\delta\mu_\mathrm{RA}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] & 0.01$\pm$0.13 & \multirow{2}{*}{\cite{platais:18}}\\[5pt]
-%       $\delta\mu_\mathrm{DEC}^{HST}$  \hfill[$\mathrm{mas\ yr^{-1}}$] &
-%                                                                         0.2$\pm$0.1 &
-%       \\[5pt]
-%       \hline
-%       $\delta v_\mathrm{rad}$  \hfill[$\kms$] & 30$\pm$20 & \cite{bestenlehner:11}\\
-%       \hline
-%     \end{tabular}
-%     \tablecomments
-%     {The error on the RA and DEC positions, are of order
-%       $\sim$$10^{-2}\,\mathrm{mas\ yr^{-1}}$ in \emph{Gaia}
-%       DR2. %REPETITION: %  We adopt the peculiar
-%       % radial velocity calculated using the  NV $\lambda4944$ line, which is
-%       % less sensitive to the wind velocity structure (see also \Secref{data:vfts683}).
-%     }
-%   \end{center}
-%   \label{tab:vfts682}
-% \end{table}
-
-The second \emph{Gaia} Data Release (DR2) % , which
-% became available on 25 April 2018 and 
-provides positions,
-parallaxes, and proper motion components for more than a billion
-sources \citep{brown:18}. VFTS682 is identified with the source id 4657685637907503744 in the \emph{Gaia} DR2
-catalog\footnote{\url{https://vizier.u-strasbg.fr/viz-bin/VizieR-3?-source=I/345/gaia2}}. Its
-G-band magnitude from \emph{Gaia}
-% reports a G-band magnitude of
-is 15.65. The star has a
-\texttt{visibility\_period} = 17, which counts how many observations have
-been used to reconstruct its astrometric solution
-\citep[][]{lindengren:18}, and the reported
-\texttt{astrometric\_excess\_noise} = 0. These values suggest that the \emph{Gaia}
-data for VFTS682 are reliable. % However, the effective temperature
-% reported in \emph{Gaia} DR2, based on the spectral fitting around the
-% CaII triplet, is one order of magnitude lower than what found by
-% \cite{bestenlehner:11}, and the best fit parallax of this star is
-% negative \citep[see, e.g.,][]{hogg:18}. We do not use the effective temperature of the star anywhere
-% in this study, and we attribute the unphysical value of the parallax
-% to the large distance to the LMC.
-% Our main findings do not rely on the
-% parallax nor the effective temperature values reported in the \emph{Gaia} DR2
-% catalog.
-
-While \emph{Gaia} DR2 data can be correlated, this is
-not an issue for VFTS682, and we treat the proper motion components ($\mu_\mathrm{RA}$, and $\mu_\mathrm{DEC}$,
-respectively) of the star as uncorrelated for simplicity.
-For the radial velocity of VFTS682 and of the 30 Doradus
-region as a whole, we instead use the VFTS data
-as quoted in \cite{bestenlehner:11}. \Tabref{tab:vfts682} lists the values adopted throughout
-this work for each of these quantities.
-
-We follow \citet{lennon:18} to define a local frame of reference and derive the peculiar velocity
-of VFTS682 with respect to the cluster R136. Their selection (see
-their Sec.~2.1) of 153
-bright ($G<17$) stars around R136 with reliable astrometric data from
-\emph{Gaia} DR2 yields $\langle\mu_\mathrm{RA}\rangle=1.74\pm0.01\,\mathrm{mas\
-  yr^{-1}}$ and $\langle\mu_\mathrm{DEC}\rangle=0.70\pm0.02\,\mathrm{mas\ yr^{-1}}$
-for the components of the mean motion of the region projected on the sky.
-
-% We define a local standard frame of reference to derive the peculiar velocity
-% of VFTS682 with respect to the cluster R136 by selecting from the \emph{Gaia} DR2 catalog following closely the approach of \cite{vandermarel:02,lennon:18}.
-% We select all the stars in a target of 0.05 degrees around R136
-% (NGC2070) fulfilling the following criteria. First, we require a G-band
-% magnitude brighter than 17, corresponding roughly to the
-% completeness level of the VFTS survey \citep[here we implicitly assume
-% G$\sim$V,][]{evans:11}. Then we require \texttt{visibility\_period} $\geq$ 5,
-% \texttt{astrometric\_excess\_noise} $< 1$, and the errors on the proper
-% motion components to be smaller than 0.07\,$\mathrm{mas\
-% yr^{-1}}$. At the distance to the LMC, $0.1\mathrm{mas\
-% yr^{-1}}\simeq25\,\kms$ \citep[e.g.,][]{platais:18}. We
-% remove obvious foreground stars by requiring the absolute value of
-% the reported parallaxes smaller than $0.1\,\mathrm{mas\ yr^{-1}}$.
-% At the distance to the
-% LMC, $1\mathrm{mas\ yr^{-1}}\simeq250\,\kms$ \citep[e.g.,][]{lennon:18}, so the cut on the values
-% of the proper motions removes stars that would have projected
-% tangential velocities in excess of $\sim$500\,$\kms$, which are most
-% likely to be foreground stars. We checked that the additional
-% requirement of having parallaxes smaller than $2\,\mathrm{mas}$ does
-% not reduces further our sample.
-% This selection yields a sample of 66 stars.% ,
-
-% We calculate the averaged proper motion components for the whole
-% region using 
-% \begin{equation}
-%   \label{eq:mean}
-%   \langle \mu_i\rangle = \frac{\sum_\mathrm{stars}\frac{1}{\Delta
-%   \mu_i^2}\mu_i}{\sum_\mathrm{stars} \frac{1}{\Delta \mu_i^2}} \ \ , \
-%   \ \Delta \langle \mu_i\rangle = \frac{\sqrt{N}}{\sum_\mathrm{stars}
-%   \frac{1}{\Delta \mu_i^2}} \ \ ,
-% \end{equation}
-% where $i = \mathrm{RA}, \mathrm{DEC}$, and $\Delta \mu_i$ is the error
-% on the proper motion component reported by \emph{Gaia}. The sums run over
-% all the $N=66$ stars in our selected sample. We evaluate each proper motion
-% component separately.
 
 
 
@@ -517,7 +382,7 @@ be expected if it formed in the relative isolation that we observe today.% , in 
 
 % Using the stars selected as described in \Secref{data:gaia} (a
 % subset is shown in blue in \Figref{fig:main}), we find averaged proper motion components of
-% $\langle\mu_\mathrm{RA}\rangle = 1.7240\pm0.0002\,\mathrm{mas\ yr^{-1}}$ and
+% $\langle\mu_\mathrm{RA}\rangle = 1.7240\pm0.0002\masyr$ and
 % $\langle\mu_\mathrm{DEC}\rangle = 0.6986\pm0.0003\,\mathrm{mas\
 % yr^{-1}}$. These values are
 % in good agreement with what is found by \cite{lennon:18}. However, we
@@ -527,9 +392,9 @@ Subtracting the mean proper motion components given by
 \citet{lennon:18} from the
 proper motion of VFTS682 (see \Tabref{tab:vfts682}), we obtain the
 components of proper motion of the star relative to the surrounding region
-$\delta\mu_\mathrm{RA}^{Gaia} = 0.10 \pm 0.07\,\mathrm{mas\ yr^{-1}}$
+$\delta\mu_\mathrm{RA}^{Gaia} = 0.10 \pm 0.07\masyr$
 and $\delta\mu_\mathrm{DEC}^{Gaia} = 0.08
-\pm 0.09\,\mathrm{mas\ yr^{-1}}$. These components result in a
+\pm 0.09\masyr$. These components result in a
 two-dimensional relative proper motion of $\delta \mu^{Gaia}=0.13\pm 0.09\,\mathrm{mas\
   yr^{-1}}$.
 
@@ -556,7 +421,7 @@ two-dimensional relative proper motion of $\delta \mu^{Gaia}=0.13\pm 0.09\,\math
 %   \caption{Polar plot of the relative proper motion components for the stars
 %     defining our reference frame. VFTS682 is indicated by the plus sign, and
 %     other notable outliers \citep[see][]{lennon:18} are also labeled. Concentric dashed-lines denote relative proper motions of
-%     0.1, 0.2, and 0.4$\,\mathrm{mas\ yr^{-1}}$. Positive angle
+%     0.1, 0.2, and 0.4$\masyr$. Positive angle
 %     indicate a tangential component pointing in the counterclockwise
 %     direction, with 0 degrees corresponding to proper motion pointing
 %     radially outward from R136. The proper motion for VFTS682
@@ -649,7 +514,7 @@ The kinematic age of this star, assuming it originates from R136, is
 \begin{equation}
   \label{eq:kin_age}
   \tau_\mathrm{kin} = \frac{d_\parallel}{\delta\mu^\mathrm{Gaia}} \simeq
-  \frac{119.4\,\mathrm{arcsec}}{0.13\,\mathrm{mas\ yr^{-1}}} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
+  \frac{119.4\,\mathrm{arcsec}}{0.13\masyr} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel = 119.4\,\mathrm{arcsec}$ is the angular distance from VFTS682 to
 the core of the cluster \citep[corresponding to $\sim$29\,pc at LMC distance,][]{bestenlehner:11}.
@@ -841,329 +706,364 @@ the central cluster itself.
 
 
 
-% \bibliographystyle{aa}
-% \bibliography{bibliography/vfts682}
-\begin{thebibliography}{}
-\makeatletter
-\relax
-\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
-\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
-  {\mn@doi@[]}}
-\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
-  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
-  \endgroup}
-\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
-\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
-\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
-  {dblp:#1}}
-\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
-  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
-  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
-  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
-  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+ \bibliographystyle{apj}
+ \bibliography{bibliography/vfts682,my_bib}
 
-\bibitem[\protect\citeauthoryear{{Banerjee}, {Kroupa}  \& {Oh}}{{Banerjee}
-  et~al.}{2012}]{banerjee:12}
-{Banerjee} S.,  {Kroupa} P.,   {Oh} S.,  2012, \mn@doi [\apj]
-  {10.1088/0004-637X/746/1/15}, \href
-  {http://adsabs.harvard.edu/abs/2012ApJ...746...15B} {746, 15}
+%\begin{thebibliography}{}
+%\makeatletter
+%\relax
+%\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+%\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+%  {\mn@doi@[]}}
+%\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+%  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+%  \endgroup}
+%\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+%\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+%\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+%  {dblp:#1}}
+%\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+%  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+%  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+%  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+%  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+%
+%\bibitem[\protect\citeauthoryear{{Banerjee}, {Kroupa}  \& {Oh}}{{Banerjee}
+%  et~al.}{2012}]{banerjee:12}
+%{Banerjee} S.,  {Kroupa} P.,   {Oh} S.,  2012, \mn@doi [\apj]
+%  {10.1088/0004-637X/746/1/15}, \href
+%  {http://adsabs.harvard.edu/abs/2012ApJ...746...15B} {746, 15}
+%
+%\bibitem[\protect\citeauthoryear{{Bate}}{{Bate}}{2009}]{bate:09}
+%{Bate} M.~R.,  2009, \mn@doi [\mnras] {10.1111/j.1365-2966.2008.14106.x}, \href
+%  {http://adsabs.harvard.edu/abs/2009MNRAS.392..590B} {392, 590}
+%
+%\bibitem[\protect\citeauthoryear{{Bestenlehner} et~al.,}{{Bestenlehner}
+%  et~al.}{2011}]{bestenlehner:11}
+%{Bestenlehner} J.~M.,  et~al., 2011, \mn@doi [\aap]
+%  {10.1051/0004-6361/201117043}, \href
+%  {http://adsabs.harvard.edu/abs/2011A\%26A...530L..14B} {530, L14}
+%
+%\bibitem[\protect\citeauthoryear{{Blaauw}}{{Blaauw}}{1961}]{blaauw:61}
+%{Blaauw} A.,  1961, \bain, \href
+%  {http://adsabs.harvard.edu/abs/1961BAN....15..265B} {15, 265}
+%
+%\bibitem[\protect\citeauthoryear{{Bressert} et~al.,}{{Bressert}
+%  et~al.}{2012}]{bressert:12}
+%{Bressert} E.,  et~al., 2012, \mn@doi [\aap] {10.1051/0004-6361/201117247},
+%  \href {http://adsabs.harvard.edu/abs/2012A\%26A...542A..49B} {542, A49}
+%
+%\bibitem[\protect\citeauthoryear{{Brott} et~al.,}{{Brott}
+%  et~al.}{2011}]{brott:11}
+%{Brott} I.,  et~al., 2011, \mn@doi [\aap] {10.1051/0004-6361/201016113}, \href
+%  {http://adsabs.harvard.edu/abs/2011A\%26A...530A.115B} {530, A115}
+%
+%\bibitem[\protect\citeauthoryear{{Crowther}, {Schnurr}, {Hirschi}, {Yusof},
+%  {Parker}, {Goodwin}  \& {Kassim}}{{Crowther} et~al.}{2010}]{crowther:10}
+%{Crowther} P.~A.,  {Schnurr} O.,  {Hirschi} R.,  {Yusof} N.,  {Parker} R.~J.,
+%  {Goodwin} S.~P.,   {Kassim} H.~A.,  2010, \mn@doi [\mnras]
+%  {10.1111/j.1365-2966.2010.17167.x}, \href
+%  {http://adsabs.harvard.edu/abs/2010MNRAS.408..731C} {408, 731}
+%
+%\bibitem[\protect\citeauthoryear{{Crowther} et~al.,}{{Crowther}
+%  et~al.}{2016}]{crowther:16}
+%{Crowther} P.~A.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stw273}, \href
+%  {http://adsabs.harvard.edu/abs/2016MNRAS.458..624C} {458, 624}
+%
+%\bibitem[\protect\citeauthoryear{{Davidson}, {Humphreys}  \& {Weis}}{{Davidson}
+%  et~al.}{2016}]{davidson:16}
+%{Davidson} K.,  {Humphreys} R.~M.,   {Weis} K.,  2016, arXiv:1608.02007, \href
+%  {http://adsabs.harvard.edu/abs/2016arXiv160802007D} {}
+%
+%\bibitem[\protect\citeauthoryear{{de Koter}, {Heap}  \& {Hubeny}}{{de Koter}
+%  et~al.}{1997}]{dekoter:97}
+%{de Koter} A.,  {Heap} S.~R.,   {Hubeny} I.,  1997, \mn@doi [\apj]
+%  {10.1086/303736}, \href {http://adsabs.harvard.edu/abs/1997ApJ...477..792D}
+%  {477, 792}
+%
+%  
+%\bibitem[\protect\citeauthoryear{{Evans} et~al.,}{{Evans}
+%  et~al.}{2010}]{evans:10}
+%{Evans} C.~J.,  et~al., 2010, \mn@doi [\apjl] {10.1088/2041-8205/715/2/L74},
+%  \href {http://adsabs.harvard.edu/abs/2010ApJ...715L..74E} {715, L74}
+%
+%\bibitem[\protect\citeauthoryear{{Evans} et~al.,}{{Evans}
+%  et~al.}{2011}]{evans:11}
+%{Evans} C.~J.,  et~al., 2011, \mn@doi [\aap] {10.1051/0004-6361/201116782},
+%  \href {http://adsabs.harvard.edu/abs/2011A\%26A...530A.108E} {530, A108}
+%
+%\bibitem[\protect\citeauthoryear{{Fujii} \& {Portegies Zwart}}{{Fujii} \&
+%  {Portegies Zwart}}{2011}]{fujii:11}
+%{Fujii} M.~S.,  {Portegies Zwart} S.,  2011, \mn@doi [Science]
+%  {10.1126/science.1211927}, \href
+%  {http://adsabs.harvard.edu/abs/2011Sci...334.1380F} {334, 1380}
+%
+%\bibitem[\protect\citeauthoryear{{Gaia Collaboration} et~al.,}{{Gaia
+%  Collaboration} et~al.}{2016}]{gaia:16}
+%{Gaia Collaboration} et~al., 2016, \mn@doi [\aap]
+%  {10.1051/0004-6361/201629272}, \href
+%  {http://adsabs.harvard.edu/abs/2016A\%26A...595A...1G} {595, A1}
+%
+%\bibitem[\protect\citeauthoryear{{Gaia Collaboration}, {Brown}, {Vallenari},
+%  {Prusti}, {de Bruijne}, {Babusiaux}  \& {Bailer-Jones}}{{Gaia Collaboration}
+%  et~al.}{2018}]{brown:18}
+%{Gaia Collaboration} {Brown} A.~G.~A.,  {Vallenari} A.,  {Prusti} T.,  {de
+%  Bruijne} J.~H.~J.,  {Babusiaux} C.,   {Bailer-Jones} C.~A.~L.,  2018,
+%  ArXiv:1804.09365, \href {http://adsabs.harvard.edu/abs/2018arXiv180409365G}
+%  {}
+%
+%\bibitem[\protect\citeauthoryear{{Gruendl} \& {Chu}}{{Gruendl} \&
+%  {Chu}}{2009}]{gruendl:09}
+%{Gruendl} R.~A.,  {Chu} Y.-H.,  2009, \mn@doi [\apjs]
+%  {10.1088/0067-0049/184/1/172}, \href
+%  {http://adsabs.harvard.edu/abs/2009ApJS..184..172G} {184, 172}
+%
+%\bibitem[\protect\citeauthoryear{{Gvaramadze}, {Weidner}, {Kroupa}  \&
+%  {Pflamm-Altenburg}}{{Gvaramadze} et~al.}{2012}]{gvaramadze:12}
+%{Gvaramadze} V.~V.,  {Weidner} C.,  {Kroupa} P.,   {Pflamm-Altenburg} J.,
+%  2012, \mn@doi [\mnras] {10.1111/j.1365-2966.2012.21452.x}, \href
+%  {http://adsabs.harvard.edu/abs/2012MNRAS.424.3037G} {424, 3037}
+%
+%% \bibitem[\protect\citeauthoryear{{Hogg}}{{Hogg}}{2018}]{hogg:18}
+%% {Hogg} D.~W.,  2018, ArXiv:1804.07766, \href
+%%   {http://adsabs.harvard.edu/abs/2018arXiv180407766H} {}
+%
+%\bibitem[\protect\citeauthoryear{{Humphreys}, {Weis}, {Davidson}  \&
+%  {Gordon}}{{Humphreys} et~al.}{2016}]{humphreys:16}
+%{Humphreys} R.~M.,  {Weis} K.,  {Davidson} K.,   {Gordon} M.~S.,  2016, \mn@doi
+%  [\apj] {10.3847/0004-637X/825/1/64}, \href
+%  {http://adsabs.harvard.edu/abs/2016ApJ...825...64H} {825, 64}
+%
+%\bibitem[\protect\citeauthoryear{{K{\"o}hler} et~al.,}{{K{\"o}hler}
+%  et~al.}{2015}]{kohler:15}
+%{K{\"o}hler} K.,  et~al., 2015, \mn@doi [\aap] {10.1051/0004-6361/201424356},
+%  \href {http://adsabs.harvard.edu/abs/2015A\%26A...573A..71K} {573, A71}
+%
+%\bibitem[\protect\citeauthoryear{{Kuiper}, {Yorke}  \& {Turner}}{{Kuiper}
+%  et~al.}{2015}]{kuiper:15}
+%{Kuiper} R.,  {Yorke} H.~W.,   {Turner} N.~J.,  2015, \mn@doi [\apj]
+%  {10.1088/0004-637X/800/2/86}, \href
+%  {http://adsabs.harvard.edu/abs/2015ApJ...800...86K} {800, 86}
+%
+%\bibitem[\protect\citeauthoryear{{Lada} \& {Lada}}{{Lada} \&
+%  {Lada}}{2003}]{lada:03}
+%{Lada} C.~J.,  {Lada} E.~A.,  2003, \mn@doi [\araa]
+%  {10.1146/annurev.astro.41.011802.094844}, \href
+%  {http://adsabs.harvard.edu/abs/2003ARA\%26A..41...57L} {41, 57}
+%
+%\bibitem[\protect\citeauthoryear{{Lamb}, {Oey}, {Segura-Cox}, {Graus},
+%  {Kiminki}, {Golden-Marx}  \& {Parker}}{{Lamb} et~al.}{2016}]{lamb:16}
+%{Lamb} J.~B.,  {Oey} M.~S.,  {Segura-Cox} D.~M.,  {Graus} A.~S.,  {Kiminki}
+%  D.~C.,  {Golden-Marx} J.~B.,   {Parker} J.~W.,  2016, \mn@doi [\apj]
+%  {10.3847/0004-637X/817/2/113}, \href
+%  {http://adsabs.harvard.edu/abs/2016ApJ...817..113L} {817, 113}
+%
+%\bibitem[\protect\citeauthoryear{{Langer}, {Norman}, {de Koter}, {Vink},
+%  {Cantiello}  \& {Yoon}}{{Langer} et~al.}{2007}]{langer:07}
+%{Langer} N.,  {Norman} C.~A.,  {de Koter} A.,  {Vink} J.~S.,  {Cantiello} M.,
+%  {Yoon} S.-C.,  2007, \mn@doi [\aap] {10.1051/0004-6361:20078482}, \href
+%  {http://adsabs.harvard.edu/abs/2007A\%26A...475L..19L} {475, L19}
+%
+%\bibitem[\protect\citeauthoryear{{Lennon} et~al.,}{{Lennon}
+%  et~al.}{2018}]{lennon:18}
+%{Lennon} D.~J.,  et~al., 2018, ArXiv:1805.08277, \href
+%  {http://adsabs.harvard.edu/abs/2018arXiv180508277L} {}
+%
+%\bibitem[\protect\citeauthoryear{{Lindegren} et~al.,}{{Lindegren}
+%  et~al.}{2018}]{lindengren:18}
+%{Lindegren} L.,  et~al., 2018, ArXiv:1804.09366, \href
+%  {http://adsabs.harvard.edu/abs/2018arXiv180409366L} {}
+%
+%% \bibitem[\protect\citeauthoryear{{Maeder} \& {Meynet}}{{Maeder} \&
+%%   {Meynet}}{2000}]{maeder:00}
+%% {Maeder} A.,  {Meynet} G.,  2000, \aap, \href
+%%   {http://adsabs.harvard.edu/abs/2000A\%26A...361..159M} {361, 159}
+%
+%\bibitem[\protect\citeauthoryear{{Oh} \& {Kroupa}}{{Oh} \&
+%  {Kroupa}}{2016}]{oh:16}
+%{Oh} S.,  {Kroupa} P.,  2016, \mn@doi [\aap] {10.1051/0004-6361/201628233},
+%  \href {http://adsabs.harvard.edu/abs/2016A\%26A...590A.107O} {590, A107}
+%
+%\bibitem[\protect\citeauthoryear{{Parker}}{{Parker}}{1993}]{parker:93}
+%{Parker} J.~W.,  1993, \mn@doi [\aj] {10.1086/116661}, \href
+%  {http://adsabs.harvard.edu/abs/1993AJ....106..560P} {106, 560}
+%
+%\bibitem[\protect\citeauthoryear{{Pietrzy{\'n}ski} et~al.,}{{Pietrzy{\'n}ski}
+%  et~al.}{2013}]{pietrzynski:13}
+%{Pietrzy{\'n}ski} G.,  et~al., 2013, \mn@doi [\nat] {10.1038/nature11878},
+%  \href {http://adsabs.harvard.edu/abs/2013Natur.495...76P} {495, 76}
+%
+%\bibitem[\protect\citeauthoryear{{Platais}, {van der Marel}, {Lennon},
+%  {Anderson}, {Bellini}, {Sabbi}, {Sana}  \& {Bedin}}{{Platais}
+%  et~al.}{2015}]{platais:15}
+%{Platais} I.,  {van der Marel} R.~P.,  {Lennon} D.~J.,  {Anderson} J.,
+%  {Bellini} A.,  {Sabbi} E.,  {Sana} H.,   {Bedin} L.~R.,  2015, \mn@doi [\aj]
+%  {10.1088/0004-6256/150/3/89}, \href
+%  {http://adsabs.harvard.edu/abs/2015AJ....150...89P} {150, 89}
+%
+%\bibitem[\protect\citeauthoryear{{Platais} et~al.,}{{Platais}
+%  et~al.}{2018}]{platais:18}
+%{Platais} I.,  et~al., 2018, ArXiv:1804.08678, \href
+%  {http://adsabs.harvard.edu/abs/2018arXiv180408678P} {}
+%
+%\bibitem[\protect\citeauthoryear{{Poveda}, {Ruiz}  \& {Allen}}{{Poveda}
+%  et~al.}{1967}]{poveda:67}
+%{Poveda} A.,  {Ruiz} J.,   {Allen} C.,  1967, Boletin de los Observatorios
+%  Tonantzintla y Tacubaya, \href
+%  {http://adsabs.harvard.edu/abs/1967BOTT....4...86P} {4, 86}
+%
+%\bibitem[\protect\citeauthoryear{{Rakavy} \& {Shaviv}}{{Rakavy} \&
+%  {Shaviv}}{1967}]{rakavy:67}
+%{Rakavy} G.,  {Shaviv} G.,  1967, \mn@doi [\apj] {10.1086/149204}, \href
+%  {http://adsabs.harvard.edu/abs/1967ApJ...148..803R} {148, 803}
+%
+%% \bibitem[\protect\citeauthoryear{{Ram{\'{\i}}rez-Agudelo}
+%%   et~al.,}{{Ram{\'{\i}}rez-Agudelo} et~al.}{2015}]{ramirez-agudelo:15}
+%% {Ram{\'{\i}}rez-Agudelo} O.~H.,  et~al., 2015, \mn@doi [\aap]
+%%   {10.1051/0004-6361/201425424}, \href
+%%   {http://adsabs.harvard.edu/abs/2015A\%26A...580A..92R} {580, A92}
+%
+%\bibitem[\protect\citeauthoryear{{Renzo} et~al.,}{{Renzo}
+%  et~al.}{2018}]{renzo:18}
+%{Renzo} M.,  et~al., 2018, ArXiv:1804.09164, \href
+%  {http://adsabs.harvard.edu/abs/2018arXiv180409164R} {}
+%
+%% \bibitem[\protect\citeauthoryear{{Robitaille} \& {Bressert}}{{Robitaille} \&
+%%   {Bressert}}{2012}]{robitaille:12}
+%% {Robitaille} T.,  {Bressert} E.,  2012, {APLpy: Astronomical Plotting Library
+%%   in Python}, Astrophysics Source Code Library (\mn@eprint {ascl} {1208.017})
+%
+%\bibitem[\protect\citeauthoryear{{Rosen}, {Krumholz}, {McKee}  \&
+%  {Klein}}{{Rosen} et~al.}{2016}]{rosen:16}
+%{Rosen} A.~L.,  {Krumholz} M.~R.,  {McKee} C.~F.,   {Klein} R.~I.,  2016,
+%  \mn@doi [\mnras] {10.1093/mnras/stw2153}, \href
+%  {http://adsabs.harvard.edu/abs/2016MNRAS.463.2553R} {463, 2553}
+%
+%\bibitem[\protect\citeauthoryear{{Rubio-D{\'{\i}}ez}, {Najarro},
+%  {Garc{\'{\i}}a}  \& {Sundqvist}}{{Rubio-D{\'{\i}}ez}
+%  et~al.}{2017}]{rubio-diez:17}
+%{Rubio-D{\'{\i}}ez} M.~M.,  {Najarro} F.,  {Garc{\'{\i}}a} M.,   {Sundqvist}
+%  J.~O.,  2017, in {Eldridge} J.~J.,  {Bray} J.~C.,  {McClelland} L.~A.~S.,
+%  {Xiao} L.,  eds,  IAU Symposium Vol. 329, The Lives and Death-Throes of
+%  Massive Stars. pp 131--135, \mn@doi{10.1017/S1743921317002447}
+%
+%\bibitem[\protect\citeauthoryear{{Sabbi} et~al.,}{{Sabbi}
+%  et~al.}{2012}]{sabbi:12}
+%{Sabbi} E.,  et~al., 2012, \mn@doi [\apjl] {10.1088/2041-8205/754/2/L37}, \href
+%  {http://adsabs.harvard.edu/abs/2012ApJ...754L..37S} {754, L37}
+%
+%\bibitem[\protect\citeauthoryear{{Sana}, {Ram{\'{\i}}rez-Tannus}, {de Koter},
+%  {Kaper}, {Tramper}  \& {Bik}}{{Sana} et~al.}{2017}]{sana:17}
+%{Sana} H.,  {Ram{\'{\i}}rez-Tannus} M.~C.,  {de Koter} A.,  {Kaper} L.,
+%  {Tramper} F.,   {Bik} A.,  2017, \mn@doi [\aap]
+%  {10.1051/0004-6361/201630087}, \href
+%  {http://adsabs.harvard.edu/abs/2017A\%26A...599L...9S} {599, L9}
+%
+%% \bibitem[\protect\citeauthoryear{{Schneider}, {Castro}, {Fossati}, {Langer}  \&
+%%   {de Koter}}{{Schneider} et~al.}{2017}]{schneider:17}
+%% {Schneider} F.~R.~N.,  {Castro} N.,  {Fossati} L.,  {Langer} N.,   {de Koter}
+%%   A.,  2017, \mn@doi [\aap] {10.1051/0004-6361/201628409}, \href
+%%   {http://adsabs.harvard.edu/abs/2017A\%26A...598A..60S} {598, A60}
+%
+%\bibitem[\protect\citeauthoryear{{Schneider} et~al.,}{{Schneider}
+%  et~al.}{2018}]{schneider:18}
+%{Schneider} F.~R.~N.,  et~al., 2018, \mn@doi [Science]
+%  {10.1126/science.aan0106}, \href
+%  {http://adsabs.harvard.edu/abs/2018Sci...359...69S} {359, 69}
+%
+%\bibitem[\protect\citeauthoryear{{Smith}}{{Smith}}{2016}]{smith:16}
+%{Smith} N.,  2016, \mn@doi [\mnras] {10.1093/mnras/stw1533}, \href
+%  {http://adsabs.harvard.edu/abs/2016MNRAS.461.3353S} {461, 3353}
+%
+%\bibitem[\protect\citeauthoryear{{Smith} \& {Tombleson}}{{Smith} \&
+%  {Tombleson}}{2015}]{smith:15}
+%{Smith} N.,  {Tombleson} R.,  2015, \mn@doi [\mnras] {10.1093/mnras/stu2430},
+%  \href {http://adsabs.harvard.edu/abs/2015MNRAS.447..598S} {447, 598}
+%
+%\bibitem[\protect\citeauthoryear{{Udalski} et~al.,}{{Udalski}
+%  et~al.}{2008}]{udalski:08}
+%{Udalski} A.,  et~al., 2008, \actaa, \href
+%  {http://adsabs.harvard.edu/abs/2008AcA....58..329U} {58, 329}
+%
+%\bibitem[\protect\citeauthoryear{{Ward} \& {Kruijssen}}{{Ward} \&
+%  {Kruijssen}}{2018}]{ward:18}
+%{Ward} J.~L.,  {Kruijssen} J.~M.~D.,  2018, \mn@doi [\mnras]
+%  {10.1093/mnras/sty117}, \href
+%  {http://adsabs.harvard.edu/abs/2018MNRAS.475.5659W} {475, 5659}
+%
+%\bibitem[\protect\citeauthoryear{{Zapartas} et~al.,}{{Zapartas}
+%  et~al.}{2017}]{zapartas:17}
+%{Zapartas} E.,  et~al., 2017, \mn@doi [\aap] {10.1051/0004-6361/201629685},
+%  \href {http://adsabs.harvard.edu/abs/2017A\%26A...601A..29Z} {601, A29}
+%
+%\bibitem[\protect\citeauthoryear{{Zinnecker} \& {Yorke}}{{Zinnecker} \&
+%  {Yorke}}{2007}]{zinnecker:07}
+%{Zinnecker} H.,  {Yorke} H.~W.,  2007, \mn@doi [\araa]
+%  {10.1146/annurev.astro.44.051905.092549}, \href
+%  {http://adsabs.harvard.edu/abs/2007ARA\%26A..45..481Z} {45, 481}
+%
+%\bibitem[\protect\citeauthoryear{{Zwicky}}{{Zwicky}}{1957}]{zwicky:57}
+%{Zwicky} F.,  1957, \zap, \href
+%  {http://adsabs.harvard.edu/abs/1957ZA.....44...64Z} {44, 64}
+%
+%
+%% \bibitem[\protect\citeauthoryear{{de Mink}, {Cantiello}, {Langer}, {Pols},
+%%   {Brott}  \& {Yoon}}{{de Mink} et~al.}{2009}]{demink:09}
+%% {de Mink} S.~E.,  {Cantiello} M.,  {Langer} N.,  {Pols} O.~R.,  {Brott} I.,
+%%   {Yoon} S.-C.,  2009, \mn@doi [\aap] {10.1051/0004-6361/200811439}, \href
+%%   {http://adsabs.harvard.edu/abs/2009A\%26A...497..243D} {497, 243}
 
-\bibitem[\protect\citeauthoryear{{Bate}}{{Bate}}{2009}]{bate:09}
-{Bate} M.~R.,  2009, \mn@doi [\mnras] {10.1111/j.1365-2966.2008.14106.x}, \href
-  {http://adsabs.harvard.edu/abs/2009MNRAS.392..590B} {392, 590}
+%\makeatother
+%\end{thebibliography}
 
-\bibitem[\protect\citeauthoryear{{Bestenlehner} et~al.,}{{Bestenlehner}
-  et~al.}{2011}]{bestenlehner:11}
-{Bestenlehner} J.~M.,  et~al., 2011, \mn@doi [\aap]
-  {10.1051/0004-6361/201117043}, \href
-  {http://adsabs.harvard.edu/abs/2011A\%26A...530L..14B} {530, L14}
 
-\bibitem[\protect\citeauthoryear{{Blaauw}}{{Blaauw}}{1961}]{blaauw:61}
-{Blaauw} A.,  1961, \bain, \href
-  {http://adsabs.harvard.edu/abs/1961BAN....15..265B} {15, 265}
 
-\bibitem[\protect\citeauthoryear{{Bressert} et~al.,}{{Bressert}
-  et~al.}{2012}]{bressert:12}
-{Bressert} E.,  et~al., 2012, \mn@doi [\aap] {10.1051/0004-6361/201117247},
-  \href {http://adsabs.harvard.edu/abs/2012A\%26A...542A..49B} {542, A49}
 
-\bibitem[\protect\citeauthoryear{{Brott} et~al.,}{{Brott}
-  et~al.}{2011}]{brott:11}
-{Brott} I.,  et~al., 2011, \mn@doi [\aap] {10.1051/0004-6361/201016113}, \href
-  {http://adsabs.harvard.edu/abs/2011A\%26A...530A.115B} {530, A115}
-
-\bibitem[\protect\citeauthoryear{{Crowther}, {Schnurr}, {Hirschi}, {Yusof},
-  {Parker}, {Goodwin}  \& {Kassim}}{{Crowther} et~al.}{2010}]{crowther:10}
-{Crowther} P.~A.,  {Schnurr} O.,  {Hirschi} R.,  {Yusof} N.,  {Parker} R.~J.,
-  {Goodwin} S.~P.,   {Kassim} H.~A.,  2010, \mn@doi [\mnras]
-  {10.1111/j.1365-2966.2010.17167.x}, \href
-  {http://adsabs.harvard.edu/abs/2010MNRAS.408..731C} {408, 731}
-
-\bibitem[\protect\citeauthoryear{{Crowther} et~al.,}{{Crowther}
-  et~al.}{2016}]{crowther:16}
-{Crowther} P.~A.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stw273}, \href
-  {http://adsabs.harvard.edu/abs/2016MNRAS.458..624C} {458, 624}
-
-\bibitem[\protect\citeauthoryear{{Davidson}, {Humphreys}  \& {Weis}}{{Davidson}
-  et~al.}{2016}]{davidson:16}
-{Davidson} K.,  {Humphreys} R.~M.,   {Weis} K.,  2016, arXiv:1608.02007, \href
-  {http://adsabs.harvard.edu/abs/2016arXiv160802007D} {}
-
-\bibitem[\protect\citeauthoryear{{de Koter}, {Heap}  \& {Hubeny}}{{de Koter}
-  et~al.}{1997}]{dekoter:97}
-{de Koter} A.,  {Heap} S.~R.,   {Hubeny} I.,  1997, \mn@doi [\apj]
-  {10.1086/303736}, \href {http://adsabs.harvard.edu/abs/1997ApJ...477..792D}
-  {477, 792}
-
+\section*{Affiliations}
+\noindent $^{1}${Astronomical Institute Anton Pannekoek, University of
+    Amsterdam, 1098 XH Amsterdam, The Netherlands} \\
+  $^{2}$ {ESA, European Space Astronomy Centre, Apdo. de Correos 78,
+    E-28691 Villanueva de la Ca\~nada, Madrid, Spain} \\
+  $^{3}$ {Space Telescope Science Institute, 3700 San Martin Drive,
+    Baltimore, MD 21218, USA}\\
+  $^{4}$ {Center for Astrophysical Sciences, Department of Physics \& Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA}\\
+  $^{5}${Department of Physics and Astronomy, Hicks Building,
+    Hounsfield Road, University of Sheffield, Sheffield S3 7RH, UK}\\
+  $^{6}$ {National Research Council, Herzberg Astronomy \&
+    Astrophysics, 5071 West Saanich Road, Victoria, BC, V9E 2E7,
+    Canada}\\
+  $^{7}$ {School of Astronomy \& Space Science, University of the Chinese
+    Academy of Sciences, Beijing 100012, China}\\
+  $^{8}$ {National Astronomical Observatories, Chinese Academy of
+    Sciences, Beijing 100012, China}\\
+  $^{9}$ {Argelander-Instit\"ut f\"ur Astronomie, Universit\"at Bonn,
+    Auf dem H\"ugel 71, 53121, Bonn, Germany}\\
+  $^{10}$ {Institute of Astronomy, KU Leuven, Celestijnenlaan 200 D, B-3001 Leuven, Belgium}\\
+  $^{11}$ {Department of Physics, University of Oxford, Keble Road,
+    Oxford OX1 3RH, UK} \\
+  $^{12}$ {Armagh Observatory, College Hill, Armagh BT61 9DG, UK}\\
+ \SdM{$^{x}$ {Affiliation: Chris Evans}\\
+  $^{x}$ {Affiliation: Paco Najorro}\\}
   
-\bibitem[\protect\citeauthoryear{{Evans} et~al.,}{{Evans}
-  et~al.}{2010}]{evans:10}
-{Evans} C.~J.,  et~al., 2010, \mn@doi [\apjl] {10.1088/2041-8205/715/2/L74},
-  \href {http://adsabs.harvard.edu/abs/2010ApJ...715L..74E} {715, L74}
 
-\bibitem[\protect\citeauthoryear{{Evans} et~al.,}{{Evans}
-  et~al.}{2011}]{evans:11}
-{Evans} C.~J.,  et~al., 2011, \mn@doi [\aap] {10.1051/0004-6361/201116782},
-  \href {http://adsabs.harvard.edu/abs/2011A\%26A...530A.108E} {530, A108}
-
-\bibitem[\protect\citeauthoryear{{Fujii} \& {Portegies Zwart}}{{Fujii} \&
-  {Portegies Zwart}}{2011}]{fujii:11}
-{Fujii} M.~S.,  {Portegies Zwart} S.,  2011, \mn@doi [Science]
-  {10.1126/science.1211927}, \href
-  {http://adsabs.harvard.edu/abs/2011Sci...334.1380F} {334, 1380}
-
-\bibitem[\protect\citeauthoryear{{Gaia Collaboration} et~al.,}{{Gaia
-  Collaboration} et~al.}{2016}]{gaia:16}
-{Gaia Collaboration} et~al., 2016, \mn@doi [\aap]
-  {10.1051/0004-6361/201629272}, \href
-  {http://adsabs.harvard.edu/abs/2016A\%26A...595A...1G} {595, A1}
-
-\bibitem[\protect\citeauthoryear{{Gaia Collaboration}, {Brown}, {Vallenari},
-  {Prusti}, {de Bruijne}, {Babusiaux}  \& {Bailer-Jones}}{{Gaia Collaboration}
-  et~al.}{2018}]{brown:18}
-{Gaia Collaboration} {Brown} A.~G.~A.,  {Vallenari} A.,  {Prusti} T.,  {de
-  Bruijne} J.~H.~J.,  {Babusiaux} C.,   {Bailer-Jones} C.~A.~L.,  2018,
-  ArXiv:1804.09365, \href {http://adsabs.harvard.edu/abs/2018arXiv180409365G}
-  {}
-
-\bibitem[\protect\citeauthoryear{{Gruendl} \& {Chu}}{{Gruendl} \&
-  {Chu}}{2009}]{gruendl:09}
-{Gruendl} R.~A.,  {Chu} Y.-H.,  2009, \mn@doi [\apjs]
-  {10.1088/0067-0049/184/1/172}, \href
-  {http://adsabs.harvard.edu/abs/2009ApJS..184..172G} {184, 172}
-
-\bibitem[\protect\citeauthoryear{{Gvaramadze}, {Weidner}, {Kroupa}  \&
-  {Pflamm-Altenburg}}{{Gvaramadze} et~al.}{2012}]{gvaramadze:12}
-{Gvaramadze} V.~V.,  {Weidner} C.,  {Kroupa} P.,   {Pflamm-Altenburg} J.,
-  2012, \mn@doi [\mnras] {10.1111/j.1365-2966.2012.21452.x}, \href
-  {http://adsabs.harvard.edu/abs/2012MNRAS.424.3037G} {424, 3037}
-
-% \bibitem[\protect\citeauthoryear{{Hogg}}{{Hogg}}{2018}]{hogg:18}
-% {Hogg} D.~W.,  2018, ArXiv:1804.07766, \href
-%   {http://adsabs.harvard.edu/abs/2018arXiv180407766H} {}
-
-\bibitem[\protect\citeauthoryear{{Humphreys}, {Weis}, {Davidson}  \&
-  {Gordon}}{{Humphreys} et~al.}{2016}]{humphreys:16}
-{Humphreys} R.~M.,  {Weis} K.,  {Davidson} K.,   {Gordon} M.~S.,  2016, \mn@doi
-  [\apj] {10.3847/0004-637X/825/1/64}, \href
-  {http://adsabs.harvard.edu/abs/2016ApJ...825...64H} {825, 64}
-
-\bibitem[\protect\citeauthoryear{{K{\"o}hler} et~al.,}{{K{\"o}hler}
-  et~al.}{2015}]{kohler:15}
-{K{\"o}hler} K.,  et~al., 2015, \mn@doi [\aap] {10.1051/0004-6361/201424356},
-  \href {http://adsabs.harvard.edu/abs/2015A\%26A...573A..71K} {573, A71}
-
-\bibitem[\protect\citeauthoryear{{Kuiper}, {Yorke}  \& {Turner}}{{Kuiper}
-  et~al.}{2015}]{kuiper:15}
-{Kuiper} R.,  {Yorke} H.~W.,   {Turner} N.~J.,  2015, \mn@doi [\apj]
-  {10.1088/0004-637X/800/2/86}, \href
-  {http://adsabs.harvard.edu/abs/2015ApJ...800...86K} {800, 86}
-
-\bibitem[\protect\citeauthoryear{{Lada} \& {Lada}}{{Lada} \&
-  {Lada}}{2003}]{lada:03}
-{Lada} C.~J.,  {Lada} E.~A.,  2003, \mn@doi [\araa]
-  {10.1146/annurev.astro.41.011802.094844}, \href
-  {http://adsabs.harvard.edu/abs/2003ARA\%26A..41...57L} {41, 57}
-
-\bibitem[\protect\citeauthoryear{{Lamb}, {Oey}, {Segura-Cox}, {Graus},
-  {Kiminki}, {Golden-Marx}  \& {Parker}}{{Lamb} et~al.}{2016}]{lamb:16}
-{Lamb} J.~B.,  {Oey} M.~S.,  {Segura-Cox} D.~M.,  {Graus} A.~S.,  {Kiminki}
-  D.~C.,  {Golden-Marx} J.~B.,   {Parker} J.~W.,  2016, \mn@doi [\apj]
-  {10.3847/0004-637X/817/2/113}, \href
-  {http://adsabs.harvard.edu/abs/2016ApJ...817..113L} {817, 113}
-
-\bibitem[\protect\citeauthoryear{{Langer}, {Norman}, {de Koter}, {Vink},
-  {Cantiello}  \& {Yoon}}{{Langer} et~al.}{2007}]{langer:07}
-{Langer} N.,  {Norman} C.~A.,  {de Koter} A.,  {Vink} J.~S.,  {Cantiello} M.,
-  {Yoon} S.-C.,  2007, \mn@doi [\aap] {10.1051/0004-6361:20078482}, \href
-  {http://adsabs.harvard.edu/abs/2007A\%26A...475L..19L} {475, L19}
-
-\bibitem[\protect\citeauthoryear{{Lennon} et~al.,}{{Lennon}
-  et~al.}{2018}]{lennon:18}
-{Lennon} D.~J.,  et~al., 2018, ArXiv:1805.08277, \href
-  {http://adsabs.harvard.edu/abs/2018arXiv180508277L} {}
-
-\bibitem[\protect\citeauthoryear{{Lindegren} et~al.,}{{Lindegren}
-  et~al.}{2018}]{lindengren:18}
-{Lindegren} L.,  et~al., 2018, ArXiv:1804.09366, \href
-  {http://adsabs.harvard.edu/abs/2018arXiv180409366L} {}
-
-% \bibitem[\protect\citeauthoryear{{Maeder} \& {Meynet}}{{Maeder} \&
-%   {Meynet}}{2000}]{maeder:00}
-% {Maeder} A.,  {Meynet} G.,  2000, \aap, \href
-%   {http://adsabs.harvard.edu/abs/2000A\%26A...361..159M} {361, 159}
-
-\bibitem[\protect\citeauthoryear{{Oh} \& {Kroupa}}{{Oh} \&
-  {Kroupa}}{2016}]{oh:16}
-{Oh} S.,  {Kroupa} P.,  2016, \mn@doi [\aap] {10.1051/0004-6361/201628233},
-  \href {http://adsabs.harvard.edu/abs/2016A\%26A...590A.107O} {590, A107}
-
-\bibitem[\protect\citeauthoryear{{Parker}}{{Parker}}{1993}]{parker:93}
-{Parker} J.~W.,  1993, \mn@doi [\aj] {10.1086/116661}, \href
-  {http://adsabs.harvard.edu/abs/1993AJ....106..560P} {106, 560}
-
-\bibitem[\protect\citeauthoryear{{Pietrzy{\'n}ski} et~al.,}{{Pietrzy{\'n}ski}
-  et~al.}{2013}]{pietrzynski:13}
-{Pietrzy{\'n}ski} G.,  et~al., 2013, \mn@doi [\nat] {10.1038/nature11878},
-  \href {http://adsabs.harvard.edu/abs/2013Natur.495...76P} {495, 76}
-
-\bibitem[\protect\citeauthoryear{{Platais}, {van der Marel}, {Lennon},
-  {Anderson}, {Bellini}, {Sabbi}, {Sana}  \& {Bedin}}{{Platais}
-  et~al.}{2015}]{platais:15}
-{Platais} I.,  {van der Marel} R.~P.,  {Lennon} D.~J.,  {Anderson} J.,
-  {Bellini} A.,  {Sabbi} E.,  {Sana} H.,   {Bedin} L.~R.,  2015, \mn@doi [\aj]
-  {10.1088/0004-6256/150/3/89}, \href
-  {http://adsabs.harvard.edu/abs/2015AJ....150...89P} {150, 89}
-
-\bibitem[\protect\citeauthoryear{{Platais} et~al.,}{{Platais}
-  et~al.}{2018}]{platais:18}
-{Platais} I.,  et~al., 2018, ArXiv:1804.08678, \href
-  {http://adsabs.harvard.edu/abs/2018arXiv180408678P} {}
-
-\bibitem[\protect\citeauthoryear{{Poveda}, {Ruiz}  \& {Allen}}{{Poveda}
-  et~al.}{1967}]{poveda:67}
-{Poveda} A.,  {Ruiz} J.,   {Allen} C.,  1967, Boletin de los Observatorios
-  Tonantzintla y Tacubaya, \href
-  {http://adsabs.harvard.edu/abs/1967BOTT....4...86P} {4, 86}
-
-\bibitem[\protect\citeauthoryear{{Rakavy} \& {Shaviv}}{{Rakavy} \&
-  {Shaviv}}{1967}]{rakavy:67}
-{Rakavy} G.,  {Shaviv} G.,  1967, \mn@doi [\apj] {10.1086/149204}, \href
-  {http://adsabs.harvard.edu/abs/1967ApJ...148..803R} {148, 803}
-
-% \bibitem[\protect\citeauthoryear{{Ram{\'{\i}}rez-Agudelo}
-%   et~al.,}{{Ram{\'{\i}}rez-Agudelo} et~al.}{2015}]{ramirez-agudelo:15}
-% {Ram{\'{\i}}rez-Agudelo} O.~H.,  et~al., 2015, \mn@doi [\aap]
-%   {10.1051/0004-6361/201425424}, \href
-%   {http://adsabs.harvard.edu/abs/2015A\%26A...580A..92R} {580, A92}
-
-\bibitem[\protect\citeauthoryear{{Renzo} et~al.,}{{Renzo}
-  et~al.}{2018}]{renzo:18}
-{Renzo} M.,  et~al., 2018, ArXiv:1804.09164, \href
-  {http://adsabs.harvard.edu/abs/2018arXiv180409164R} {}
-
-% \bibitem[\protect\citeauthoryear{{Robitaille} \& {Bressert}}{{Robitaille} \&
-%   {Bressert}}{2012}]{robitaille:12}
-% {Robitaille} T.,  {Bressert} E.,  2012, {APLpy: Astronomical Plotting Library
-%   in Python}, Astrophysics Source Code Library (\mn@eprint {ascl} {1208.017})
-
-\bibitem[\protect\citeauthoryear{{Rosen}, {Krumholz}, {McKee}  \&
-  {Klein}}{{Rosen} et~al.}{2016}]{rosen:16}
-{Rosen} A.~L.,  {Krumholz} M.~R.,  {McKee} C.~F.,   {Klein} R.~I.,  2016,
-  \mn@doi [\mnras] {10.1093/mnras/stw2153}, \href
-  {http://adsabs.harvard.edu/abs/2016MNRAS.463.2553R} {463, 2553}
-
-\bibitem[\protect\citeauthoryear{{Rubio-D{\'{\i}}ez}, {Najarro},
-  {Garc{\'{\i}}a}  \& {Sundqvist}}{{Rubio-D{\'{\i}}ez}
-  et~al.}{2017}]{rubio-diez:17}
-{Rubio-D{\'{\i}}ez} M.~M.,  {Najarro} F.,  {Garc{\'{\i}}a} M.,   {Sundqvist}
-  J.~O.,  2017, in {Eldridge} J.~J.,  {Bray} J.~C.,  {McClelland} L.~A.~S.,
-  {Xiao} L.,  eds,  IAU Symposium Vol. 329, The Lives and Death-Throes of
-  Massive Stars. pp 131--135, \mn@doi{10.1017/S1743921317002447}
-
-\bibitem[\protect\citeauthoryear{{Sabbi} et~al.,}{{Sabbi}
-  et~al.}{2012}]{sabbi:12}
-{Sabbi} E.,  et~al., 2012, \mn@doi [\apjl] {10.1088/2041-8205/754/2/L37}, \href
-  {http://adsabs.harvard.edu/abs/2012ApJ...754L..37S} {754, L37}
-
-\bibitem[\protect\citeauthoryear{{Sana}, {Ram{\'{\i}}rez-Tannus}, {de Koter},
-  {Kaper}, {Tramper}  \& {Bik}}{{Sana} et~al.}{2017}]{sana:17}
-{Sana} H.,  {Ram{\'{\i}}rez-Tannus} M.~C.,  {de Koter} A.,  {Kaper} L.,
-  {Tramper} F.,   {Bik} A.,  2017, \mn@doi [\aap]
-  {10.1051/0004-6361/201630087}, \href
-  {http://adsabs.harvard.edu/abs/2017A\%26A...599L...9S} {599, L9}
-
-% \bibitem[\protect\citeauthoryear{{Schneider}, {Castro}, {Fossati}, {Langer}  \&
-%   {de Koter}}{{Schneider} et~al.}{2017}]{schneider:17}
-% {Schneider} F.~R.~N.,  {Castro} N.,  {Fossati} L.,  {Langer} N.,   {de Koter}
-%   A.,  2017, \mn@doi [\aap] {10.1051/0004-6361/201628409}, \href
-%   {http://adsabs.harvard.edu/abs/2017A\%26A...598A..60S} {598, A60}
-
-\bibitem[\protect\citeauthoryear{{Schneider} et~al.,}{{Schneider}
-  et~al.}{2018}]{schneider:18}
-{Schneider} F.~R.~N.,  et~al., 2018, \mn@doi [Science]
-  {10.1126/science.aan0106}, \href
-  {http://adsabs.harvard.edu/abs/2018Sci...359...69S} {359, 69}
-
-\bibitem[\protect\citeauthoryear{{Smith}}{{Smith}}{2016}]{smith:16}
-{Smith} N.,  2016, \mn@doi [\mnras] {10.1093/mnras/stw1533}, \href
-  {http://adsabs.harvard.edu/abs/2016MNRAS.461.3353S} {461, 3353}
-
-\bibitem[\protect\citeauthoryear{{Smith} \& {Tombleson}}{{Smith} \&
-  {Tombleson}}{2015}]{smith:15}
-{Smith} N.,  {Tombleson} R.,  2015, \mn@doi [\mnras] {10.1093/mnras/stu2430},
-  \href {http://adsabs.harvard.edu/abs/2015MNRAS.447..598S} {447, 598}
-
-\bibitem[\protect\citeauthoryear{{Udalski} et~al.,}{{Udalski}
-  et~al.}{2008}]{udalski:08}
-{Udalski} A.,  et~al., 2008, \actaa, \href
-  {http://adsabs.harvard.edu/abs/2008AcA....58..329U} {58, 329}
-
-\bibitem[\protect\citeauthoryear{{Ward} \& {Kruijssen}}{{Ward} \&
-  {Kruijssen}}{2018}]{ward:18}
-{Ward} J.~L.,  {Kruijssen} J.~M.~D.,  2018, \mn@doi [\mnras]
-  {10.1093/mnras/sty117}, \href
-  {http://adsabs.harvard.edu/abs/2018MNRAS.475.5659W} {475, 5659}
-
-\bibitem[\protect\citeauthoryear{{Zapartas} et~al.,}{{Zapartas}
-  et~al.}{2017}]{zapartas:17}
-{Zapartas} E.,  et~al., 2017, \mn@doi [\aap] {10.1051/0004-6361/201629685},
-  \href {http://adsabs.harvard.edu/abs/2017A\%26A...601A..29Z} {601, A29}
-
-\bibitem[\protect\citeauthoryear{{Zinnecker} \& {Yorke}}{{Zinnecker} \&
-  {Yorke}}{2007}]{zinnecker:07}
-{Zinnecker} H.,  {Yorke} H.~W.,  2007, \mn@doi [\araa]
-  {10.1146/annurev.astro.44.051905.092549}, \href
-  {http://adsabs.harvard.edu/abs/2007ARA\%26A..45..481Z} {45, 481}
-
-\bibitem[\protect\citeauthoryear{{Zwicky}}{{Zwicky}}{1957}]{zwicky:57}
-{Zwicky} F.,  1957, \zap, \href
-  {http://adsabs.harvard.edu/abs/1957ZA.....44...64Z} {44, 64}
+ \begin{acknowledgements}
+   \small
+   We are grateful to S.\,Torres, M.\,C.\,Ramirez-Tannus,
+   and C.\,J.\,Evans for help and discussions, European Unions Horizon 2020 research and innovation programme from the European Research Council (ERC), Grant agreement No. 715063 [SdM], the NRC-Canada Plaskett Fellowship [VHB].
+   
+This work has made use of data from the European Space Agency (ESA) mission {\it Gaia} (\url{https://www.cosmos.esa.int/gaia}), processed by the {\it Gaia} Data Processing and Analysis Consortium (DPAC, \url{https://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions
+participating in the {\it Gaia} Multilateral Agreement. 
+   
+ % The background image of \Figref{fig:main} is based on observations
+   % made with ESO Telescopes at the La Silla Observatory under programme
+   % ID 076.C-0888, processed and released by the ESO VOS/ADP group.
+   % This research made use of APLpy, an open-source plotting package for Python \citep[][]{robitaille:12}.
+ \end{acknowledgements}
 
 
-% \bibitem[\protect\citeauthoryear{{de Mink}, {Cantiello}, {Langer}, {Pols},
-%   {Brott}  \& {Yoon}}{{de Mink} et~al.}{2009}]{demink:09}
-% {de Mink} S.~E.,  {Cantiello} M.,  {Langer} N.,  {Pols} O.~R.,  {Brott} I.,
-%   {Yoon} S.-C.,  2009, \mn@doi [\aap] {10.1051/0004-6361/200811439}, \href
-%   {http://adsabs.harvard.edu/abs/2009A\%26A...497..243D} {497, 243}
 
-\makeatother
-\end{thebibliography}
-
-% \begin{acknowledgements}
-%   \small
-%   We are grateful to S.~Torres, M.~C.~Ramirez-Tannus,
-%   and C.~J.~Evans for help and discussions. SdM has received funding under the European Unions Horizon 2020 research and innovation programme from the European Research Council (ERC) (Grant agreement No. 715063). VHB acknowledges support from the NRC-Canada Plaskett Fellowship. This work has made use of data from the ESA space mission \emph{Gaia} (\url{http://www.cosmos.esa.int/gaia}), processed by the \emph{Gaia} Data Processing and Analysis Consortium (DPAC, \url{http://www.cosmos.esa.int/web/gaia/dpac/consortium}). Funding for the DPAC has been provided by national institutions, in particular the institutions participating in the \emph{Gaia} Multilateral Agreement. % The background image of \Figref{fig:main} is based on observations
-%   % made with ESO Telescopes at the La Silla Observatory under programme
-%   % ID 076.C-0888, processed and released by the ESO VOS/ADP group.
-%   % This research made use of APLpy, an open-source plotting package for Python \citep[][]{robitaille:12}.
-% \end{acknowledgements}
 
 \end{document}
-
-
-
-
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
