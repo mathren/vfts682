@@ -297,7 +297,7 @@ ejected from R136.
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=0.35\textwidth]{figures/dist_mu_region.pdf}
-  \includegraphics[width=0.35\textwidth]{figures/angle_dist}
+  \includegraphics[width=0.35\textwidth]{figures/angle}
   \caption{Left panel: distribution of OB-type and Wolf-Rayet stars in proper
     motion relative to R136. VFTS682 is not an outlier, but
     its relative proper motion matches the expected value if it were indeed
@@ -353,9 +353,9 @@ i.e. groups of observations separated from other groups by a gap of at
 least four days, used in the astrometric solution is seventeen for this
 star. The reported astrometric excess noise is zero.  These values
 suggest that the \emph{Gaia} DR2  data for VFTS682 are
-reliable. Gaia errors are correlated \citep[][]{lindengren:18}, but for this star the correlation coefficient is very small, $\rho\,(\mu_\mathrm{RA}, \mu_\mathrm{DEC})$  = 0.023, where zero is for completely un-correlated data and one is for fully correlated data. We can thus safely treat the proper motion components as uncorrelated.
+reliable. Gaia errors are correlated \citep[][]{lindengren:18}, but for this star the correlation coefficient is very small, $\rho\,(\mu_\mathrm{RA}, \mu_\mathrm{DEC})$  = 0.026, where zero is for completely un-correlated data and one is for fully correlated data. We can thus safely treat the proper motion components as uncorrelated.
 
-To determine the relative proper motion with respect to R136, we follow  \citet{lennon:18} to define the motion of the local frame of reference using the average proper motion of nearby stars with reliable astrometric data.  They select  bright ($G<17$) stars within 0.05 degrees of R136 with and exclude sources with proper motion errors greater than $0.01\masyr$ in both coordinates (see their  Sect.~2.1 for further discussion).  
+To determine the relative proper motion with respect to R136, we follow  \citet{lennon:18} to define the motion of the local frame of reference using the average proper motion of nearby stars with reliable astrometric data.  They select  bright ($G<17$) stars within 0.05 degrees of R136 and exclude sources with proper motion errors greater than $0.01\masyr$ in both coordinates (see their  Sect.~2.1 for further discussion).  
 
 With these we compute the relative proper motion
 $\delta\mu_\mathrm{RA}$ and $\delta\mu_\mathrm{DEC}$.  We also derive
@@ -382,11 +382,18 @@ Tab.~\ref{tab:vfts682}. %%what does the projection on the proper
 
 %For large distances ($\gtrsim50$\,kpc), HST astrometry can compete or even exceed \emph{Gaia} DR2 data in quality. \SdM{Mathieu: do you have a ref for this?}
 
-The 30 doradus region was target of an a two-epoch photometric campaign with \emph{HST} providing observations in the F775W filter in October 2011 and October 2014 (GO-12499; P.I.: D.~J.~Lennon, \citealt{sabbi:13}). Visually, the star is clearly isolated and does not appear to have any close neighbor. This by itself gives further confidence in ability of \emph{Gaia} to measure the proper motion reliably without being affected by crowding. 
+The 30 doradus region was target of an a two-epoch photometric campaign with HST providing observations in the F775W filter in October 2011 and October 2014 (GO-12499; P.I.: D.~J.~Lennon, \citealt{sabbi:13}). Visually, the star is clearly isolated and does not appear to have any close neighbor. This by itself gives further confidence in ability of \emph{Gaia} to measure the proper motion reliably without being affected by crowding. 
 
 
- \citet{platais:18} recently analyzed the HST data for candidate runaway stars. The brightest stars (V$<$14) are missing from the catalogue because of saturation effects, but the high extinction towards VFTS682 makes it faint enough to be included.
- Our star did not make the more conservative selection criteria for runaway stars adopted in that study. However, the measurements are useful here, since they provides a measurement of the proper motion of VFTS 682 that is completely independent from the \emph{Gaia} measurement. 
+ \citet{platais:18} recently analyzed the HST data for candidate
+ OB-type runaway stars. The brightest stars (V$<$14) are missing from
+ the catalogue because of saturation effects, but the high extinction
+ towards VFTS682 makes it faint enough to be included.
+ This star was not included in their study because of its WNh5
+ spectral type and because it would not pass the more conservative
+ selection criteria they adopted.
+ However, the measurements are useful here, since they provides an
+ estimate of the proper motion of VFTS 682 that is completely independent from the \emph{Gaia} measurement. 
  
 We list their data in \Tabref{tab:vfts682}.  
 
@@ -580,7 +587,7 @@ of $1.0\pm 0.2$\,Myr \citep{schneider:18}. % , which
 \begin{figure}%[tbp]
   \centering
   \includegraphics[width=0.48\textwidth]{./figures/main_plot_good_gaia_only}  
-  \caption{\SdM{I don't see a reason why we would not show the HST data, except for wanting to hide it maybe.  Let's sit together and find a good way to plot both.  (Hope you still have the script to show the HST direction. )}  The red solid arrow indicates the proper motion of VFTS682. 
+  \caption{\SdM{I don't see a reason why we would not show the HST data, except for wanting to hide it maybe.  Let's sit together and find a good way to plot both.  (Hope you still have the script to show the HST direction. )}  The red solid arrow indicates the proper motion of VFTS682 
     relative to the region from \emph{Gaia} DR2, starting from the present day position of
     the star. The yellow arrows indicate the possible
     directions of projected motion within the \emph{Gaia} DR2 errors, and are extended
