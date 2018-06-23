@@ -158,7 +158,6 @@ ejected from R136.
 \section{Observations}
 \label{sec:sample}
 
-
 \begin{table}
   \begin{center}
     \caption{Selected stellar parameters for VFTS682. }
@@ -178,8 +177,9 @@ ejected from R136.
       \\
       &age & [Myr] & $1.0\pm0.2$ & (1) \\
       &mass loss rate & [$M_\odot \ \mathrm{yr}^{-1}$] & $10^{-4.1\pm0.2}$ & (2)\\
-      &\multirow{2}{*}{surface helium mass fraction} &  & 0.45 & (2)\\
-      & &  & 0.49 & (3)\\
+      % &\multirow{2}{*}{surface helium mass fraction} &  & 0.45 & (2)\\
+      % & &  & 0.49 & (3)\\ %% we don't use this: if we believe it's a
+      % merger it's not relevant, if we don't we still don't use it
       \hline
 
     \end{tabular}
@@ -187,10 +187,10 @@ ejected from R136.
     { 
       (1)~\cite{schneider:18}
       (2)~\cite{bestenlehner:11}
-      (3)~\cite{rubio-diez:17}
+      % (3)~\cite{rubio-diez:17}
     }
   \end{center}
-  \label{tab:star}
+  \label{tab:star_param}
 \end{table}
 
 
@@ -248,8 +248,8 @@ ejected from R136.
       &$\delta\mu_\mathrm{DEC}$  &[$\masyr$] & $0.086\pm0.100$ &  (1,5) \\
       &$\delta\mu_{Gaia}$  &[$\masyr$] & $0.13\pm0.09$ &  (1,5) \\
       &$v_\mathrm{2d}$  &[$\kms$] & $32\pm21$ & (1,5)\\  
-      &$\theta$  &[degrees] &  $14.2_{-43}^{+44}$  & (1,5)\\  
-%      &$v_\mathrm{2d, \parallel}$  &[$\kms$] & $\SdM{xxx}\pm\SdM{xxx}$ & (1,5)\\  
+      &$\theta$  &[degrees] &  $14_{-43}^{+44}$  & (1,5)\\  
+      % &$v_\mathrm{2d, \parallel}$  &[$\kms$] & $\SdM{xxx}\pm\SdM{xxx}$ & (1,5)\\  
  %
 
  \hline     
@@ -302,14 +302,40 @@ The WNh5 star VFTS682, located at right ascension (RA)
 %VFTS survey. % The spectra available covered $\lambda$4000--7000 and
 % were taken at multiple epochs.
 %
-\citet{bestenlehner:11}  analyzed the spectra to infer the stellar parameters and measure an extinction of $A_V=4.45\pm0.12$, implying a luminosity of $\log_{10}(L/L_\odot) =  6.5\pm0.2$, making this one of the brightest stars in the region. The star is unlikely to have a close companion, because of the absence of clear radial velocity variations \citet{bestenlehner:11}.  Bayesian fits of the stellar parameters against evolutionary tracks \citep{brott:11, kohler:15} using the Bonsaii code \citep{schneider:17, schneider:18} provide estimates for the age, present mass and initial mass, indicating that this star among the most massive stars known, see \Tabref{tab:star} for an overview of the parameters.
 
-Estimates of the radial velocity are complicated by the variable, optically thick winds that is typical for emission line stars. \citet{bestenlehner:11} estimate a mass loss rate of $10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, not accounting for the possible effect of clumping.  The V-band light curve of VFTS682  shows variations at a $\sim$10\% level on a timescale of years, which is unusual for Wolf-Rayet stars and more typical for Luminous Blue Variable (LBV) stars \citep{udalski:08, bestenlehner:11}. It also shows mid-infrared excess \citep{gruendl:09}.  We therefore caution for over-interpreting the estimates for the radial velocities, but we will summarize the estimates that have been published.  \citet{bestenlehner:11}  estimate a radial velocity (RV) of  $300\pm10\kms$ using the  N{\footnotesize V} $\lambda4944$ line, which is offset from the average radial velocity of the region, which is  $270\pm10\kms$. This is consistent with, but no proof of, a runaway nature.  \cite{bressert:12} note an offset compared between the RV of the star and the nebular lines from the gas filaments in its vicinity. This is consistent with, but also no proof of, the expectation if the star was not formed in situ.  
+\citet{bestenlehner:11}  analyzed the spectra to infer the stellar
+parameters and measure an extinction of $A_V=4.45\pm0.12$, implying a
+luminosity of $\log_{10}(L/L_\odot) =  6.5\pm0.2$, making this one of
+the brightest stars in the region. The star is unlikely to have a
+close companion, because of the absence of clear radial velocity
+variations \citet{bestenlehner:11}. Bayesian fits of the stellar
+parameters against evolutionary tracks \citep{brott:11, kohler:15}
+using the Bonsaii code \citep{schneider:17, schneider:18} provide
+estimates for the age, present mass and initial mass, indicating that
+this star among the most massive stars known, see
+\Tabref{tab:star_param} for an overview of the parameters.
 
-Newer measurements based on a fit to new Xshooter data covering the full spectrum from 3200 Angstr{\"o}m to 2.45 microns lead to an estimate of $260 \pm 15 \kms$ ({\color{blue} Rubio-D{\' i}ez et al. in prep}). This estimate, which we consider to be the most reliable fo those quoted here, indicates that the relative motion along the line-of-sight is small or negligible. This in consistent with both hypotheses.  
+\cite{townsley:06} did not find
+an X-ray point source at the position of VFTS682 in their
+\emph{Chandra} survey of the region, which suggests the absence of
+colliding winds that would be expected in the presence of companions
+even for extreme mass ratios, given the extremely large mass of VFTS682.
+
+Estimates of the radial velocity are complicated by the variable,
+optically thick winds that is typical for emission line
+stars. \citet{bestenlehner:11} estimate a mass loss rate of
+$10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, not accounting for the
+possible effect of clumping.  The V-band light curve of VFTS682  shows
+variations at a $\sim$10\% level on a timescale of years, which is
+unusual for Wolf-Rayet stars and more typical for Luminous Blue
+Variable (LBV) stars \citep{udalski:08, bestenlehner:11}. It also
+shows mid-infrared excess \citep{gruendl:09}.  We therefore caution for over-interpreting the estimates for the radial velocities, but we will summarize the estimates that have been published.  \citet{bestenlehner:11}  estimate a radial velocity (RV) of  $300\pm10\kms$ using the  N{\footnotesize V} $\lambda4944$ line, which is offset from the average radial velocity of the region, which is  $270\pm10\kms$. This is consistent with, but no proof of, a runaway nature.  \cite{bressert:12} note an offset compared between the RV of the star and the nebular lines from the gas filaments in its vicinity. This is consistent with, but also no proof of, the expectation if the star was not formed in situ.  Newer measurements based on new Xshooter data give different estimates for the RV ({\color{blue} Rubio-D{\' i}ez et al. in prep}). We will therefore refrain from using the RV measurements in this work. 
+
 
 %of $137.8^{+27.5}_ {-15.9}\Msun$, an apparent age of $1.0^{+0.2}_{-0.2}$\,Myr and an inferred initial mass of $150.0^{+28.7}_{-17.4}\Msun$.  Further parameters of are summarized in Table~\ref{X}.
-
+VFTS682 is relatively isolated in \emph{Spitzer} images, except for the extended
+source S10 interpreted as star formation triggered by the wind of
+VFTS682 itself by \cite{walborn:13}. 
 
 %% Radial Velocity: 
 
@@ -340,7 +366,9 @@ For the distance we adopt the distance to the LMC of $50$\,kpc. The error on the
       yr^{-1}}\simeq25\,\mathrm{km\ s^{-1}}$ at 50\,kpc, the
     lighter blue histograms contain 36 stars with errors smaller than $0.05\,\mathrm{mas \
       yr^{-1}}$.\todo{possibly: cartoon to illustrate angle definition, or add to
-    fig.2 if not too messy}}
+    fig.2 if not too messy, maybe also show HST measurements on this
+    plot for 682? Redo right panel taking care of projection of the
+    radial directions!It's misleading!}}
   \label{fig:dist}
 \end{figure*}
 
@@ -360,7 +388,10 @@ With these we compute the relative proper motion
 $\delta\mu_\mathrm{RA}$ and $\delta\mu_\mathrm{DEC}$.   We also compute the total projected 2d velocity
 $v_\mathrm{2d}$ and
 the angle $\theta$ between the direction of motion and the vector
-connecting the center of R136 with the current position of VFTS 682.  This means that $\theta = 0$ is the angle that is expected for a star that is moving away from R136 with a perfect radial motion.   All kinematic quantities are provided in
+connecting the center of R136 with the current position of VFTS 682,
+i.e. such that $\theta = 0$ is the angle corresponding to perfectly
+radial motion away from R136.    We further provide the projected 2d velocity
+$v_\mathrm{2d}$.   All kinematic quantities are provided in
 Tab.~\ref{tab:vfts682}. 
 
 
@@ -457,33 +488,36 @@ reach its present day location % at $\sim$29\,pc from the cluster core
 if the
 star was ejected very early in its evolution. This range is
 highlighted by the green vertical band, and its width is determined by
-the uncertainty in the present-day age of the star (cf.~\Tabref{tab:star}).
+the uncertainty in the present-day age of the star (cf.~\Tabref{tab:star_param}).
 
-The right panel shows the distributions in flight direction for these
-stars: $\theta$ is the angle between the radial direction from the
-center of R136 to each star and its proper motion relative to
-R136 (see also \Figref{fig:main}). Dynamical ejections from the
+The right panel shows the distributions in projected flight direction for these
+stars: $\theta$ is the angle between the projected radial direction from the
+center of R136 to each star and its projected relative proper motion (see also \Figref{fig:main}). Dynamical ejections from the
 cluster should %are expected to
 produce
-close to radial ejections, i.e.~$\theta\simeq0$. On this panel, the green band highlights
+close to radial ejections, i.e.~$\theta\simeq0$ \todo{this is only
+  true for small RV}. On this panel, the green band highlights
 the range of angles corresponding to an opening angle around the
-radial direction of 45\,degrees. The direction of motion of VFTS682 is
+projected radial direction of 45\,degrees. The direction of motion of VFTS682 is
 poorly constrained because of the large errors on the proper motion
 components both in HST and \emph{Gaia} data, but
-it is consistent with dynamical ejection from R136.
+it is consistent with dynamical ejection from R136. We note that
+VFTS72 has a small radial velocity, while VFTS16 (and possibly VRTS682) has
+large peculiar radial velocity and therefore accurate distances are
+needed to contrain the flight direction in three dimensions.
 
 Figure~\ref{fig:main} shows the projected motion of VFTS682 relative to R136 on the
 sky. \todo{fix colors} The dashed circle shows the location of the cluster, and the red
 (cyan) arrow shows the relative proper motion from \emph{Gaia} DR2
-(HST). The lighter arrows show the corresponding opening angle within
-the large uncertainties. The length of each arrow is proportional to
+(HST). The lighter arrows show the uncertainty on the direction of
+motion due to the large uncertainties. The length of each arrow is proportional to
 the speed of the star, and dashed prolungations show the possible
 region of origin assuming an age of $1.0\pm0.2$\,Myr
 \citep[][]{schneider:18}. This figure illustrates that R136 is clearly
 the most likely origin of the star, although the large error bars
 prevent a robust identification. 
 
-Assuming VFTS682 originates from R136, we can calculate its kinematic
+Assuming VFTS682 indeed originates from R136, we can calculate its kinematic
 age simply as:
 \begin{equation}
   \label{eq:kin_age}
@@ -643,8 +677,10 @@ R136 early in the evolution of both the star and the cluster.
 \label{sec:discussion}
 
 Based on our results, we tentatively claim that VFTS682 is the most massive
-(slow) runaway known to date, with a peculiar three-dimensional speed of
-$44\pm21\,\kms$ \todo{make 2d? use LOS velocity from Marimar?}. Due to the large error bars, this result will need
+(slow) runaway known to date, with a peculiar two-dimensional
+projected velocity with respect to R136 of
+$\sim38\kms$ (averaging the \emph{Gaia} DR2 and HST
+results) but compatible with zero within $2\sigma$. Due to the large error bars, this result will need
 to be revisited with future astrometric data. % to be revisited as updated
 % astrometric parameters from future \emph{Gaia} data releases become
 % available.
@@ -825,7 +861,7 @@ the central cluster itself.
 
  \begin{acknowledgements}
    \small
-   We are grateful to S.\,Torres and M.\,C.\,Ramirez-Tannus
+   We are grateful to M.\,C.\,Ramirez-Tannus, S.~N.~Shore, and S.\,Torres
    % and C.\,J.\,Evans
    for help and discussions, European Unions Horizon 2020 research and innovation programme from the European Research Council (ERC), Grant agreement No. 715063 [SdM], the NRC-Canada Plaskett Fellowship [VHB].
    
