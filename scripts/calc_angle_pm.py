@@ -20,30 +20,32 @@ from pyspark.sql.functions import floor
 #calculate opening angle of proper motion
 
 
-#star='VFTS16'
-#relpmra = -0.336
-#relpmdec = -0.038
-#relpm = np.array([-0.336,-0.038])
+# star='VFTS16'
+# relpmra = -0.336
+# relpmdec = -0.038
+# relpm = np.array([-0.336,-0.038])
 
-#pmra_error = 0.04593
-#pmdec_error = 0.04536
-#pmra_pmdec_corr = 0.10909
+# pmra_error = 0.04593
+# pmdec_error = 0.04536
+# pmra_pmdec_corr = 0.10909
 
-# star='VFTS72'
+star='VFTS72'
 
-# relpmra = -0.372
-# relpmdec = 0.125
+relpmra = -0.372
+relpmdec = 0.125
 
-# pmra_error = 0.05038
-# pmdec_error = 0.06077
-# pmra_pmdec_corr = 0.1414
+pmra_error = 0.05038
+pmdec_error = 0.06077
+pmra_pmdec_corr = 0.1414
 
-star='VFTS682'
-relpmra =  0.102976611081
-pmra_error = 0.0797415003151
-relpmdec =  0.0855134899438
-pmdec_error = 0.0999780525252
-pmra_pmdec_corr = 0.026013786
+# star='VFTS682'
+# relpmra =  0.102976611081
+# pmra_error = 0.0797415003151
+
+# relpmdec =  0.0855134899438
+# pmdec_error = 0.0999780525252
+
+# pmra_pmdec_corr = 0.022639342
 
 # components of the correlation matrix
 c33=pmra_error * pmra_error
@@ -114,7 +116,7 @@ m3 = y/x
 alpha1=math.atan((m1 - m3)/(1.+m1*m3))
 alpha2=math.atan((m2 - m3)/(1.+m2*m3))
 
-
+print star
 print(alpha1,alpha2)
 print(180.*alpha1/math.pi,180.*alpha2/math.pi)
 
