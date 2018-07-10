@@ -29,23 +29,22 @@ from pyspark.sql.functions import floor
 # pmdec_error = 0.04536
 # pmra_pmdec_corr = 0.10909
 
-star='VFTS72'
+# star='VFTS72'
+# relpmra = -0.372
+# relpmdec = 0.125
 
-relpmra = -0.372
-relpmdec = 0.125
+# pmra_error = 0.05038
+# pmdec_error = 0.06077
+# pmra_pmdec_corr = 0.1414
 
-pmra_error = 0.05038
-pmdec_error = 0.06077
-pmra_pmdec_corr = 0.1414
+star='VFTS682'
+relpmra =  0.102976611081
+pmra_error = 0.06974150031513375
 
-# star='VFTS682'
-# relpmra =  0.102976611081
-# pmra_error = 0.0797415003151
+relpmdec =  0.0855134899438
+pmdec_error = 0.0797415003151
 
-# relpmdec =  0.0855134899438
-# pmdec_error = 0.0999780525252
-
-# pmra_pmdec_corr = 0.022639342
+pmra_pmdec_corr = 0.022639342
 
 # components of the correlation matrix
 c33=pmra_error * pmra_error
