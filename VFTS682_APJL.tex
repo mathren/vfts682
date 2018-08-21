@@ -112,8 +112,7 @@ process. Important progress has been made on the theoretical side,
 \citep[e.g.][]{bate:09,kuiper:15,rosen:16}, but the simulations of this multi-scale and multi-physics problem are computationally expensive and remain challenging.  
 
 In has been proposed that most, if not all, stars form in clusters
-\citep{lada:03}, where massive stars reside in the
-innermost cores. In this picture, field stars are primarily the result
+\citep{lada:03}. In this picture, field stars are primarily the result
 of the dissolution of dense groups.  However, a significant population
 of massive stars exists in relative isolation, far from dense clusters
 or OB associations and their origin remains a matter of debate
@@ -153,7 +152,7 @@ from R136. \citet{lennon:18} investigate the kinematics of  isolated
 O-type stars in the region using the second \emph{Gaia} data release
 \cite[DR2,][]{gaia:16,brown:18} and show that the proper motion,
 postion and direction of the $\sim$$100\Msun$ star VFTS16 is consistent
-with a runaway origin from R136. They also found a less clear case for
+with a runaway origin from R136. They found a less clear case for
 VFTS72, and in both cases some tension between the kinematic age of
 these stars and their apparent age remains. 
 
@@ -202,7 +201,7 @@ ejected from R136.
       & initial mass& $[M_\odot]$ & $150.0^{+28.7}_{-17.4}$ & (1)
       \\
       &age & [Myr] & $1.0\pm0.2$ & (1) \\
-      &mass loss rate & [$M_\odot \ \mathrm{yr}^{-1}$] & $10^{-4.1\pm0.2}$ & (2)\\
+      & mass loss rate & $\log_{10}(\dot{M}/[M_\odot \ \mathrm{yr}^{-1}])$ & $-4.1\pm0.2$ & (2)\\
       % &\multirow{2}{*}{surface helium mass fraction} &  & 0.45 & (2)\\
       % & &  & 0.49 & (3)\\ %% we don't use this: if we believe it's a
       % merger it's not relevant, if we don't we still don't use it
@@ -233,7 +232,7 @@ variations suggests that the star is unlikely to have close binary
 companions \citep[][]{bestenlehner:11}, unless the orbital inclination is
 very high. Bayesian fits of the stellar
 parameters against evolutionary tracks \citep{brott:11, kohler:15}
-using the BONNSAI code \citep{schneider:17, schneider:18} provide
+using the BONNSAI code \citep{schneider:14,schneider:17} provide
 estimates for the age, present mass and initial mass, % indicating that
 % this star among the most massive stars known,
 % see
@@ -351,9 +350,14 @@ estimates for the age, present mass and initial mass, % indicating that
 a bright X-ray point source at the position of VFTS682 in their
 \emph{Chandra} survey of the region. The X-ray luminosity of VFTS682
 is significantly lower than known massive binaries in the region, which suggests the absence of
-colliding winds that would be expected in the presence of companions
+colliding winds. These would be expected in the presence of companions
 even for extreme mass ratios, given the extremely large mass of
-VFTS682. This star is also relatively isolated in the (near) infrared. There nearest bright (near-)infrared sources detected by \emph{Spitzer} \citep{meixner:06} and resolved in the \emph{VISTA} Magellanic Clouds Survey \citep{cioni:11} are located at a distance of about 10 arcsecond, i.e. about 2.4 pc. \cite{walborn:13} speculate that these nearby young stars may represent a case of starformation triggered by the the wind of VFTS682, but chance alignment cannot be excluded.
+VFTS682. This star is also relatively isolated in the (near)
+infrared. The nearest bright (near-)infrared sources detected by
+\emph{Spitzer} \citep{meixner:06} and resolved in the \emph{VISTA}
+Magellanic Clouds Survey \citep{cioni:11} are located at a distance of
+about 10 arcsecond, i.e. about 2.4 pc. \cite{walborn:13} speculate
+that these nearby young stars may represent a case of star formation triggered by the the wind of VFTS682.
 
 The V-band light curve of VFTS682  shows
 variations at a $\sim$10\% level on a timescale of years, which is
@@ -364,24 +368,27 @@ shows a mid-infrared excess \citep{gruendl:09}.
 Estimates of the radial velocity are complicated by the variable,
 possibly inhomogeneous, optically thick wind  typical of emission line
 stars. \citet{bestenlehner:11} estimate a mass loss rate of
-$10^{-4.1\pm0.2}\,M_\odot \ \mathrm{yr}^{-1}$, not accounting for the
+$\log_{10}(\dot{M}/[M_\odot \ \mathrm{yr}^{-1}])=-4.1\pm0.2$, not accounting for the
 possible effect of clumping.  We therefore caution
-for over-interpreting the estimates for the radial velocities. % , but we will summarize the estimates that have been published. 
+for over-interpreting the radial velocities estimates. % , but we will summarize the estimates that have been published. 
 \citet{bestenlehner:11}  estimate a radial velocity (RV) of
 $300\pm10\kms$ using the  N{\footnotesize V} $\lambda4944$ line, which
 is offset from the average radial velocity of the region of
 $270\pm10\kms$. This was suggested as indicating a runaway nature, but
-it is no proof of it, and more recent measurements based on X-shooter
-data give different estimates for the RV ({\color{blue} Rubio-D{\'
-    i}ez et al. in prep}). \cite{bressert:12} note an offset compared between the RV of
+it is no proof of it. % , and more recent measurements based on X-shooter
+% data give different estimates for the RV ({\color{blue} Rubio-D{\'
+%     i}ez et al. in prep}).
+\cite{bressert:12} note an offset compared between the RV of
 the star and the nebular lines from the gas filaments in its
 vicinity. This is consistent with the expectation if the star was not
 formed in situ. We will refrain from using the RV measurements in this
 work, and focus on the velocities on the plane of the sky. 
 
-We adopt as distance to the LMC the value of $50$\,kpc. The error on
+We adopt a distance to the LMC of $50$\,kpc. The error on
 the distance determination is small ($\lesssim2\%$,
-\citealt{pietrzynski:13}) and any possible offset in the radial direction between R136 or VFTS682 and the distance we adopted for the LMC is probably much smaller (likely $\ll 1\%$, e.g., \citealt{Luks+1992}). These uncertainties are negligible compared to the errors in the proper motion discussed below.  
+\citealt{pietrzynski:13}) and any possible offset in the radial
+direction between R136 or VFTS682 and the distance we adopted for the
+LMC is probably much smaller ($\sim$$0.5\%$, e.g., \citealt{Luks+1992}). These uncertainties are negligible compared to the errors in the proper motion discussed below.  
 
 %\citet{parker:93} reported B and V magnitudes roughly 0.5\,magnitude lower than found by \citet{evans:11}.  - Citing OGLE is enough
 
@@ -466,7 +473,9 @@ brightest stars (V$<$14) are saturated in the data set and have been
 excluded from the analysis. The high extinction around VFTS682
 prevents this issue. % should be one of the brightest
 % stars in the region, however, the high extinction makes it faint enough such that saturation effects are not an issue.
-VFTS682 is relatively slow and is therefore not discussed in their paper.  However, their measurements are useful here, since they provide an  estimate of the proper motion of VFTS682 that is independent from the \emph{Gaia} measurement. 
+VFTS682 is relatively slow and is therefore not discussed in
+\citealt{platais:18}.  However, their measurements provide useful
+complementary estimate of the proper motion of VFTS682 independent from the \emph{Gaia} data. 
  
 The HST study provides proper motions that are relative to the bulk motion
 of the majority of the stars in the field of view. The full 30 Dor
@@ -575,16 +584,16 @@ between the apparent age and the present day distance from the cluster
 core for VFTS16 and VFTS72 \citep[][]{lennon:18}. 
 
 Assuming VFTS682 indeed originates from R136, we can calculate its kinematic
-age simply as:
+age as:
 \begin{equation}
   \label{eq:kin_age}
   \tau_\mathrm{kin} = \frac{d_\parallel}{\delta\mu_{Gaia}} \simeq
   \frac{119.4\,\mathrm{arcsec}}{0.13\masyr} \simeq 0.9\pm\,0.6\, \mathrm{Myr} \ \ ,
 \end{equation}
 where $d_\parallel = 119.4\,\mathrm{arcsec}$ is the angular distance from VFTS682 to
-the core of the cluster \citep[corresponding to $\sim$29\,pc at a
-distance of 
-50\,kpc,][]{bestenlehner:11}.
+the core of the cluster \citep[][]{bestenlehner:11}. % \citep[corresponding to $\sim$29\,pc at a
+% distance of 
+% 50\,kpc,][]{bestenlehner:11}.
 % As in the rest of this study, we neglect for
 % simplicity the error on the distance estimates, because it is negligible compared to other uncertainties.
 The kinematic age $\tau_\mathrm{kin}$ is consistent with a very early
@@ -607,19 +616,24 @@ results), but compatible with zero within $2\sigma$. Due to the large error bars
 to be revisited with future astrometric data. % to be revisited as updated
 % astrometric parameters from future \emph{Gaia} data releases become
 % available.
+
 If confirmed, it means that isolated star formation is
 \emph{not} required to explain the isolation of VFTS682. Its proper motion suggests that it was ejected from the cluster R136
 $0.9\pm0.6$\,Myr ago. If the
 cluster age \citep[$\lesssim2$\,Myr,][]{crowther:10, sabbi:12} is
 indeed smaller than the shortest stellar lifetime
-\citep[$\sim$3\,Myr,][]{brott:11,zapartas:17}, the ejection of VFTS682
+\citep[$\sim$3\,Myr,][]{brott:11,kohler:15, zapartas:17}, the ejection of VFTS682
 from the disruption of a binary is excluded. %  since the region is too young for stars
 % to have experienced core-collapse already. 
 The kinematic age we infer is smaller than the kinematic age of
 $\sim$1.5\,Myr for VFTS16 found in \cite{lennon:18}, which indicates
-that VFTS682 was ejected later than VFTS16, at a time similar to VFTS72.
+that VFTS682 was ejected later than VFTS16, potentially at a time similar to VFTS72.
 
-If the star were ejected dynamically, its exceptionally large mass raises the question of which stars must populate
+
+If the star were ejected dynamically, its isolation makes it an ideal target to constrain the stellar physics of
+stars with masses well above $\sim$$100\,M_\odot$ while avoiding
+crowding issues. Moreover, 
+ its exceptionally large mass raises the question of which stars must populate
 the core of the cluster. N-body dynamics typically ejects the least
 massive star among those interacting \cite[e.g.,][]{banerjee:12}. Just
 based on the kinematic properties of VFTS682, we would expect several
@@ -627,16 +641,6 @@ stars with initial masses larger than $\sim$$150\,M_\odot$ in the
 cluster R136, which is consistent with the detection
 of extremely massive stars in the core of the
 cluster.
-
-The spectral type of VFTS682
-\citep[WNh5,][]{bestenlehner:11} is the same as R136a1-a3, i.e.~the
-three most massive stars detected in the core of the cluster, %  by
-% \cite{dekoter:97,crowther:10,crowther:16}
- with a remarkable similarity in particular with
-the spectrum of R136a3. The isolation of
-VFTS682 makes it an ideal target to constrain the stellar physics of
-stars with masses well above $\sim$$100\,M_\odot$ while avoiding
-crowding issues.
 
 The simulations of \cite{fujii:11} suggest that
 early in the evolution of a cluster, dynamical interactions form an extremely
@@ -654,7 +658,7 @@ metallicity \citep[see also][]{langer:07}.
 
 Similarly, the final fate of VFTS682 could be either a
 pair-instability supernova without compact remnant formation, or
-possibly direct collapse to a black hole above the $2^\mathrm{nd}$
+possibly direct collapse to a black hole above the pair-instability
 mass gap. The amount of mass loss of these stars will determine their final core
 mass and thus their final fate.
 
