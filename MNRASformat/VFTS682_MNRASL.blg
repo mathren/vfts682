@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: VFTS682_MNRASL.aux
+The style file: mnras.bst
+Database file #1: bibliography/vfts682.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 48 entries,
+            2881 wiz_defined-function locations,
+            1104 strings with 23876 characters,
+and the built_in function-call counts, 22239 in all, are:
+= -- 1786
+> -- 1640
+< -- 84
++ -- 739
+- -- 230
+* -- 2942
+:= -- 3448
+add.period$ -- 0
+call.type$ -- 48
+change.case$ -- 96
+chr.to.int$ -- 48
+cite$ -- 48
+duplicate$ -- 1075
+empty$ -- 1082
+format.name$ -- 400
+if$ -- 3765
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 48
+newline$ -- 157
+num.names$ -- 308
+pop$ -- 237
+preamble$ -- 1
+purify$ -- 192
+quote$ -- 0
+skip$ -- 616
+stack$ -- 0
+substring$ -- 1214
+swap$ -- 574
+text.length$ -- 195
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 432
+warning$ -- 0
+while$ -- 340
+width$ -- 0
+write$ -- 493
