@@ -94,13 +94,11 @@
   {10.1051/0004-6361/201629272}, \href
   {http://adsabs.harvard.edu/abs/2016A%26A...595A...1G} {595, A1}
 
-\bibitem[\protect\citeauthoryear{{Gaia Collaboration}, {Brown}, {Vallenari},
-  {Prusti}, {de Bruijne}, {Babusiaux}  \& {Bailer-Jones}}{{Gaia Collaboration}
-  et~al.}{2018}]{brown:18}
-{Gaia Collaboration} {Brown} A.~G.~A.,  {Vallenari} A.,  {Prusti} T.,  {de
-  Bruijne} J.~H.~J.,  {Babusiaux} C.,   {Bailer-Jones} C.~A.~L.,  2018,
-  ArXiv:1804.09365, \href {http://adsabs.harvard.edu/abs/2018arXiv180409365G}
-  {}
+\bibitem[\protect\citeauthoryear{{Gaia Collaboration} et~al.,}{{Gaia
+  Collaboration} et~al.}{2018}]{brown:18}
+{Gaia Collaboration} et~al., 2018, \mn@doi [\aap]
+  {10.1051/0004-6361/201833051}, \href
+  {http://adsabs.harvard.edu/abs/2018A%26A...616A...1G} {616, A1}
 
 \bibitem[\protect\citeauthoryear{{Gruendl} \& {Chu}}{{Gruendl} \&
   {Chu}}{2009}]{gruendl:09}
@@ -191,7 +189,8 @@
 
 \bibitem[\protect\citeauthoryear{{Platais} et~al.,}{{Platais}
   et~al.}{2018}]{platais:18}
-{Platais} I.,  et~al., 2018, \aj, 156, 98
+{Platais} I.,  et~al., 2018, \mn@doi [\aj] {10.3847/1538-3881/aad280}, \href
+  {http://adsabs.harvard.edu/abs/2018AJ....156...98P} {156, 98}
 
 \bibitem[\protect\citeauthoryear{{Poveda}, {Ruiz}  \& {Allen}}{{Poveda}
   et~al.}{1967}]{poveda:67}
