@@ -2,6 +2,7 @@
  "vfts682"
  (lambda ()
    (LaTeX-add-bibitems
+    "vink:15"
     "woosley:17"
     "belczynski:16"
     "townsley:14"
