@@ -10,7 +10,7 @@ We thank the referee for their kind comments and suggestions. We have adapted th
 
 ANSWER: =========================================================================================
 
-We agree that this would be more clear, and have modified the sentence accordingly adding "N- body simulations indicate that the *dynamical* ejection of..."
+We agree that this would be more clear, and have modified the sentence accordingly. The text now reads: "N- body simulations indicate that the *dynamical* ejection of..."
 
 =================================================================================================
 
@@ -18,11 +18,11 @@ We agree that this would be more clear, and have modified the sentence according
 
 ANSWER: =========================================================================================
 
-Indeed we agree that we should have stated this more clearly. We have added a clarification in the main text of Sec. 3 and a pointer to it in the figure caption.
+Indeed, we agree that we should have stated this more clearly. We have added a clarification in the main text of Sec. 3 and a pointer to it in the figure caption.
 
 To answer the referee's question here: the green vertical band in the top panel is determined by the error bars on the apparent age of the star: the expected proper motion is the projected distance between the cluster and the star (~29pc) divided by the apparent age of the star (1+/-0.2Myr) which gives the v2D reported in Tab. 2. For the bottom panel we have assumed a width of 45 degrees centered in theta=0.
 
-We have chosen not to include similar bands for VFTS16 and 72 since they would overlap with the one for vfts682 in the bottom panel and we think this would make the figure less clear. We note that this information is also contained in Fig. 2 (in the prolongation backward in time of the observed proper motions and the proper motion error cone).
+We have chosen not to include similar bands for VFTS16 and 72 since they would overlap with the one for VFTS682 in the bottom panel and we think this would make the figure less clear. We note that this information is also contained in Fig. 2 (in the prolongation backward in time of the observed proper motions and the proper motion error cone).
 
 =================================================================================================
 
@@ -56,7 +56,7 @@ ANSWER: ========================================================================
 
 We agree with the referee on this point, and have modified the text to make the dynamical mergers less upfront.
 
-We would prefer to still mention the mergers to implicitly pose the question of whether these VMS are mergers or not (and we agree with the referee that this remains to be seen for VFTS682). While these are not instrumental in explaining their results, the fact that using an IMF up to 150Msun only already gave Banerjee et al. enough VMS stars both in and around the cluster suggests that if they had allowed for the formation of even more massive stars, then the efficiency of dynamically driven mergers together with stars initially more massivre than 150Msun might possibly result in an over-prediction of VMS in the region. We think that this is an interesting point were observations can put constraints on the physics of cluster dynamics and stellar mergers.
+We would prefer to still mention the mergers, to implicitly pose the question of whether these VMS are mergers or not (and we agree with the referee that this remains to be seen for VFTS682). While mergers are not instrumental in explaining their results, the fact that using an IMF up to 150Msun only already gave Banerjee et al. enough VMS stars both in and around the cluster suggests that if they had allowed for the formation of even more massive stars, then the efficiency of dynamically driven mergers together with stars initially more massivre than 150Msun might possibly result in an over-prediction of VMS in the region. We think that this is an interesting point were observations can put constraints on the physics of cluster dynamics and stellar mergers.
 
 =================================================================================================
 
@@ -64,6 +64,6 @@ We would prefer to still mention the mergers to implicitly pose the question of 
 
 ANSWER: =========================================================================================
 
-We agree with the referee that the metallicity dependence of the pair-instability fate is also addressed in Belczynski et al. 2016 paper, although it is a population synthesis work where the pulsational pair instability is prescribed rather than calculated, and therefore the reference suggested is not a primary one. The work of Belczynski et al. is based on the detailed simulations of Woosley 2017, http://adsabs.harvard.edu/abs/2017ApJ...836..244W, and we chose to add a citation to the primary source instead.
+We agree with the referee that the metallicity dependence of the pair-instability occurrence is also addressed in Belczynski et al. 2016, although it is a population synthesis study where the pulsational pair instability is prescribed rather than calculated, and therefore the reference suggested is not a primary one. The work of Belczynski et al. is based on the detailed simulations of Woosley 2017, http://adsabs.harvard.edu/abs/2017ApJ...836..244W, and we chose to add a citation to the primary source instead.
 
 =================================================================================================
