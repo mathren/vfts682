@@ -33,8 +33,6 @@
     '("Tabref" 1)
     '("Figref" 1)
     '("Eqref" 1)
-    '("newtext" 1)
-    '("SdM" 1)
     "kms"
     "Msun"
     "Lsun"
@@ -53,9 +51,10 @@
     "eq:kin_age"
     "sec:discussion"
     "lastpage")
-   (LaTeX-add-bibliographies
-    "bibliography/vfts682")
-   (LaTeX-add-xcolor-definecolors
-    "Wildstrawberry"))
+   (LaTeX-add-bibitems
+    "bate:09"
+    "blaauw:61"
+    "vink:15"
+    "woosley:17"))
  :latex)
 
