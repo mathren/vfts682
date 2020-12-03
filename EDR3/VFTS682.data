@@ -1,0 +1,2 @@
+ra,ra_error,dec,dec_error,pm,pmra,pmra_error,pmdec,pmdec_error,ra_dec_corr,ra_pmra_corr,ra_pmdec_corr,dec_pmra_corr,dec_pmdec_corr,parallax_pmdec_corr,astrometric_n_good_obs_al,astrometric_n_bad_obs_al,ruwe,phot_g_mean_mag,bp_rp,dr2_radial_velocity
+84.7313640155608,0.030666254,-69.07411059943992,0.03148526,1.8578612,1.7152509608556308,0.041465584,0.7138362781172476,0.047146976,-0.042232394,-0.25623962,0.0029638642,0.03441255,-0.4529141,-0.35703638,268,1,1.0459872,15.662468,1.5058689,
