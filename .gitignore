@@ -27,3 +27,4 @@ VFTS682.pdf
 figures/ESO_field/*
 comments/*
 .ipynb_checkpoints/*
+figures/ESO_field/*.fits
