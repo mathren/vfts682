@@ -11,4 +11,4 @@ date.
 #+DOWNLOADED: screenshot @ 2023-05-23 17:14:57
 [[file:.org_notes_figures/2023-05-23_17-14-57_screenshot.png]]
 
-See the paper for more information.
+See [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.102R/abstract][the paper (Renzo et al. 2019a, MNRASL,482,L102-L106)]] for more information.
