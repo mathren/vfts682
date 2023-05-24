@@ -17,7 +17,7 @@ See [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.102R/abstract][the paper 
 
 Please cite the associated article with this BibTex snippet:
 
-#+begin_src latex
+#+begin_src bibtex
 @ARTICLE{renzo:19vfts682,
        author = {{Renzo}, M. and {de Mink}, S.~E. and {Lennon}, D.~J. and {Platais}, I. and {van der Marel}, R.~P. and {Laplace}, E. and {Bestenlehner}, J.~M. and {Evans}, C.~J. and {H{\'e}nault-Brunet}, V. and {Justham}, S. and {de Koter}, A. and {Langer}, N. and {Najarro}, F. and {Schneider}, F.~R.~N. and {Vink}, J.~S.},
         title = "{Space astrometry of the very massive {\ensuremath{\sim}}150 M$_{{\ensuremath{\odot}}}$ candidate runaway star VFTS682}",
