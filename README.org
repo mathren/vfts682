@@ -12,3 +12,27 @@ date.
 [[file:.org_notes_figures/2023-05-23_17-14-57_screenshot.png]]
 
 See [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.102R/abstract][the paper (Renzo et al. 2019a, MNRASL,482,L102-L106)]] for more information.
+
+*** Citation
+
+Please cite the associated article with this BibTex snippet:
+
+#+begin_src latex
+@ARTICLE{renzo:19vfts682,
+       author = {{Renzo}, M. and {de Mink}, S.~E. and {Lennon}, D.~J. and {Platais}, I. and {van der Marel}, R.~P. and {Laplace}, E. and {Bestenlehner}, J.~M. and {Evans}, C.~J. and {H{\'e}nault-Brunet}, V. and {Justham}, S. and {de Koter}, A. and {Langer}, N. and {Najarro}, F. and {Schneider}, F.~R.~N. and {Vink}, J.~S.},
+        title = "{Space astrometry of the very massive {\ensuremath{\sim}}150 M$_{{\ensuremath{\odot}}}$ candidate runaway star VFTS682}",
+      journal = {\mnras},
+     keywords = {astrometry, stars: kinematics and dynamics, stars: individual: VFTS682, stars: massive, Astrophysics - Solar and Stellar Astrophysics, Astrophysics - Astrophysics of Galaxies},
+         year = 2019,
+        month = jan,
+       volume = {482},
+       number = {1},
+        pages = {L102-L106},
+          doi = {10.1093/mnrasl/sly194},
+archivePrefix = {arXiv},
+       eprint = {1810.05650},
+ primaryClass = {astro-ph.SR},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.102R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+#+end_src
