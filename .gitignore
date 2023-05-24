@@ -16,7 +16,6 @@ auto
 *.bbl
 *.blg
 *.toc
-*.org
 *.tex.backup
 *.synctex.gz
 comments/*

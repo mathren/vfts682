@@ -1,0 +1,14 @@
+#+Title: Space astrometry of the very massive ∼150 M⊙ candidate runaway star VFTS682
+
+Code associated to the [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.102R/abstract][Renzo et al. 2019a]]. In this paper we used /Gaia/
+DR2 data to test the kinematics of a >150M_{\odot} star, VFTS682, and
+found it was plausibly ejected from the core of the R136 cluster,
+despite being that massive. This possibly makes it the third
+>100M_{\odot} star ejected from this cluster, together with VFTS72 and
+VFTS16 [[https://ui.adsabs.harvard.edu/abs/2018A%26A...619A..78L/abstract][Lennon et al. 2018]], and the most massive runaway star known to
+date.
+
+#+DOWNLOADED: screenshot @ 2023-05-23 17:14:57
+[[file:.org_notes_figures/2023-05-23_17-14-57_screenshot.png]]
+
+See the paper for more information.
